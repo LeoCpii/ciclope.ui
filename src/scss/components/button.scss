@@ -1,0 +1,21 @@
+@import "./../utilities/utilities";
+
+.lz-btn {
+    border-radius: $radius;
+    padding: 5px;
+    border: none;
+    outline: none;
+    transition: all $animation;
+    color: var(--color-brand);
+    background-color: transparent;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.lz-btn.lz-btn--mr:nth-child(n) {
+    margin-right: $distance;
+}
+
+.lz-btn:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}

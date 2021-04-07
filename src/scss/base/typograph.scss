@@ -1,0 +1,14 @@
+@import './../utilities/utilities';
+
+.lz-title-page {
+    font-family: $font-semi-bold;
+    color: var(--text);
+    font-size: $font-x-large;
+}
+
+.lz-text-truncate {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

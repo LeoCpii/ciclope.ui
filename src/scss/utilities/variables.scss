@@ -1,0 +1,34 @@
+$radius: 4px;
+$distance: 15px;
+$nav-height: 33px;
+
+/* TRANSITION */
+$duration: .2s;
+$transition: cubic-bezier(0.51, 0.31, 0, 1.01);
+$animation: $duration $transition;
+
+/* BOX SHADOW */
+$box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+/* FONT FAMILY */
+$font-sans-serif: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$font-serif: "Freight", "Georgia", serif;
+$font-regular: "gibson" !important;
+$font-bold: "gibson-bold" !important;
+$font-semi-bold: "gibson-semi-bold" !important;
+
+/* FONT SIZE */
+$font-tiny: 8px;
+$font-small: 12px;
+$font-medium: 16px;
+$font-large: 18px;
+$font-x-large: 22px;
+
+/* FONT WEIGHT */
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 600;
+$font-weight-bold: 700;
+
+/* COMPONENTS */
+$header-height: 63px;

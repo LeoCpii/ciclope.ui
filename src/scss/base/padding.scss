@@ -1,0 +1,21 @@
+@import './../utilities/utilities';
+
+.lz-padding {
+    padding: $distance;
+}
+
+.lz-padding-right {
+    padding-right: $distance;
+}
+
+.lz-padding-left {
+    padding-left: $distance;
+}
+
+.lz-padding-top {
+    padding-top: $distance;
+}
+
+.lz-padding-bottom {
+    padding-bottom: $distance;
+}

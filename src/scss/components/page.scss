@@ -1,0 +1,6 @@
+@import './../utilities/utilities';
+
+.lz-page {
+    width: 100%;
+    padding: calc(2 * #{$distance});
+}

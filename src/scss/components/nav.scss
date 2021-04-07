@@ -1,0 +1,25 @@
+@import './../utilities/utilities';
+
+.lz-nav {
+    background-color: var(--color);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    @include start;
+    padding: $distance;
+}
+
+.lz-nav .lz-content {
+    @include between;
+    width: 100%;
+}
+
+.lz-nav .lz-content-left {
+    @include start;
+}
+
+.lz-nav .lz-content-right {
+    @include end;
+}
+
+.lz-nav .lz-content .lz-name {
+    margin-left: $distance;
+}

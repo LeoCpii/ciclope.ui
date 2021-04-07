@@ -1,0 +1,21 @@
+@import './../utilities/utilities';
+
+.lz-margin {
+    margin: $distance;
+}
+
+.lz-margin-right {
+    margin-right: $distance;
+}
+
+.lz-margin-left {
+    margin-left: $distance;
+}
+
+.lz-margin-top {
+    margin-top: $distance;
+}
+
+.lz-margin-bottom {
+    margin-bottom: $distance;
+}

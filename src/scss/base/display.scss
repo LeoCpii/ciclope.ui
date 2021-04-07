@@ -1,0 +1,43 @@
+@import './../utilities/utilities';
+
+.lz-display-small-mobile {
+    @include for-small-mobile {
+        display: none;
+    }
+}
+
+.lz-display-mobile {
+    @include for-mobile {
+        display: none;
+    }
+}
+
+.lz-display-small-tablet {
+    @include for-small-tablet {
+        display: none;
+    }
+}
+
+.lz-display-tablet {
+    @include for-tablet {
+        display: none;
+    }
+}
+
+.lz-display-small-desktop {
+    @include for-small-desktop {
+        display: none;
+    }
+}
+
+.lz-display-desktop {
+    @include for-desktop {
+        display: none;
+    }
+}
+
+.lz-display-big-desktop {
+    @include for-big-desktop {
+        display: none;
+    }
+}

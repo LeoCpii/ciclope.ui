@@ -1,0 +1,103 @@
+@import "./../utilities/utilities";
+
+.lz-col {
+    @include grid(32);
+}
+
+.lz-col .lz-col-small-mobile {
+    @include for-small-mobile {
+        @include grid-column-span(32);
+    }
+}
+
+.lz-col .lz-col-mobile {
+    @include for-mobile {
+        @include grid-column-span(32);
+    }
+}
+
+.lz-col .lz-col-small-tablet {
+    @include for-small-tablet {
+        @include grid-column-span(32);
+    }
+}
+
+.lz-col .lz-col-tablet {
+    @include for-tablet {
+        @include grid-column-span(32);
+    }
+}
+
+.lz-col .lz-col-small-desktop {
+    @include for-small-desktop {
+        @include grid-column-span(32);
+    }
+}
+
+.lz-col .lz-col-desktop {
+    @include for-desktop {
+        @include grid-column-span(32);
+    }
+}
+
+.lz-col .lz-col-big-desktop {
+    @include for-big-desktop {
+        @include grid-column-span(32);
+    }
+}
+
+.lz-col .lz-col-30 {
+    @include grid-column-span(32);
+}
+
+.lz-col .lz-col-30 {
+    @include grid-column-span(30);
+}
+
+.lz-col .lz-col-28 {
+    @include grid-column-span(28);
+}
+
+.lz-col .lz-col-26 {
+    @include grid-column-span(26);
+}
+
+.lz-col .lz-col-24 {
+    @include grid-column-span(24);
+}
+
+.lz-col .lz-col-22 {
+    @include grid-column-span(22);
+}
+
+.lz-col .lz-col-20 {
+    @include grid-column-span(20);
+}
+
+.lz-col .lz-col-18 {
+    @include grid-column-span(18);
+}
+
+.lz-col .lz-col-16 {
+    @include grid-column-span(16);
+}
+
+.lz-col .lz-col-8 {
+    @include grid-column-span(8);
+}
+
+.lz-col .lz-col-6 {
+    @include grid-column-span(6);
+}
+
+.lz-col .lz-col-4 {
+    @include grid-column-span(4);
+}
+
+.lz-col .lz-col-2 {
+    @include grid-column-span(2);
+}
+
+.lz-wrapper {
+    @include wrapper;
+}

@@ -2,14 +2,24 @@
   "name": "lizard.ui",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass src/scss --watch -o src/css --output-style compressed"
+    "build": "npm run types && sucrase ./src -d ./dist --transforms typescript,imports && npm run asset && npm run scss",
+    "start:dev": "nodemon src/index.ts",
+    "scss:dev": "node-sass src/scss --watch -o dist/css compressed",
+    "scss": "node-sass src/scss -o dist/css compressed",
+    "types": "tsc --declaration",
+    "asset": "cp -r src/assets/* dist/assets"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^5.0.0"
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7",
+    "sucrase": "^3.17.1",
+    "typescript": "^4.2.3"
+  },
+  "devDependencies": {
+    "@types/node-sass": "^4.11.1"
   }
 }
