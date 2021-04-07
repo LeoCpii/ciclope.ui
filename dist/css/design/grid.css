@@ -1,0 +1,63 @@
+/* TRANSITION */
+/* BOX SHADOW */
+/* FONT FAMILY */
+.col {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: repeater("1fr ", 32);
+  grid-gap: 0;
+  grid-template-columns: repeat(32, 1fr);
+  position: relative;
+  width: 100%; }
+
+.col .col-30 {
+  grid-column-end: span 32;
+  -ms-grid-column-span: 32; }
+
+.col .col-30 {
+  grid-column-end: span 30;
+  -ms-grid-column-span: 30; }
+
+.col .col-28 {
+  grid-column-end: span 28;
+  -ms-grid-column-span: 28; }
+
+.col .col-26 {
+  grid-column-end: span 26;
+  -ms-grid-column-span: 26; }
+
+.col .col-24 {
+  grid-column-end: span 24;
+  -ms-grid-column-span: 24; }
+
+.col .col-22 {
+  grid-column-end: span 22;
+  -ms-grid-column-span: 22; }
+
+.col .col-20 {
+  grid-column-end: span 20;
+  -ms-grid-column-span: 20; }
+
+.col .col-18 {
+  grid-column-end: span 18;
+  -ms-grid-column-span: 18; }
+
+.col .col-16 {
+  grid-column-end: span 16;
+  -ms-grid-column-span: 16; }
+
+.col .col-8 {
+  grid-column-end: span 8;
+  -ms-grid-column-span: 8; }
+
+.col .col-6 {
+  grid-column-end: span 6;
+  -ms-grid-column-span: 6; }
+
+.col .col-4 {
+  grid-column-end: span 4;
+  -ms-grid-column-span: 4; }
+
+.col .col-2 {
+  grid-column-end: span 2;
+  -ms-grid-column-span: 2; }

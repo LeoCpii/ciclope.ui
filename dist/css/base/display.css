@@ -1,0 +1,33 @@
+/* TRANSITION */
+/* BOX SHADOW */
+/* FONT FAMILY */
+/* FONT SIZE */
+/* FONT WEIGHT */
+/* COMPONENTS */
+@media only screen and (max-width: 320px) {
+  .lz-display-small-mobile {
+    display: none; } }
+
+@media only screen and (max-width: 480px) {
+  .lz-display-mobile {
+    display: none; } }
+
+@media only screen and (max-width: 768px) {
+  .lz-display-small-tablet {
+    display: none; } }
+
+@media only screen and (max-width: 1024px) {
+  .lz-display-tablet {
+    display: none; } }
+
+@media only screen and (max-width: 1366px) {
+  .lz-display-small-desktop {
+    display: none; } }
+
+@media only screen and (max-width: 1680px) {
+  .lz-display-desktop {
+    display: none; } }
+
+@media only screen and (max-width: 1800px) {
+  .lz-display-big-desktop {
+    display: none; } }
