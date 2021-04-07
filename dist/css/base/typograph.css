@@ -1,0 +1,16 @@
+/* TRANSITION */
+/* BOX SHADOW */
+/* FONT FAMILY */
+/* FONT SIZE */
+/* FONT WEIGHT */
+/* COMPONENTS */
+.lz-title-page {
+  font-family: "gibson-semi-bold" !important;
+  color: var(--text);
+  font-size: 22px; }
+
+.lz-text-truncate {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
