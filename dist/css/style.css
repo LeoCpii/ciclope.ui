@@ -1,5 +1,5 @@
 :root {
-  --color-brand: #1abc9c;
+  --brand: #1abc9c;
   --color-contrast: #333;
   --color: var(--color-light);
   --background: var(--background-light);
@@ -155,7 +155,7 @@ td,
   border-radius: 4px;
   padding: 5px;
   border: none;
-  color: var(--color-brand);
+  color: var(--brand);
   cursor: pointer;
   background-color: transparent;
   outline: none;
@@ -194,9 +194,9 @@ td,
   border-left: 6px solid rgba(0, 0, 0, 0.1); }
 
 .side-nav button.btn-side-nav.btn-side-nav--active {
-  color: var(--color-brand);
+  color: var(--brand);
   background-color: rgba(0, 0, 0, 0.06);
-  border-left: 6px solid var(--color-brand); }
+  border-left: 6px solid var(--brand); }
 
 .side-nav button.btn-side-nav svg {
   margin-right: 5px;

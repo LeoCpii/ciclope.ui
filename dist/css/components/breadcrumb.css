@@ -1,0 +1,14 @@
+/* TRANSITION */
+/* BOX SHADOW */
+/* FONT FAMILY */
+/* FONT SIZE */
+/* FONT WEIGHT */
+/* COMPONENTS */
+.lz-breadcrumb {
+  font-weight: 300;
+  color: var(--emphasis);
+  font-size: 22px; }
+
+.lz-breadcrumb:last-child {
+  font-weight: 700;
+  color: var(--text); }

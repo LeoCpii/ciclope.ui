@@ -6,17 +6,29 @@
 /* COMPONENTS */
 .lz-btn {
   border-radius: 4px;
-  padding: 5px;
-  border: none;
+  padding: 10px;
+  border: 1px solid transparent;
   outline: none;
   transition: all 0.2s cubic-bezier(0.51, 0.31, 0, 1.01);
-  color: var(--color-brand);
   background-color: transparent;
   cursor: pointer;
   text-transform: uppercase; }
+  .lz-btn:hover {
+    background-color: rgba(0, 0, 0, 0.04); }
+  .lz-btn--solid {
+    background-color: var(--brand);
+    border: 1px solid var(--brand);
+    color: white; }
+    .lz-btn--solid:hover {
+      color: var(--brand); }
+  .lz-btn--outline {
+    background-color: transparent;
+    border: 1px solid var(--brand);
+    color: var(--brand); }
+  .lz-btn--no-stroke {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: var(--brand); }
 
 .lz-btn.lz-btn--mr:nth-child(n) {
   margin-right: 15px; }
-
-.lz-btn:hover {
-  background-color: rgba(0, 0, 0, 0.04); }

@@ -2,6 +2,10 @@
 
 .lz-col {
     @include grid(32);
+
+    @include for-tablet {
+        display: block
+    }
 }
 
 .lz-col .lz-col-small-mobile {

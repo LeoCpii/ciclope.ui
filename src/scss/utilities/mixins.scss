@@ -111,3 +111,10 @@
         @error $type + 'is not a valid type';
     }
 }
+
+// COLOR
+
+@mixin background-opacity($color, $opacity) {
+    background: var(#{$color});  /*Fallback */
+    background: rgba(var(#{$color}), $opacity);
+}

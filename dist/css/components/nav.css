@@ -10,7 +10,8 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 15px; }
+  padding: 15px;
+  transition: all 0.2s cubic-bezier(0.51, 0.31, 0, 1.01); }
 
 .lz-nav .lz-content {
   display: flex;

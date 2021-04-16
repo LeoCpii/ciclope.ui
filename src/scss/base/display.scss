@@ -41,3 +41,20 @@
         display: none;
     }
 }
+
+// FLEX
+.lz-display-flex-center {
+    @include center;
+}
+
+.lz-display-flex-end {
+    @include end;
+}
+
+.lz-display-flex-start {
+    @include start;       
+}
+
+.lz-display-flex-between {
+    @include between;
+}

@@ -43,7 +43,7 @@
 }
 
 .lz-side-nav .lz-side-nav-container .lz-btn-side-nav-list li.lz-btn-side-nav-list-item.lz-btn-side-nav-list-item--active {
-    color: var(--color-brand) !important;
+    color: var(--brand) !important;
 }
 
 .lz-side-nav .lz-side-nav-container .lz-btn-side-nav-list li.lz-btn-side-nav-list-item:hover {
@@ -56,9 +56,9 @@
 }
 
 .lz-side-nav button.lz-btn-side-nav.lz-btn-side-nav--active {
-    color: var(--color-brand);
+    color: var(--brand);
     background-color: rgba(0, 0, 0, 0.08);
-    border-left: 6px solid var(--color-brand);
+    border-left: 6px solid var(--brand);
 }
 
 .lz-side-nav button.lz-btn-side-nav svg {

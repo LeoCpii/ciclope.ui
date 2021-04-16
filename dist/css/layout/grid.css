@@ -12,6 +12,9 @@
   grid-template-columns: repeat(32, 1fr);
   position: relative;
   width: 100%; }
+  @media only screen and (max-width: 1024px) {
+    .lz-col {
+      display: block; } }
 
 @media only screen and (max-width: 320px) {
   .lz-col .lz-col-small-mobile {

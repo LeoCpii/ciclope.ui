@@ -31,3 +31,23 @@
 @media only screen and (max-width: 1800px) {
   .lz-display-big-desktop {
     display: none; } }
+
+.lz-display-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.lz-display-flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+
+.lz-display-flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+.lz-display-flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }

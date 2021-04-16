@@ -1,0 +1,12 @@
+@import './../utilities/utilities';
+
+.lz-breadcrumb {
+    font-weight: $font-weight-light;
+    color: var(--emphasis);
+    font-size: $font-x-large;
+}
+
+.lz-breadcrumb:last-child {
+    font-weight: $font-weight-bold;
+    color: var(--text);
+}
