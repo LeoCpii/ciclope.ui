@@ -2,10 +2,17 @@
 
 .lz-side-nav {
     width: 250px;
-    height: calc(100vh - #{$header-height});
+    min-height: calc(100vh - #{$header-height});
+    height: 100%;
     background-color: var(--color);
     box-shadow: $box-shadow;
     padding-top: $distance;
+}
+
+.lz-side-nav-content {
+    position: sticky;
+    top: 15px;
+    display: block;
 }
 
 .lz-side-nav button.lz-btn-side-nav {

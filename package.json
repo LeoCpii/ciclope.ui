@@ -7,7 +7,7 @@
     "build": "npm run types && sucrase ./src -d ./dist --transforms typescript,imports && npm run asset && npm run scss",
     "start:dev": "nodemon src/index.ts",
     "scss:dev": "node-sass src/scss --watch -o dist/css compressed",
-    "scss": "node-sass src/scss -o dist/css compressed",
+    "scss": "node-sass src/scss -o dist/css --output-style compressed",
     "types": "tsc --declaration",
     "asset": "cp -r src/assets/* dist/assets"
   },
