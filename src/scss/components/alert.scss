@@ -1,0 +1,52 @@
+@import "./../utilities/utilities";
+
+.lz-alert {
+    padding: 15px;
+    box-shadow: $box-shadow;
+    border-radius: $radius;
+    color: #333;
+
+    &--brand {
+        background-color: var(--brand);
+        border: 1px solid var(--brand);
+    }
+
+    &--contrast {
+        background-color: var(--contrast);
+        border: 1px solid var(--contrast);
+        color: #f1f1f1;
+    }
+
+    &--red {
+        background-color: var(--red);
+        border: 1px solid var(--red);
+    }
+
+    &--green {
+        background-color: var(--green);
+        border: 1px solid var(--green);
+    }
+
+    &--yellow {
+        background-color: var(--yellow);
+        border: 1px solid var(--yellow);
+    }
+
+    &--blue {
+        background-color: var(--blue);
+        border: 1px solid var(--blue);
+    }
+
+    &--action {
+        @include between;
+        padding: 10px 15px;
+
+        .lz-btn--icon {
+            color: #333 !important;
+        }
+    }
+
+    .lz-alert-icon {
+        margin-right: 15px;
+    }
+}
