@@ -1,7 +1,7 @@
 type TValidTheme = 'light' | 'dark';
 
 class Theme {
-    static v = ['color', 'background', 'emphasis', 'text'];
+    static v = ['color', 'background', 'background--disabled', 'emphasis', 'emphasis--opacity', 'text'];
 
     constructor() { }
 
@@ -12,7 +12,7 @@ class Theme {
 
     public setColorBrand(color: string):void {
         const root = document.documentElement;
-        root.style.setProperty('--color-brand', color)
+        root.style.setProperty('--brand', color)
     }
 }
 

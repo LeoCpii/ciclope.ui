@@ -1,3 +1,56 @@
-.card {
+@import './../utilities/utilities';
+
+.lz-card {
+    font-family: $font-regular;
     background-color: var(--color);
+    transition: all $animation;
+
+    &-alert {
+        padding: $distance;
+
+        &-container {
+            padding: $distance;
+            background-color: yellowgreen;
+        }
+    }
+
+    &-header {
+        background-color: var(--background--disabled);
+        color: var(--text);
+        padding: $distance;
+        border-radius: $radius $radius 0px 0px;
+    }
+
+    &-body {
+        background-color: var(--color);
+        color: var(--text);
+        padding: $distance;
+
+        &--grid {
+            @include grid(32, $distance);
+
+            @include for-tablet {
+                display: block;
+            }
+
+            &-left {
+                @include grid-column-span(8);
+
+                &-title {
+                    font-size: $font-medium;
+                    color: var(--text);
+                }
+
+                &-subscription {
+                    font-family: $font-light;
+                    font-size: $font-small;
+                    color: var(--emphasis);
+                }
+            }
+
+            &-right {
+                @include grid-column-span(24);
+            }
+        }
+    }
 }

@@ -1,0 +1,58 @@
+@import "./../utilities/utilities";
+
+button {
+    .lz-badge {
+        margin-left: 5px;
+    }
+}
+
+.lz-badge {
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: $radius;
+    border: none;
+    padding: 2px 4px;
+    color: #f1f1f1;
+
+    &--brand {
+        background-color: var(--brand);
+        border: 1px solid var(--brand);
+    }
+
+    &--contrast {
+        background-color: var(--contrast);
+        border: 1px solid var(--contrast);
+    }
+
+    &--red {
+        background-color: var(--red);
+        border: 1px solid var(--red);
+    }
+
+    &--green {
+        background-color: var(--green);
+        border: 1px solid var(--green);
+    }
+    
+    &--yellow {
+        background-color: var(--yellow);
+        border: 1px solid var(--yellow);
+    }
+
+    &--blue {
+        background-color: var(--blue);
+        border: 1px solid var(--blue);
+    }
+}
+
+// display: inline-block;
+// padding: 0.35em 0.65em;
+// font-size: 0.75em;
+// font-weight: 700;
+// line-height: 1;
+// color: #fff;
+// text-align: center;
+// white-space: nowrap;
+// vertical-align: baseline;
+// border-radius: 0.25rem;

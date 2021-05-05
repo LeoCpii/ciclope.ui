@@ -1,0 +1,40 @@
+@import './../utilities/utilities';
+
+.lz-loading-container {
+    display: inline-block;
+}
+
+.lz-loading {
+    @include center;
+    position: relative;
+    width: 100%;
+}
+.lz-loading div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    bottom: -6px;
+    width: 16px;
+    height: 16px;
+    border: 2.5px solid var(--text--disabled);
+    border-radius: 50%;
+    animation: lz-loading 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: var(--text--disabled) transparent transparent transparent;
+}
+.lz-loading div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+.lz-loading div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+.lz-loading div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+@keyframes lz-loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

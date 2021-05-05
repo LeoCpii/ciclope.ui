@@ -14,6 +14,10 @@
 
 .lz-margin-top {
     margin-top: $distance;
+
+    &--2x {
+        margin-top: calc(2 * #{$distance});
+    }
 }
 
 .lz-margin-bottom {

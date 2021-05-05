@@ -1,7 +1,7 @@
 "use strict";Object.defineProperty(exports, "__esModule", {value: true});
 
 class Theme {
-    static __initStatic() {this.v = ['color', 'background', 'emphasis', 'text']}
+    static __initStatic() {this.v = ['color', 'background', 'background--disabled', 'emphasis', 'emphasis--opacity', 'text']}
 
     constructor() { }
 
@@ -12,7 +12,7 @@ class Theme {
 
      setColorBrand(color) {
         const root = document.documentElement;
-        root.style.setProperty('--color-brand', color)
+        root.style.setProperty('--brand', color)
     }
 } Theme.__initStatic();
 
