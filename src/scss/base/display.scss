@@ -58,3 +58,20 @@
 .lz-display-flex-between {
     @include between;
 }
+
+// JUSTIFY-CONTENT
+.lz-justify-baseline {
+    align-items: baseline;
+}
+
+.lz-justify-flex-end {
+    align-items: flex-end;
+}
+
+.lz-justify-flex-start {
+    align-items: flex-start;
+}
+
+.lz-justify-center {
+    align-items: center;
+}
