@@ -8,7 +8,7 @@
     }
 
     &--tablet-block {
-        display: block
+        display: block;
     }
 }
 
@@ -80,7 +80,7 @@
 
 .lz-col .lz-col-small-mobile {
     @include for-small-mobile {
-        @include grid-column-span(32); 
+        @include grid-column-span(32);
     }
 }
 

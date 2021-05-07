@@ -1,36 +1,42 @@
 :root {
-    --brand: #23AF93;
-    --contrast: #294C60;
+    --brand: #23af93;
+    --contrast: #294c60;
 
     --color: var(--color-light);
     --background: var(--background-light);
-    --background--disabled: #EDF0F4;
+    --background--disabled: #edf0f4;
     --emphasis: var(--emphasis-light);
     --emphasis--opacity: var(--emphasis-light);
     --text: var(--text-light);
-    --text--disabled: #C4C6C8;
+    --text--disabled: #c4c6c8;
 
     // Light
-    --color-light: #FFFFFF;
-    --background-light: #F4F7F9;
-    --background--disabled-light: #EDF0F4;
-    --emphasis-light: #A7A9AB;
-    --emphasis-light--opacity: #A7A9AB99;
+    --color-light: #ffffff;
+    --background-light: #f4f7f9;
+    --background--disabled-light: #edf0f4;
+    --emphasis-light: #a7a9ab;
+    --emphasis-light--opacity: #a7a9ab99;
     --text-light: #303438;
-    --text--disabled-light: #C4C6C8;
+    --text--disabled-light: #c4c6c8;
 
     // Dark
     --color-dark: #272829;
-    --background-dark: #1E1F20;
+    --background-dark: #1e1f20;
     --background--disabled-dark: #555657;
     --emphasis-dark: #717579;
-    --emphasis-dark--opacity: #717579DD;
-    --text-dark: #C4C6C8;
-    --text--disabled-dark: #C4C6C8;
+    --emphasis-dark--opacity: #717579dd;
+    --text-dark: #c4c6c8;
+    --text--disabled-dark: #c4c6c8;
 
     // State
-    --red: #F44336;
-    --green:  #66BB6A;
-    --yellow: #F9A825;
-    --blue: #1BA8F1;
+    --red: #f44336;
+    --green: #66bb6a;
+    --yellow: #f9a825;
+    --blue: #1ba8f1;
+
+    // Social
+    --facebook: #3B5998;
+
+    // Utils
+    --link: #1BA8F1;
 }
