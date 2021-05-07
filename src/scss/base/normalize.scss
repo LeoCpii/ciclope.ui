@@ -9,6 +9,7 @@ body {
     margin: 0;
     background-color: var(--background);
     transition: all $animation;
+    height: 100%;
 }
 
 h1,
@@ -29,8 +30,6 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-    font-size: 16px;
-    font-family: $font-regular;
     border: none;
     -webkit-text-fill-color: #20252a;
     -webkit-box-shadow: 0 0 0px 1000px transparent inset;
@@ -42,6 +41,7 @@ h2,
 h3,
 h4,
 h5,
+h6,
 p,
 a,
 button,
