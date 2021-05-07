@@ -14,6 +14,10 @@
     box-shadow: $box-shadow;
     color: white;
 
+    &--block {
+        width: 100%;
+    }
+
     &--large {
         font-size: 20px !important;
     }
@@ -22,105 +26,11 @@
         font-size: 10px !important;
     }
 
-    &--disabled {
-        background: var(--background--disabled);
-        color: var(--text--disabled);
-        cursor: not-allowed;
-    }
-
-    &--brand {
-        background-color: var(--brand);
-        border: 1px solid var(--brand);
-    }
-
-    &--contrast {
-        background-color: var(--contrast);
-        border: 1px solid var(--contrast);
-    }
-
-    &--red {
-        background-color: var(--red);
-        border: 1px solid var(--red);
-    }
-
-    &--green {
-        background-color: var(--green);
-        border: 1px solid var(--green);
-    }
-
-    &--yellow {
-        background-color: var(--yellow);
-        border: 1px solid var(--yellow);
-    }
-
-    &--blue {
-        background-color: var(--blue);
-        border: 1px solid var(--blue);
-    }
-
-    &--outline {
-        background-color: transparent;
-        box-shadow: none;
-
-        &--brand {
-            border: 1px solid var(--brand);
-            color: var(--brand);
-        }
-
-        &--contrast {
-            border: 1px solid var(--contrast);
-            color: var(--contrast);
-        }
-
-        &--red {
-            border: 1px solid var(--red);
-            color: var(--red);
-        }
-
-        &--green {
-            border: 1px solid var(--green);
-            color: var(--green);
-        }
-
-        &--yellow {
-            border: 1px solid var(--yellow);
-            color: var(--yellow);
-        }
-
-        &--blue {
-            border: 1px solid var(--blue);
-            color: var(--blue);
-        }
-    }
-
-    &--no-stroke {
-        background-color: transparent;
-        border: 1px solid transparent;
-        box-shadow: none;
-
-        &--brand {
-            color: var(--brand);
-        }
-
-        &--contrast {
-            color: var(--contrast);
-        }
-
-        &--red {
-            color: var(--red);
-        }
-
-        &--green {
-            color: var(--green);
-        }
-
-        &--yellow {
-            color: var(--yellow);
-        }
-
-        &--blue {
-            color: var(--blue);
-        }
+    &:disabled {
+        background: var(--background--disabled) !important;
+        color: var(--text--disabled) !important;
+        border: 1px solid var(--background--disabled);
+        cursor: not-allowed !important;
     }
 
     &--icon {
@@ -132,6 +42,127 @@
 
         &--no-shadow {
             box-shadow: none;
+        }
+    }
+
+    &--brand {
+        background-color: var(--brand);
+        border: 1px solid var(--brand);
+
+        &--no-stroke {
+            background-color: transparent;
+            border: 1px solid transparent;
+            box-shadow: none;
+            color: var(--brand);
+        }
+
+        &--outline {
+            background-color: transparent;
+            box-shadow: none;
+            border: 1px solid var(--brand);
+            color: var(--brand);
+        }
+    }
+
+    &--contrast {
+        background-color: var(--contrast);
+        border: 1px solid var(--contrast);
+
+        &--no-stroke {
+            background-color: transparent;
+            border: 1px solid transparent;
+            box-shadow: none;
+            color: var(--contrast);
+        }
+
+        &--outline {
+            background-color: transparent;
+            box-shadow: none;
+            border: 1px solid var(--contrast);
+            color: var(--contrast);
+        }
+    }
+
+    &--red {
+        background-color: var(--red);
+        border: 1px solid var(--red);
+
+        &--no-stroke {
+            background-color: transparent;
+            border: 1px solid transparent;
+            box-shadow: none;
+            color: var(--red);
+        }
+
+        &--outline {
+            background-color: transparent;
+            box-shadow: none;
+            border: 1px solid var(--red);
+            color: var(--red);
+        }
+    }
+
+    &--green {
+        background-color: var(--green);
+        border: 1px solid var(--green);
+
+        &--no-stroke {
+            background-color: transparent;
+            border: 1px solid transparent;
+            box-shadow: none;
+            color: var(--green);
+        }
+
+        &--outline {
+            background-color: transparent;
+            box-shadow: none;
+            border: 1px solid var(--green);
+            color: var(--green);
+        }
+    }
+
+    &--yellow {
+        background-color: var(--yellow);
+        border: 1px solid var(--yellow);
+
+        &--no-stroke {
+            background-color: transparent;
+            border: 1px solid transparent;
+            box-shadow: none;
+            color: var(--yellow);
+        }
+
+        &--outline {
+            background-color: transparent;
+            box-shadow: none;
+            border: 1px solid var(--yellow);
+            color: var(--yellow);
+        }
+    }
+
+    &--blue {
+        background-color: var(--blue);
+        border: 1px solid var(--blue);
+
+        &--no-stroke {
+            background-color: transparent;
+            border: 1px solid transparent;
+            box-shadow: none;
+            color: var(--blue);
+        }
+
+        &--outline {
+            background-color: transparent;
+            box-shadow: none;
+            border: 1px solid var(--blue);
+            color: var(--blue);
+        }
+    }
+
+    &--social {
+        &--facebook {
+            background-color: var(--facebook);
+            border: 1px solid var(--facebook);
         }
     }
 }

@@ -56,6 +56,12 @@
 
         .lz-icon {
             margin-left: 10px;
+            padding: 10px;
+            padding-right: 0px;
+
+            &--pointer {
+                cursor: pointer;
+            }
         }
     }
 
@@ -216,11 +222,21 @@
     margin-bottom: calc(#{$distance} * 2);
 
     .lz-label {
-        font-size: 1rem;
+        font-size: .75rem;
         margin-top: 10px;
         margin-bottom: 10px;
         text-transform: uppercase;
         color: var(--text);
+        font-family: $font-regular;
+        position: relative;
+
+        &--required::after {
+            content: "\0025CF";
+            color: var(--red);
+            position: absolute;
+            bottom: 2px;
+            font-size: 10px;
+        }
     }
 
     .lz-feedback {
