@@ -14,6 +14,12 @@
     box-shadow: $box-shadow;
     color: white;
 
+    &--responsive {
+        @include for-small-tablet {
+            width: 100%;
+        }
+    }
+
     &--block {
         width: 100%;
     }

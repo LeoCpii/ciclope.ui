@@ -6,6 +6,76 @@
     font-size: $font-x-large;
 }
 
+.lz-text {
+    &--type {
+        font-family: $font-regular;
+        color: var(--text);
+
+        &--super-title {
+            font-size: 28px;
+
+            @include for-small-tablet {
+                font-size: 18px;
+            }
+        }
+
+        &--title {
+            font-size: 22px;
+        }
+
+        &--subtitle {
+            font-size: 18px;
+            font-family: $font-light;
+
+            @include for-small-tablet {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &--color {
+        &-brand {
+            color: var(--brand);
+        }
+        
+        &-contrast {
+            color: var(--contrast);
+        }
+        
+        &-red {
+            color: var(--red);
+        }
+        
+        &-green {
+            color: var(--green);
+        }
+
+        &-blue {
+            color: var(--blue);
+        }
+
+        &-link {
+            color: var(--link);
+        }
+
+        &-disabled {
+            color: var(--text--disabled);
+        }
+    }
+
+    &--align {
+        &-center {
+            text-align: center;
+        }
+        &-left {
+            text-align: left;
+        }
+        &-right {
+            text-align: right;
+        }
+    }
+}
+
 .lz-text-truncate {
     display: block;
     overflow: hidden;
