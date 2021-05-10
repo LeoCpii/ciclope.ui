@@ -2,6 +2,10 @@
 
 .lz-padding {
     padding: $distance;
+
+    &--2x {
+        padding: calc(2 * #{$distance});
+    }
 }
 
 .lz-padding-right {
