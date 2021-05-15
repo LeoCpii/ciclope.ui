@@ -5,6 +5,7 @@
     box-shadow: $box-shadow;
     border-radius: $radius;
     color: #333;
+    font-family: $font-regular;
 
     &--brand {
         background-color: var(--brand);
@@ -20,6 +21,7 @@
     &--red {
         background-color: var(--red);
         border: 1px solid var(--red);
+        color: #f1f1f1;
     }
 
     &--green {
