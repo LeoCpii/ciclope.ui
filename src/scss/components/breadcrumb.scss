@@ -2,11 +2,13 @@
 
 .lz-breadcrumb {
     font-weight: $font-weight-light;
-    color: var(--emphasis);
-    font-size: $font-x-large;
-}
-
-.lz-breadcrumb:last-child {
-    font-weight: $font-weight-bold;
     color: var(--text);
+    font-size: $font-x-large;
+    transition: all $animation;
+    cursor: pointer;
+
+    &:last-child {
+        color: var(--emphasis);
+        cursor: default;
+    }
 }

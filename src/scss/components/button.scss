@@ -51,6 +51,14 @@
         }
     }
 
+    &--default {
+        &--no-stroke {
+            background-color: transparent;
+            border: 1px solid transparent;
+            box-shadow: none;
+        }
+    }
+
     &--brand {
         background-color: var(--brand);
         border: 1px solid var(--brand);

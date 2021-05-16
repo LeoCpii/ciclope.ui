@@ -4,6 +4,7 @@
     font-family: $font-regular;
     background-color: var(--color);
     transition: all $animation;
+    box-shadow: $box-shadow;
 
     &-alert {
         padding: $distance;
@@ -25,6 +26,10 @@
         background-color: var(--color);
         color: var(--text);
         padding: $distance;
+
+        &--no-padding {
+            padding: 0px;
+        }
 
         &--grid {
             @include grid(32, $distance);

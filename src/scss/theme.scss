@@ -4,11 +4,12 @@
 
     --color: var(--color-light);
     --background: var(--background-light);
-    --background--disabled: #edf0f4;
+    --background--disabled: var(--text--background-light);
     --emphasis: var(--emphasis-light);
     --emphasis--opacity: var(--emphasis-light);
     --text: var(--text-light);
-    --text--disabled: #c4c6c8;
+    --text--disabled: var(--text--disabled-light);
+    --rgb: var(--rgb-light);
 
     // Light
     --color-light: #ffffff;
@@ -18,6 +19,7 @@
     --emphasis-light--opacity: #a7a9ab99;
     --text-light: #303438;
     --text--disabled-light: #c4c6c8;
+    --rgb-light: 255, 255, 255;
 
     // Dark
     --color-dark: #272829;
@@ -27,6 +29,7 @@
     --emphasis-dark--opacity: #717579dd;
     --text-dark: #c4c6c8;
     --text--disabled-dark: #c4c6c8;
+    --rgb-dark: 0, 0, 0;
 
     // State
     --red: #f44336;

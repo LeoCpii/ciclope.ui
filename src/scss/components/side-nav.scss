@@ -6,10 +6,12 @@
     height: 100%;
     background-color: var(--color);
     box-shadow: $box-shadow;
+    transition: all $animation;
     padding-top: $distance;
 
     button {
         &.lz-btn-side-nav {
+            @include between;
             width: 100%;
             height: 40px;
             color: var(--emphasis);
@@ -21,6 +23,7 @@
             text-align: left;
             transition: all $animation;
             outline: none;
+            padding-right: 10px;        
 
             &:hover {
                 background-color: rgba(0, 0, 0, 0.04);
@@ -29,18 +32,18 @@
 
             &--active {
                 color: var(--brand);
-                background-color: rgba(0, 0, 0, 0.08);
-                border-left: 6px solid var(--brand);
             }
         }
     }
 
     .lz-side-nav-container {
-        .lz-btn-side-nav-list {
+        ul.lz-btn-side-nav-list {
             padding-inline-start: 17px;
+            margin: 0px;
             overflow: hidden;
 
             li.lz-btn-side-nav-list-item {
+                @include between;
                 font-family: $font-regular;
                 padding: 10px;
                 list-style: inside;
@@ -52,9 +55,7 @@
                 border-left: 3px solid rgba(0, 0, 0, 0.08);
 
                 &--active {
-                    color: var(--brand) !important;
                     border-left: 3px solid var(--brand);
-    
                 }
             }
         }

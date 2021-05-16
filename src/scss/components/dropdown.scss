@@ -1,0 +1,26 @@
+@import "./../utilities/utilities";
+
+.lz-content-droplist {
+    position: relative;
+    width: fit-content;
+
+    &-header {
+        width: max-content;
+        z-index: 10;
+    }
+
+    &-body {
+        position: absolute;
+        width: max-content;
+        background-color: transparent;
+        z-index: 99999;
+
+        &--right {
+            right: 0 !important;
+        }
+
+        &--left {
+            left: 0 !important;
+        }
+    }
+}

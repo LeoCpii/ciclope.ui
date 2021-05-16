@@ -1,44 +1,100 @@
-@import './../utilities/utilities';
+@import "./../utilities/utilities";
 
 .lz-display-small-mobile {
-    @include for-small-mobile {
-        display: none;
+    &-show {
+        @include for-small-mobile {
+            display: initial !important;
+        }
+    }
+
+    &-hide {
+        @include for-small-mobile {
+            display: none !important;
+        }
     }
 }
 
 .lz-display-mobile {
-    @include for-mobile {
-        display: none;
+    &-show {
+        @include for-mobile {
+            display: initial !important;
+        }
+    }
+
+    &-hide {
+        @include for-mobile {
+            display: none !important;
+        }
     }
 }
 
 .lz-display-small-tablet {
-    @include for-small-tablet {
-        display: none;
+    &-show {
+        @include for-small-tablet {
+            display: initial !important;
+        }
+    }
+
+    &-hide {
+        @include for-small-tablet {
+            display: none !important;
+        }
     }
 }
 
 .lz-display-tablet {
-    @include for-tablet {
-        display: none;
+    &-show {
+        @include for-tablet {
+            display: initial !important;
+        }
+    }
+
+    &-hide {
+        @include for-tablet {
+            display: none !important;
+        }
     }
 }
 
 .lz-display-small-desktop {
-    @include for-small-desktop {
-        display: none;
+    &-show {
+        @include for-small-desktop {
+            display: initial !important;
+        }
+    }
+
+    &-hide {
+        @include for-small-desktop {
+            display: none !important;
+        }
     }
 }
 
 .lz-display-desktop {
-    @include for-desktop {
-        display: none;
+    &-show {
+        @include for-desktop {
+            display: initial !important;
+        }
+    }
+
+    &-hide {
+        @include for-desktop {
+            display: none !important;
+        }
     }
 }
 
 .lz-display-big-desktop {
-    @include for-big-desktop {
-        display: none;
+    &-show {
+        @include for-big-desktop {
+            display: initial !important;
+        }
+    }
+
+    &-hide {
+        @include for-big-desktop {
+            display: none !important;
+        }
     }
 }
 
@@ -52,7 +108,7 @@
 }
 
 .lz-display-flex-start {
-    @include start;       
+    @include start;
 }
 
 .lz-display-flex-between {

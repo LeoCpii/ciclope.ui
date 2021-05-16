@@ -4,5 +4,6 @@ declare class Theme {
     constructor();
     set(config: TValidTheme): void;
     setColorBrand(color: string): void;
+    getColorBrand(): string;
 }
 export default Theme;
