@@ -5,6 +5,7 @@
     background-color: var(--color);
     transition: all $animation;
     box-shadow: $box-shadow;
+    border-radius: $radius;
 
     &-alert {
         padding: $distance;
@@ -26,6 +27,7 @@
         background-color: var(--color);
         color: var(--text);
         padding: $distance;
+        border-radius: $radius;
 
         &--no-padding {
             padding: 0px;

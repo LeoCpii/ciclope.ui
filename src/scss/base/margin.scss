@@ -2,14 +2,26 @@
 
 .lz-margin {
     margin: $distance;
+
+    &--2x {
+        margin: calc(2 * #{$distance});
+    }
 }
 
 .lz-margin-right {
     margin-right: $distance;
+
+    &--2x {
+        margin-right: calc(2 * #{$distance});
+    }
 }
 
 .lz-margin-left {
     margin-left: $distance;
+
+    &--2x {
+        margin-left: calc(2 * #{$distance});
+    }
 }
 
 .lz-margin-top {
@@ -22,4 +34,8 @@
 
 .lz-margin-bottom {
     margin-bottom: $distance;
+
+    &--2x {
+        margin-bottom: calc(2 * #{$distance});
+    }
 }

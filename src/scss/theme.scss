@@ -4,7 +4,7 @@
 
     --color: var(--color-light);
     --background: var(--background-light);
-    --background--disabled: var(--text--background-light);
+    --background--disabled: var(--background--disabled-light);
     --emphasis: var(--emphasis-light);
     --emphasis--opacity: var(--emphasis-light);
     --text: var(--text-light);
@@ -34,7 +34,7 @@
     // State
     --red: #f44336;
     --green: #66bb6a;
-    --yellow: #f9a825;
+    --yellow: #F49F5C;
     --blue: #1ba8f1;
 
     // Social
@@ -42,4 +42,8 @@
 
     // Utils
     --link: #1BA8F1;
+
+    // Support
+    --info: #9BD0C0;
+    --news: #ED6650;
 }

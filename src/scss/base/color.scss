@@ -1,50 +1,54 @@
 // COLOR
-.lz-color-clear {
-    color: var(--brand);
+.lz-color-brand {
+    color: var(--brand) !important;
 }
 
 .lz-color-contrast {
-    color: var(--contrast);
+    color: var(--contrast) !important;
 }
 
 .lz-color-red {
-    color: var(--red);
+    color: var(--red) !important;
 }
 
 .lz-color-green {
-    color: var(--green);
+    color: var(--green) !important;
 }
 
 .lz-color-yellow {
-    color: var(--yellow);
+    color: var(--yellow) !important;
 }
 
 .lz-color-blue {
-    color: var(--blue);
+    color: var(--blue) !important;
+}
+
+.lz-color-white {
+    color: #fff !important;
 }
 
 // BACKGROUND
 .lz-background-brand {
-    background: var(--brand);
+    background: var(--brand) !important;
 }
 
 .lz-background-contrast {
-    background: var(--contrast);
+    background: var(--contrast) !important;
 }
 
 .lz-background-red {
-    background: var(--red);
+    background: var(--red) !important;
 }
 
 .lz-background-green {
-    background: var(--green);
+    background: var(--green) !important;
 }
 
 .lz-background-yellow {
-    background: var(--yellow);
+    background: var(--yellow) !important;
 }
 
 .lz-background-blue {
-    background: var(--blue);
+    background: var(--blue) !important;
 }
 

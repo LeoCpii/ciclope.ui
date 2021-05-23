@@ -13,7 +13,7 @@ button {
     border-radius: $radius;
     border: none;
     padding: 2px 4px;
-    color: #f1f1f1;
+    color: var(--color);
 
     &--brand {
         background-color: var(--brand);
@@ -44,15 +44,14 @@ button {
         background-color: var(--blue);
         border: 1px solid var(--blue);
     }
-}
 
-// display: inline-block;
-// padding: 0.35em 0.65em;
-// font-size: 0.75em;
-// font-weight: 700;
-// line-height: 1;
-// color: #fff;
-// text-align: center;
-// white-space: nowrap;
-// vertical-align: baseline;
-// border-radius: 0.25rem;
+    &--info {
+        background-color: var(--info);
+        border: 1px solid var(--info);
+    }
+
+    &--news {
+        background-color: var(--news);
+        border: 1px solid var(--news);
+    }
+}

@@ -4,21 +4,11 @@
     .lz-container-field-group-container {
         height: 20px;
     }
-
-    .lz-container-field {
-        &:last-child {
-            margin: 0px !important;
-        }
-    }
 }
 
 .lz-container-field {
     &--inline {
         margin-right: 10px;
-
-        &:last-child {
-            margin: 0;
-        }
     }
 
     .lz-field {
@@ -34,7 +24,7 @@
             border: 1px solid var(--red);
         }
 
-        &--disabled {
+        &--disabled, &--read-only {
             background: var(--background--disabled);
             cursor: no-drop;
         }
@@ -48,7 +38,7 @@
             outline: none;
             padding: 10px 0px;
 
-            &:disabled {
+            &:disabled, &:read-only {
                 background: var(--background--disabled);
                 cursor: no-drop;
             }
@@ -222,7 +212,7 @@
     margin-bottom: calc(#{$distance} * 2);
 
     .lz-label {
-        font-size: .75rem;
+        font-size: 0.75rem;
         margin-top: 10px;
         margin-bottom: 10px;
         text-transform: uppercase;
@@ -236,6 +226,7 @@
             position: absolute;
             bottom: 2px;
             font-size: 10px;
+            margin-left: 5px;
         }
     }
 
@@ -244,12 +235,17 @@
         transition: all 0.2s;
         @include z-index("floor");
         margin-top: 10px;
+        position: absolute;
+        bottom: -10px;
+        opacity: 0;
+
+        &--message {
+            bottom: -20px;
+            opacity: 1;
+        }
 
         &--error {
             margin: 0px;
-            position: absolute;
-            opacity: 0;
-            bottom: -10px;
 
             &--active {
                 bottom: -20px;

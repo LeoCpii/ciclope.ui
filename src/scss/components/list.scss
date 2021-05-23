@@ -1,0 +1,25 @@
+@import "./../utilities/utilities";
+
+.lz-list {
+    ul {
+        padding: 0px $distance;
+
+        li {
+            margin-bottom: $distance;
+            list-style: none;
+        }
+    }
+    &--dot {
+        li {
+            @include start;
+            align-items: center;
+
+            &::before {
+                content: "\002981";
+                font-size: 30px;
+                margin-right: 10px;
+                color: var(--brand);
+            }
+        }
+    }
+}

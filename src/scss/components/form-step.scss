@@ -1,0 +1,85 @@
+@import "./../utilities/utilities";
+
+.lz-form-step {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--background);
+    overflow: auto;
+    @include z-index("sky");
+
+    &-header {
+        @include grid(32);
+        width: 100%;
+        height: 73px;
+        background: #fff;
+        border: 1px solid rgba(#d8d8d8, 0.4);
+
+        &-content {
+            @include grid-column-span(20);
+            @include grid-column-start(6);
+            @include between;
+
+            @include for-tablet {
+                @include grid-column-span(32);
+                @include grid-column-start(1);
+                padding: 0px 15px;
+            }
+
+            &-title {
+                @include start;
+
+                .chevron {
+                    margin: 0px 26px;
+
+                    @include for-mobile {
+                        margin: 0px 15px 0px 0px;
+                    }
+                }
+
+                &-steps {
+                    font-family: $font-regular;
+                    color: var(--contrast);
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+
+                    @include for-mobile {
+                        max-width: 285px;
+                    }
+
+                    @include for-small-mobile {
+                        max-width: 150px;
+                    }
+
+                    span {
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+
+    &-body {
+        @include grid(32);
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+        // @include for-tablet {
+        //   margin-top: 0px;
+        // }
+
+        &-content {
+            @include grid-column-span(20);
+            @include grid-column-start(6);
+
+            @include for-tablet {
+                @include grid-column-span(32);
+                @include grid-column-start(1);
+                padding: 0px 15px;
+            }
+        }
+    }
+}

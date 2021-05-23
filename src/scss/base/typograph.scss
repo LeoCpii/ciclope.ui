@@ -1,4 +1,4 @@
-@import './../utilities/utilities';
+@import "./../utilities/utilities";
 
 .lz-title-page {
     font-family: $font-semi-bold;
@@ -37,15 +37,15 @@
         &-brand {
             color: var(--brand);
         }
-        
+
         &-contrast {
             color: var(--contrast);
         }
-        
+
         &-red {
             color: var(--red);
         }
-        
+
         &-green {
             color: var(--green);
         }
@@ -72,6 +72,16 @@
         }
         &-right {
             text-align: right;
+        }
+    }
+
+    &--weight {
+        &-light {
+            font-family: $font-light;
+        }
+
+        &-bold {
+            font-family: $font-bold;
         }
     }
 }

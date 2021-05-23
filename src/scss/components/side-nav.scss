@@ -4,6 +4,7 @@
     width: 250px;
     min-height: calc(100vh - #{$header-height});
     height: 100%;
+    position: relative;
     background-color: var(--color);
     box-shadow: $box-shadow;
     transition: all $animation;
@@ -23,7 +24,7 @@
             text-align: left;
             transition: all $animation;
             outline: none;
-            padding-right: 10px;        
+            padding-right: 10px;
 
             &:hover {
                 background-color: rgba(0, 0, 0, 0.04);
@@ -58,6 +59,35 @@
                     border-left: 3px solid var(--brand);
                 }
             }
+        }
+    }
+
+    &-footer {
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+
+        &-content {
+            width: 100%;
+            text-align: center;
+
+            &-item {
+                width: 100%;
+                span {
+                    color: var(--emphasis);
+
+                    i {
+                        color: var(--green);
+                    }
+                }
+            }
+        }
+
+        .line {
+            height: 100%;
+            width: 3px;
         }
     }
 }
