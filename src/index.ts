@@ -1,13 +1,17 @@
 type TValidTheme = 'light' | 'dark';
 
 class Theme {
-    static v = ['color', 'background', 'background--disabled', 'emphasis', 'emphasis--opacity', 'text', 'text--disabled', 'rgb'];
+    static properties = ['color', 'background', 'background--disabled', 'emphasis', 'emphasis--opacity', 'text', 'text--disabled', 'rgb'];
+    static colors = ['red', 'green', 'blue', 'yellow', 'news', 'info', 'brand', 'contrast'];
+    static images = ['empty'];
+
+    private v = [...Theme.properties, ...Theme.colors, Theme.images];
 
     constructor() { }
 
     public set(config: TValidTheme): void {
         const root = document.documentElement;
-        Theme.v.forEach(v => root.style.setProperty(`--${v}`, `var(--${v}-${config})`));
+        this.v.forEach(v => root.style.setProperty(`--${v}`, `var(--${v}-${config})`));
     }
 
     public setColorBrand(color: string): void {

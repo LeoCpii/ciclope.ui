@@ -21,6 +21,7 @@
         color: var(--text);
         padding: $distance;
         border-radius: $radius $radius 0px 0px;
+        transition: all $animation;
     }
 
     &-body {
@@ -28,6 +29,7 @@
         color: var(--text);
         padding: $distance;
         border-radius: $radius;
+        transition: all $animation;
 
         &--no-padding {
             padding: 0px;

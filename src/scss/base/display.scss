@@ -117,17 +117,30 @@
 
 // JUSTIFY-CONTENT
 .lz-justify-baseline {
-    align-items: baseline;
+    justify-content: baseline;
 }
 
 .lz-justify-flex-end {
-    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .lz-justify-flex-start {
-    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .lz-justify-center {
-    align-items: center;
+    justify-content: center;
+}
+
+// ALIGN-ITEMS
+.lz-align-items-baseline {
+    align-items: baseline;
+}
+
+.lz-align-items-flex-end {
+    align-items: flex-end;
+}
+
+.lz-align-items-flex-start {
+    align-items: flex-start;
 }

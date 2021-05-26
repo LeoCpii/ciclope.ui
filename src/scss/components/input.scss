@@ -19,6 +19,7 @@
         padding-right: $distance;
         border-radius: 4px;
         background: var(--color);
+        transition: all $animation;
 
         &--invalid {
             border: 1px solid var(--red);
@@ -96,8 +97,8 @@
                 top: 4px;
                 left: 4px;
                 border-radius: 100%;
-                -webkit-transition: all 0.2s ease;
-                transition: all 0.2s ease;
+                -webkit-transition: all $animation;
+                transition: all $animation;
             }
 
             &:not(:checked) + label:after {
@@ -172,8 +173,8 @@
                 font-size: 1em;
                 color: var(--brand);
                 line-height: 0;
-                -webkit-transition: all 0.2s;
-                transition: all 0.2s;
+                -webkit-transition: all $animation;
+                transition: all $animation;
             }
 
             &:not(:checked) + label:after {
@@ -232,7 +233,7 @@
 
     .lz-feedback {
         font-size: 12px;
-        transition: all 0.2s;
+        transition: all $animation;
         @include z-index("floor");
         margin-top: 10px;
         position: absolute;

@@ -1,6 +1,9 @@
 declare type TValidTheme = 'light' | 'dark';
 declare class Theme {
-    static v: string[];
+    static properties: string[];
+    static colors: string[];
+    static images: string[];
+    private v;
     constructor();
     set(config: TValidTheme): void;
     setColorBrand(color: string): void;

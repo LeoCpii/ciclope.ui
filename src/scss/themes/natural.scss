@@ -1,0 +1,34 @@
+:root {
+    --brand: var(--brand-light);
+    --contrast: var(--contrast-light);
+
+    --color: var(--color-light);
+    --background: var(--background-light);
+    --background--disabled: var(--background--disabled-light);
+    --emphasis: var(--emphasis-light);
+    --emphasis--opacity: var(--emphasis--opacity-light);
+    --text: var(--text-light);
+    --text--disabled: var(--text--disabled-light);
+    --rgb: var(--rgb-light);
+    
+    // State
+    --red: var(--red-light);
+    --green: var(--green-light);
+    --yellow: var(--yellow-light);
+    --blue: var(--blue-light);
+
+    // Social
+    --facebook: #3B5998;
+
+    // Utils
+    --link: #1BA8F1;
+
+    // Support
+    --info: var(--info-light);
+    --info-opacity: #9BD0C0;
+    --news: var(--news-light);
+    --news-opacity: #ed65503f;
+
+    // Images
+    --empty: var(--empty-light);
+}

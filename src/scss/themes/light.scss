@@ -1,0 +1,26 @@
+:root {
+    // base
+    --color-light: #ffffff;
+    --background-light: #f4f7f9;
+    --background--disabled-light: #edf0f4;
+    --emphasis-light: #a7a9ab;
+    --emphasis--opacity-light: #a7a9ab99;
+    --text-light: #303438;
+    --text--disabled-light: #c4c6c8;
+    --rgb-light: 241, 241, 241;
+
+    // State
+    --red-light: #f44336;
+    --green-light: #66bb6a;
+    --yellow-light: #f49f5c;
+    --blue-light: #1ba8f1;
+
+    // Support
+    --news-light: #ed6650;
+    --info-light: #72cfb3;
+    --brand-light: #23af93;
+    --contrast-light: #294c60;
+
+    // Images
+    --empty-light: url('./../assets/svg/empty/empty-light.svg')
+}

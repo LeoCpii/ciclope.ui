@@ -1,0 +1,55 @@
+@import "./../utilities/utilities";
+
+.lz-table {
+    table {
+        width: 100%;
+        border-collapse: collapse;
+
+        th {
+            font-family: $font-light;
+            text-transform: uppercase;
+            color: var(--emphasis);
+        }
+
+        td,
+        th {
+            padding: 4px;
+            font-size: 14px;
+            text-align: left;
+
+            &.lz-table-align {
+                &-left {
+                    text-align: left;
+                }
+                &-right {
+                    text-align: right;
+                }
+            }
+
+            &.lz-table-empty {
+                text-align: center;
+                font-style: italic;
+                opacity: 0.4;
+                font-size: 0.875rem;
+            }
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(var(--rgb), 0.3);
+        }
+    }
+
+    &-loading {
+        min-height: 150px;
+    }
+
+    &-footer {
+        @include between;
+        margin-top: calc(2 * #{$distance});
+        margin-bottom: calc(2 * #{$distance});
+
+        &-count {
+            color: var(--emphasis);
+        }
+    }
+}
