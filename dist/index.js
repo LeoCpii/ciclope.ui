@@ -9,9 +9,16 @@ class Theme {
 
     constructor() {;Theme.prototype.__init.call(this); }
 
-     set(config) {
+    
+
+     get theme() {
+        return this._theme;
+    }
+
+     set(theme) {
         const root = document.documentElement;
-        this.v.forEach(v => root.style.setProperty(`--${v}`, `var(--${v}-${config})`));
+        this._theme = theme;
+        this.v.forEach(v => root.style.setProperty(`--${v}`, `var(--${v}-${theme})`));
     }
 
      setColorBrand(color) {

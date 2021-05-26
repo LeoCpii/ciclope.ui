@@ -7,11 +7,18 @@ class Theme {
 
     private v = [...Theme.properties, ...Theme.colors, Theme.images];
 
-    constructor() { }
+    constructor() { };
 
-    public set(config: TTheme): void {
+    private _theme: TTheme;
+
+    public get theme(): TTheme {
+        return this._theme;
+    }
+
+    public set(theme: TTheme): void {
         const root = document.documentElement;
-        this.v.forEach(v => root.style.setProperty(`--${v}`, `var(--${v}-${config})`));
+        this._theme = theme;
+        this.v.forEach(v => root.style.setProperty(`--${v}`, `var(--${v}-${theme})`));
     }
 
     public setColorBrand(color: string): void {

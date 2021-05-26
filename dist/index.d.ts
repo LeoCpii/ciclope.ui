@@ -5,7 +5,9 @@ declare class Theme {
     static images: string[];
     private v;
     constructor();
-    set(config: TTheme): void;
+    private _theme;
+    get theme(): TTheme;
+    set(theme: TTheme): void;
     setColorBrand(color: string): void;
     getColorBrand(): string;
 }
