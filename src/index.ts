@@ -1,4 +1,4 @@
-type TValidTheme = 'light' | 'dark';
+export type TTheme = 'light' | 'dark';
 
 class Theme {
     static properties = ['color', 'background', 'background--disabled', 'emphasis', 'emphasis--opacity', 'text', 'text--disabled', 'rgb'];
@@ -9,7 +9,7 @@ class Theme {
 
     constructor() { }
 
-    public set(config: TValidTheme): void {
+    public set(config: TTheme): void {
         const root = document.documentElement;
         this.v.forEach(v => root.style.setProperty(`--${v}`, `var(--${v}-${config})`));
     }
