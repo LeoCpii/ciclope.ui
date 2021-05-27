@@ -2,7 +2,7 @@
 
 .lz-container-field-group {
     .lz-container-field-group-container {
-        height: 20px;
+        // height: 20px;
     }
 }
 
@@ -43,12 +43,17 @@
                 background: var(--background--disabled);
                 cursor: no-drop;
             }
+
+            &:-internal-autofill-selected {
+                -webkit-text-fill-color: var(--text);
+            }
         }
 
         .lz-icon {
             margin-left: 10px;
             padding: 10px;
             padding-right: 0px;
+            color: var(--text);
 
             &--pointer {
                 cursor: pointer;

@@ -61,6 +61,10 @@
         &-disabled {
             color: var(--text--disabled);
         }
+
+        &-text {
+            color: var(--text);
+        }
     }
 
     &--align {
