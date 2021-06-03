@@ -46,7 +46,6 @@
     &-footer {
         @include between;
         margin-top: calc(2 * #{$distance});
-        margin-bottom: calc(2 * #{$distance});
 
         &-count {
             color: var(--emphasis);

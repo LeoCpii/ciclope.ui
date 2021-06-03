@@ -1,10 +1,6 @@
 @import "./../utilities/utilities";
 
-.lz-container-field-group {
-    .lz-container-field-group-container {
-        // height: 20px;
-    }
-}
+$dimenssion: 20px;
 
 .lz-container-field {
     &--inline {
@@ -20,12 +16,29 @@
         border-radius: 4px;
         background: var(--color);
         transition: all $animation;
+        overflow: hidden;
+
+        &--big {
+            height: 62px;
+
+            input[type="text"],
+            select {
+                font-size: 22px;
+            }
+
+            @include for-small-tablet {
+                input[type="text"] {
+                    font-size: 16px;
+                }
+            }
+        }
 
         &--invalid {
             border: 1px solid var(--red);
         }
 
-        &--disabled, &--read-only {
+        &--disabled,
+        &--read-only {
             background: var(--background--disabled);
             cursor: no-drop;
         }
@@ -39,13 +52,37 @@
             outline: none;
             padding: 10px 0px;
 
-            &:disabled, &:read-only {
+            &:disabled,
+            &:read-only {
                 background: var(--background--disabled);
                 cursor: no-drop;
             }
 
             &:-internal-autofill-selected {
                 -webkit-text-fill-color: var(--text);
+            }
+
+            &::placeholder {
+                /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: var(--emphasis--opacity);
+                opacity: 1; /* Firefox */
+            }
+
+            &:-ms-input-placeholder {
+                /* Internet Explorer 10-11 */
+                color: var(--emphasis--opacity);
+            }
+
+            &::-ms-input-placeholder {
+                /* Microsoft Edge */
+                color: var(--emphasis--opacity);
+            }
+        }
+
+        select {
+            &:read-only {
+                background: var(--color);
+                cursor: auto;
             }
         }
 
@@ -59,9 +96,120 @@
                 cursor: pointer;
             }
         }
+
+        .lz-limit {
+            font-family: $font-regular;
+            color: var(--emphasis--opacity);
+            padding-left: $distance;
+        }
+    }
+
+    .lz-field-file {
+        position: relative;
+
+        &-container {
+            @include center;
+            height: 186px;
+            border: 3px dashed var(--emphasis--opacity);
+            border-radius: 4px;
+            width: 100%;
+            position: relative;
+            background-color: var(--color);
+            transition: all $animation;
+
+            &:hover {
+                opacity: 0.75;
+            }
+
+            input {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: transparent;
+                outline: none;
+                opacity: 0;
+                cursor: pointer;
+            }
+
+            .lz-field-file-text {
+                font-family: $font-regular;
+                text-align: center;
+                color: var(--emphasis--opacity);
+
+                i {
+                    font-size: 72px;
+                }
+
+                &-info {
+                    color: var(--emphasis--opacity);
+                    font-family: $font-light;
+                    margin-bottom: 15px;
+                }
+            }
+
+            &-info {
+                @include center;
+                margin-bottom: 15px;
+
+                .lz-field-file-icon {
+                    @include center;
+                    font-family: $font-regular;
+                    width: $dimenssion;
+                    max-width: $dimenssion;
+                    height: $dimenssion;
+                    max-height: $dimenssion;
+                    border-radius: 50px;
+
+                    &--success {
+                        color: var(--green);
+                    }
+
+                    &--error {
+                        color: var(--red);
+                    }
+                }
+
+                .lz-field-file-info {
+                    margin-left: 10px;
+
+                    &-name {
+                        color: var(--emphasis--opacity);
+                        font-family: $font-light;
+                    }
+
+                    &-size {
+                        color: var(--emphasis--opacity);
+                        font-family: $font-light;
+                    }
+                }
+            }
+        }
+
+        .lz-progress {
+            position: relative;
+            padding: 5px;
+            height: 5px;
+            border-radius: $radius;
+            background-color: var(--emphasis);
+            overflow: hidden;
+
+            .lz-content {
+                position: absolute;
+                height: 100%;
+                width: 30%;
+                top: 0;
+                left: 0;
+                background-color: var(--contrast);
+                border-radius: $radius;
+                transition: all $animation;
+            }
+        }
     }
 
     .lz-radio {
+        @include between;
+        width: 100%;
+
         input[type="radio"] {
             &:checked,
             &:not(:checked) {
@@ -131,6 +279,19 @@
             &:disabled:checked + label:after {
                 background: var(--text--disabled);
             }
+
+            label {
+                width: 100%;
+            }
+        }
+
+        &-complement {
+            width: 100%;
+            cursor: pointer;
+        }
+
+        &-input {
+            @include end;
         }
     }
 
@@ -217,6 +378,18 @@
     position: relative;
     margin-bottom: calc(#{$distance} * 2);
 
+    &--no-margin {
+        margin: 0;
+
+        &--force {
+            margin: 0 !important;
+        }
+
+        @include for-small-tablet {
+            margin-bottom: calc(#{$distance} * 2);
+        }
+    }
+
     .lz-label {
         font-size: 0.75rem;
         margin-top: 10px;
@@ -248,6 +421,10 @@
         &--message {
             bottom: -20px;
             opacity: 1;
+
+            @include for-small-tablet {
+                bottom: -35px;
+            }
         }
 
         &--error {

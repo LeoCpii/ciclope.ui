@@ -53,6 +53,10 @@
         @include grid-column-span(16);
     }
 
+    .lz-col-14 {
+        @include grid-column-span(14);
+    }
+
     .lz-col-12 {
         @include grid-column-span(12);
     }
@@ -97,6 +101,10 @@
 
     .lz-start-16 {
         @include grid-column-start(16);
+    }
+
+    .lz-start-14 {
+        @include grid-column-start(14);
     }
 
     .lz-start-12 {
@@ -164,6 +172,10 @@
             @include grid-column-span(16);
         }
 
+        .lz-col-md-14 {
+            @include grid-column-span(14);
+        }
+
         .lz-col-md-12 {
             @include grid-column-span(12);
         }
@@ -208,6 +220,10 @@
 
         .lz-start-md-16 {
             @include grid-column-start(16);
+        }
+
+        .lz-start-md-14 {
+            @include grid-column-start(14);
         }
 
         .lz-start-md-12 {
@@ -276,6 +292,10 @@
             @include grid-column-span(16);
         }
 
+        .lz-col-sm-14 {
+            @include grid-column-span(14);
+        }
+
         .lz-col-sm-12 {
             @include grid-column-span(12);
         }
@@ -320,6 +340,10 @@
 
         .lz-start-sm-16 {
             @include grid-column-start(16);
+        }
+        
+        .lz-start-sm-14 {
+            @include grid-column-start(14);
         }
 
         .lz-start-sm-12 {

@@ -1,0 +1,50 @@
+@import "./../utilities/utilities";
+
+.angular-editor-toolbar {
+    border-radius: 4px !important;
+    background-color: var(--background--disabled) !important;
+    border: 1px solid var(--background--disabled) !important;
+    color: var(--text) !important;
+    transition: all $animation !important;
+
+    @include for-small-tablet {
+        white-space: nowrap;
+        overflow: hidden;
+        overflow-x: auto;
+    }
+}
+
+.angular-editor-button {
+    border-radius: 4px !important;
+    background-color: var(--color) !important;
+    border: none !important;
+
+    &.active {
+        background-color: var(--brand) !important;
+        color: var(--color) !important;
+    }
+}
+
+.ae-picker-label {
+    border-radius: 4px !important;
+    background-color: var(--color) !important;
+    border: none !important;
+
+    &::before {
+        background: var(--color) !important;
+    }
+}
+
+.angular-editor-textarea {
+    font-family: $font-regular;
+    background: var(--color) !important;
+    border-radius: 4px !important;
+    border: 1px solid var(--background--disabled) !important;
+    outline: none;
+    padding: 1rem 0.8rem 1rem !important;
+    color: var(--text);
+}
+
+.angular-editor-placeholder {
+    padding: 1rem 0.8rem 1rem !important;
+}

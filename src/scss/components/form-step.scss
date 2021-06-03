@@ -38,6 +38,12 @@
                         display: none;
                     }
 
+                    &-last {
+                        @include for-small-tablet {
+                            display: initial;
+                        }
+                    }
+
                     img {
                         width: 100%;
                     }
@@ -46,7 +52,7 @@
                 .chevron {
                     margin: 0px 15px;
 
-                    @include for-mobile {
+                    @include for-small-tablet {
                         margin: 0px 15px 0px 0px;
                     }
                 }
@@ -78,10 +84,6 @@
         @include grid(32);
         margin-top: 40px;
         margin-bottom: 40px;
-
-        // @include for-tablet {
-        //   margin-top: 0px;
-        // }
 
         &-content {
             @include grid-column-span(20);

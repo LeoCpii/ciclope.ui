@@ -25,7 +25,8 @@
     }
 
     &--large {
-        font-size: 20px !important;
+        font-size: 16px !important;
+        min-width: 150px;
     }
 
     &--small {

@@ -1,0 +1,28 @@
+.lz-collapsible {
+    position: relative;
+    border-radius: 4px;
+  
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      padding-left: 10px;
+  
+      &-icon {
+        padding: 10px;
+        transform: rotate(0deg);
+        transition: all 0.4s cubic-bezier(0.51, 0.31, 0, 1.01);
+  
+        &--open {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  
+    &-content {
+      border-top: 1px solid rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+    }
+  }
+  

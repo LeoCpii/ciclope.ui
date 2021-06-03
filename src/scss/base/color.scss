@@ -1,4 +1,9 @@
 // COLOR
+
+.lz-color {
+    color: var(--color) !important;
+}
+
 .lz-color-brand {
     color: var(--brand) !important;
 }
@@ -29,6 +34,10 @@
 
 .lz-color-text {
     color: var(--text) !important;
+}
+
+.lz-color-emphasis {
+    color: var(--emphasis) !important;
 }
 
 // BACKGROUND

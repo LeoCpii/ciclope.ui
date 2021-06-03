@@ -55,4 +55,9 @@ button {
         background-color: var(--news);
         border: 1px solid var(--news);
     }
+
+    &--emphasis {
+        background-color: var(--emphasis);
+        border: 1px solid var(--emphasis);
+    }
 }
