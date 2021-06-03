@@ -84,6 +84,11 @@ $dimenssion: 20px;
                 background: var(--color);
                 cursor: auto;
             }
+
+            &:disabled {
+                background: var(--background--disabled) !important;
+                cursor: no-drop;
+            }
         }
 
         .lz-icon {
