@@ -1,4 +1,10 @@
+@import 'variables';
+
 .lz-anchor-to-top {
     position: absolute;
     top: -100vh;
+}
+
+.lz-shadow {
+    box-shadow: $box-shadow;
 }

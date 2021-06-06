@@ -1,0 +1,21 @@
+@import "./../utilities/utilities";
+
+.lz-item {
+    margin: 0 0 $distance 0;
+
+    &--delimiter {
+        border-bottom: 1px solid var(--emphasis--opacity);
+        padding-bottom: $distance;
+        // padding-bottom: calc(2 * #{$distance});
+    }
+
+    &-label {
+        color: var(--emphasis);
+    }
+
+    &-value {
+        margin: 0px;
+        margin-top: 5px;
+        font-size: 14px;
+    }
+}

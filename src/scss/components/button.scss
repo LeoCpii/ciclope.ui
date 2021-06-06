@@ -40,6 +40,16 @@
         cursor: not-allowed !important;
     }
 
+    &--align {
+        &-left {
+            text-align: left;
+        }
+
+        &-right {
+            text-align: right;
+        }
+    }
+
     &--icon {
         padding: 2px;
         min-width: 0px;
