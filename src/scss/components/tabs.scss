@@ -1,0 +1,45 @@
+@import "./../utilities/utilities";
+
+.lz-tabs {
+    display: flex;
+    position: relative;
+    user-select: none;
+    height: 50.8px;
+
+    &-item {
+        @include center;
+        font-family: $font-regular;
+        color: var(--emphasis);
+        padding: 15px 0px;
+        margin-right: calc(2 * #{$distance});
+        cursor: pointer;
+        transition: all 0.4s;
+
+        &--active {
+            color: var(--contrast);
+        }
+
+        &--padding-bottom {
+            padding: 15px 0px 5px !important;
+        }
+    }
+
+    &-select {
+        @include z-index("sky");
+        height: 3px;
+        background-color: var(--brand);
+        transition: all 0.4s;
+        position: absolute;
+        width: 0px;
+        bottom: 0px;
+    }
+
+    &-line {
+        height: 3px;
+        background-color: var(--emphasis--opacity);
+        transition: all 0.4s;
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+    }
+}
