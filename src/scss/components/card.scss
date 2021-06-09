@@ -6,6 +6,7 @@
     transition: all $animation;
     box-shadow: $box-shadow;
     border-radius: $radius;
+    position: relative;
 
     &-alert {
         padding: $distance;
@@ -61,5 +62,13 @@
                 @include grid-column-span(24);
             }
         }
+    }
+
+    &-footer {
+        border-top: 2px solid rgba(var(--rgb), .7);
+        color: var(--text);
+        padding: $distance;
+        border-radius: $radius $radius 0px 0px;
+        transition: all $animation;
     }
 }

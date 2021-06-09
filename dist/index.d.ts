@@ -1,14 +1,16 @@
-export declare type TTheme = 'light' | 'dark';
-declare class Theme {
+export declare type TMode = 'light' | 'dark';
+declare class Lizard {
     static properties: string[];
     static colors: string[];
     static images: string[];
     private v;
     constructor();
-    private _theme;
-    get theme(): TTheme;
-    set(theme: TTheme): void;
-    setColorBrand(color: string): void;
-    getColorBrand(): string;
+    private _mode;
+    get mode(): TMode;
+    get brand(): string;
+    get contrast(): string;
+    set(mode: TMode): void;
+    setBrand(color: string): void;
+    setContrast(color: string): void;
 }
-export default Theme;
+export default Lizard;

@@ -14,9 +14,10 @@
         margin-right: calc(2 * #{$distance});
         cursor: pointer;
         transition: all 0.4s;
+        min-width: 70px;
 
         &--active {
-            color: var(--contrast);
+            color: var(--text);
         }
 
         &--padding-bottom {
