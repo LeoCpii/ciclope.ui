@@ -14,7 +14,7 @@
         width: max-content;
         min-width: 200px;
         background-color: transparent;
-        z-index: 99999;
+        @include z-index('sky');
 
         &--right {
             right: 0 !important;
