@@ -1,0 +1,22 @@
+@import "./../utilities/utilities";
+
+.lz-modal {
+    &-title {
+        h1 {
+            font-size: 20px;
+            font-family: $font-regular;
+            font-weight: 100;
+            padding: 10px;
+            border-bottom: 1px solid rgba(var(--rgb), 0.3);
+        }
+    }
+
+    &-content {
+        padding: 20px 10px;
+    }
+
+    &-footer {
+        @include end;
+        padding: 10px 0px;
+    }
+}

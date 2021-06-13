@@ -135,7 +135,7 @@
         @include grid-column-start(1);
     }
 
-    @include for-small-desktop {
+    @include for-tablet {
         .lz-col-md-32 {
             @include grid-column-span(32);
         }
