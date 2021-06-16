@@ -13,6 +13,7 @@
     min-width: 100px;
     box-shadow: $box-shadow;
     color: white;
+    text-align: center;
 
     &--responsive {
         @include for-small-tablet {
