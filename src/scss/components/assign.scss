@@ -1,0 +1,24 @@
+.lz-assign {
+    width: 100%;
+
+    &-content {
+        width: 100%;
+        text-align: center;
+
+        &-item {
+            width: 100%;
+            span {
+                color: var(--emphasis);
+
+                i {
+                    color: var(--green);
+                }
+            }
+        }
+    }
+
+    .line {
+        height: 100%;
+        width: 3px;
+    }
+}

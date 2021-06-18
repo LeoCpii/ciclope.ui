@@ -10,90 +10,61 @@
     transition: all $animation;
     padding-top: $distance;
 
-    button {
-        &.lz-btn-side-nav {
-            @include between;
-            width: 100%;
-            height: 40px;
-            color: var(--emphasis);
-            background-color: transparent;
-            border: none;
-            border-left: 6px solid transparent;
-            font-size: 16px;
-            cursor: pointer;
-            text-align: left;
-            transition: all $animation;
-            outline: none;
-            padding-right: 10px;
+    .lz-side-nav-content {
+        position: sticky;
+        top: 15px;
+        display: block;
 
-            &:hover {
-                background-color: rgba(0, 0, 0, 0.04);
-                border-left: 6px solid rgba(0, 0, 0, 0.1);
-            }
-
-            &--active {
-                color: var(--brand);
-            }
-        }
-    }
-
-    .lz-side-nav-container {
-        ul.lz-btn-side-nav-list {
-            padding-inline-start: 17px;
-            margin: 0px;
-            overflow: hidden;
-
-            li.lz-btn-side-nav-list-item {
+        button {
+            &.lz-btn-side-nav {
                 @include between;
-                font-family: $font-regular;
-                padding: 10px;
-                list-style: inside;
-                list-style-type: none;
+                width: 100%;
+                height: 40px;
+                color: var(--emphasis);
+                background-color: transparent;
+                border: none;
+                border-left: 6px solid transparent;
+                font-size: 16px;
                 cursor: pointer;
+                text-align: left;
                 transition: all $animation;
-                color: var(--text);
                 outline: none;
-                border-left: 3px solid rgba(var(--rgb), 0.7);
+                padding-right: $distance;
+
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.04);
+                    border-left: 6px solid rgba(0, 0, 0, 0.1);
+                }
 
                 &--active {
-                    border-left: 3px solid var(--brand);
+                    color: var(--brand);
                 }
             }
         }
-    }
 
-    &-footer {
-        position: absolute;
-        bottom: 15px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
+        .lz-side-nav-container {
+            ul.lz-btn-side-nav-list {
+                padding-inline-start: 17px;
+                margin: 0px;
+                overflow: hidden;
 
-        &-content {
-            width: 100%;
-            text-align: center;
+                li.lz-btn-side-nav-list-item {
+                    @include between;
+                    font-family: $font-regular;
+                    padding: 10px;
+                    list-style: inside;
+                    list-style-type: none;
+                    cursor: pointer;
+                    transition: all $animation;
+                    color: var(--text);
+                    outline: none;
+                    border-left: 3px solid rgba(var(--rgb), 0.7);
 
-            &-item {
-                width: 100%;
-                span {
-                    color: var(--emphasis);
-
-                    i {
-                        color: var(--green);
+                    &--active {
+                        border-left: 3px solid var(--brand);
                     }
                 }
             }
         }
-
-        .line {
-            height: 100%;
-            width: 3px;
-        }
     }
-}
-
-.lz-side-nav-content {
-    position: sticky;
-    top: 15px;
-    display: block;
 }
