@@ -1,0 +1,44 @@
+@import "./../utilities/utilities";
+
+.lz-filter {
+    margin-bottom: calc(#{$distance} * 2);
+    width: 100%;
+
+    &-header {
+        @include start;
+        width: 100%;
+        background-color: var(--color);
+        padding: $distance;
+        border-radius: $radius;
+        box-shadow: $box-shadow;
+        cursor: pointer;
+
+        i {
+            color: var(--text);
+        }
+
+        &-badges {
+            @include start;
+            margin-left: $distance;
+        }
+
+        &-badge {
+            margin-right: $distance;
+            &:last-child {
+                margin: 0px;
+            }
+        }
+    }
+
+    &-body {
+        margin-top: 15px;
+        background-color: var(--color);
+        color: var(--text);
+        padding: $distance;
+        font-family: $font-regular;
+        transition: all $animation;
+        box-shadow: $box-shadow;
+        border-radius: $radius;
+        position: relative;
+    }
+}

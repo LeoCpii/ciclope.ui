@@ -35,33 +35,6 @@
         &--no-padding {
             padding: 0px;
         }
-
-        &--grid {
-            @include grid(32, $distance);
-
-            @include for-tablet {
-                display: block;
-            }
-
-            &-left {
-                @include grid-column-span(8);
-
-                &-title {
-                    font-size: $font-medium;
-                    color: var(--text);
-                }
-
-                &-subscription {
-                    font-family: $font-light;
-                    font-size: $font-small;
-                    color: var(--emphasis);
-                }
-            }
-
-            &-right {
-                @include grid-column-span(24);
-            }
-        }
     }
 
     &-footer {

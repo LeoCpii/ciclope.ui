@@ -24,6 +24,14 @@ $dimenssion: 20px;
             input[type="text"],
             select {
                 font-size: 22px;
+
+                &::after {
+                    content: "";
+                    width: 0.8em;
+                    height: 0.5em;
+                    background-color: red;
+                    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+                }
             }
 
             @include for-small-tablet {
@@ -193,7 +201,7 @@ $dimenssion: 20px;
         &-form-group {
             @include between;
             align-items: flex-end;
-            
+
             &-input {
                 width: 100%;
                 margin-right: $distance;
@@ -395,7 +403,7 @@ $dimenssion: 20px;
         &--disabled {
             label {
                 cursor: no-drop !important;
-                opacity: .7;
+                opacity: 0.7;
             }
             label:active:after {
                 width: 20px !important;
