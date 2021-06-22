@@ -77,3 +77,11 @@
 .nsm-content {
     background-color: var(--color) !important;
 }
+
+// CHART
+
+.apexcharts-canvas {
+    svg {
+        background: transparent !important;
+    }
+}
