@@ -20,7 +20,7 @@
     padding-top: $distance;
 
     &--2x {
-        padding: calc(2 * #{$distance});
+        padding-top: calc(2 * #{$distance});
     }
 }
 
