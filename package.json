@@ -4,10 +4,12 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "npm run types && sucrase ./src -d ./dist --transforms typescript,imports && npm run asset && npm run scss",
+    "build": "rimraf dist && npm run sucrase && npm run asset && npm run scss & npm run clean",
+    "sucrase": "npm run types && sucrase ./src -d ./dist --transforms typescript,imports",
     "start:dev": "nodemon src/index.ts",
     "scss:dev": "node-sass src/scss --watch -o dist/css compressed",
     "scss": "node-sass src/scss -o dist/css --output-style compressed",
+    "clean": "rimraf dist/scss && rimraf dist/css/base && rimraf dist/css/components && rimraf dist/css/layout && rimraf dist/css/themes && rimraf dist/css/utilities && rimraf dist/css/fonts.css",
     "types": "tsc --declaration",
     "asset": "cp -r src/assets/* dist/assets"
   },
