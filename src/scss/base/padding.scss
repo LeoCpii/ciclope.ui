@@ -1,4 +1,4 @@
-@import './../utilities/utilities';
+@import "./../utilities/utilities";
 
 .lz-padding {
     padding: $distance;
@@ -18,6 +18,10 @@
 
 .lz-padding-top {
     padding-top: $distance;
+
+    &--2x {
+        padding: calc(2 * #{$distance});
+    }
 }
 
 .lz-padding-bottom {

@@ -9,6 +9,10 @@
         @include for-mobile {
             @include grid(32);
         }
+
+        &--margin {
+            margin-bottom: 15px !important;
+        }
     }
 
     &--tablet-block {
