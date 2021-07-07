@@ -2,7 +2,9 @@ export type TMode = 'light' | 'dark';
 
 class Lizard {
     static properties = ['color', 'background', 'background--disabled', 'emphasis', 'emphasis--opacity', 'text', 'text--disabled', 'rgb'];
-    static colors = ['red', 'green', 'blue', 'yellow', 'news', 'info', 'brand', 'contrast'];
+    static colors = ['red', 'green', 'blue', 'yellow', 'news', 'info', 'brand',
+        'contrast--opacity', 'red--opacity', 'green--opacity', 'blue--opacity', 'yellow--opacity',
+        'news--opacity', 'info--opacity', 'brand--opacity', 'contrast--opacity'];
     static images = ['empty'];
 
     private v = [...Lizard.properties, ...Lizard.colors, Lizard.images];
@@ -33,7 +35,7 @@ class Lizard {
         const root = document.documentElement;
         root.style.setProperty('--brand', color)
     }
-    
+
     public setContrast(color: string): void {
         const root = document.documentElement;
         root.style.setProperty('--contrast', color)

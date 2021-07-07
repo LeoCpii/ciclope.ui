@@ -18,46 +18,46 @@ button {
 
     &--brand {
         background-color: var(--brand);
-        border: 1px solid var(--brand);
+        color: #fff;
     }
 
     &--contrast {
         background-color: var(--contrast);
-        border: 1px solid var(--contrast);
+        color: #fff;
     }
 
     &--red {
-        background-color: var(--red);
-        border: 1px solid var(--red);
+        background-color: var(--red--opacity);
+        color: var(--red);
     }
 
     &--green {
-        background-color: var(--green);
-        border: 1px solid var(--green);
+        background-color: var(--green--opacity);
+        color: var(--green);
     }
     
     &--yellow {
-        background-color: var(--yellow);
-        border: 1px solid var(--yellow);
+        background-color: var(--yellow--opacity);
+        color: var(--yellow);
     }
 
     &--blue {
-        background-color: var(--blue);
-        border: 1px solid var(--blue);
+        background-color: var(--blue--opacity);
+        color: var(--blue);
     }
 
     &--info {
         background-color: var(--info);
-        border: 1px solid var(--info);
+        color: #fff;
     }
 
     &--news {
         background-color: var(--news);
-        border: 1px solid var(--news);
+        color: #fff;
     }
 
     &--emphasis {
         background-color: var(--emphasis);
-        border: 1px solid var(--emphasis);
+        color: #fff;
     }
 }

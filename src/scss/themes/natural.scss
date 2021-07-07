@@ -13,9 +13,14 @@
     
     // State
     --red: var(--red-light);
+    --red--opacity: var(--red--opacity-light);
     --green: var(--green-light);
+    --green--opacity: var(--green--opacity-light);
     --yellow: var(--yellow-light);
+    --yellow--opacity: var(--yellow--opacity-light);
     --blue: var(--blue-light);
+    --blue--opacity: var(--blue--opacity-light);
+    
 
     // Social
     --facebook: #3B5998;

@@ -2,7 +2,9 @@
 
 class Lizard {
     static __initStatic() {this.properties = ['color', 'background', 'background--disabled', 'emphasis', 'emphasis--opacity', 'text', 'text--disabled', 'rgb']}
-    static __initStatic2() {this.colors = ['red', 'green', 'blue', 'yellow', 'news', 'info', 'brand', 'contrast']}
+    static __initStatic2() {this.colors = ['red', 'green', 'blue', 'yellow', 'news', 'info', 'brand',
+        'contrast--opacity', 'red--opacity', 'green--opacity', 'blue--opacity', 'yellow--opacity',
+        'news--opacity', 'info--opacity', 'brand--opacity', 'contrast--opacity']}
     static __initStatic3() {this.images = ['empty']}
 
      __init() {this.v = [...Lizard.properties, ...Lizard.colors, Lizard.images]}
@@ -33,7 +35,7 @@ class Lizard {
         const root = document.documentElement;
         root.style.setProperty('--brand', color)
     }
-    
+
      setContrast(color) {
         const root = document.documentElement;
         root.style.setProperty('--contrast', color)

@@ -7,8 +7,17 @@
     transition: all $animation;
     cursor: pointer;
 
+    &::after {
+        content: "\002215";
+        padding: 0px 10px;
+    }
+
     &:last-child {
         color: var(--emphasis);
         cursor: default;
+
+        &::after {
+            content: "";
+        }
     }
 }
