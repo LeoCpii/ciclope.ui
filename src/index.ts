@@ -2,7 +2,7 @@ export type TMode = 'light' | 'dark';
 
 class Lizard {
     static properties = ['color', 'background', 'background--disabled', 'emphasis', 'emphasis--opacity', 'text', 'text--disabled', 'rgb'];
-    static colors = ['red', 'green', 'blue', 'yellow', 'news', 'info', 'brand',
+    static colors = ['red', 'green', 'blue', 'yellow', 'news', 'info', 'brand', 'contrast',
         'contrast--opacity', 'red--opacity', 'green--opacity', 'blue--opacity', 'yellow--opacity',
         'news--opacity', 'info--opacity', 'brand--opacity', 'contrast--opacity'];
     static images = ['empty'];
