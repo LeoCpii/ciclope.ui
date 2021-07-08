@@ -16,6 +16,7 @@
             padding: 4px;
             font-size: 14px;
             text-align: left;
+            transition: all $animation !important;
 
             &.lz-table-align {
                 &-left {
@@ -34,8 +35,11 @@
             }
         }
 
-        tr:nth-child(even) {
-            background-color: rgba(var(--rgb), 0.3);
+        tr {
+            transition: all $animation !important;
+            &:nth-child(even) {
+                background-color: rgba(var(--rgb), 0.3);
+            }
         }
     }
 
@@ -49,6 +53,49 @@
 
         &-count {
             color: var(--emphasis);
+        }
+    }
+
+    @include for-small-tablet {
+        thead,
+        tbody,
+        th,
+        td,
+        tr {
+            display: block;
+        }
+        /* Hide table headers (but not display: none;, for accessibility) */
+        thead tr,
+        thead th {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+
+        td {
+            border-bottom: 1px solid rgba(var(--rgb), 0.7);
+            position: relative;
+            padding-top: 9px !important;
+            padding-left: 50% !important;
+            min-height: 32px;
+            word-break: break-all;
+
+            &:before {
+                position: absolute;
+                top: 0rem;
+                left: 4px;
+                width: 45%;
+                padding-top: 9px !important;
+                padding-right: 10px;
+                content: attr(data-header);
+                text-transform: uppercase;
+                font-family: $font-light;
+                color: var(--emphasis);
+            }
+
+            &.lz-table-empty {
+                padding-left: 0px !important;
+            }
         }
     }
 }
