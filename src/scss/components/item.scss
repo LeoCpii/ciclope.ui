@@ -6,7 +6,10 @@
     &--delimiter {
         border-bottom: 1px solid var(--emphasis--opacity);
         padding-bottom: $distance;
-        // padding-bottom: calc(2 * #{$distance});
+    }
+
+    &--no-margin {
+        margin: 0;
     }
 
     &-label {
