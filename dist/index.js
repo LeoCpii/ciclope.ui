@@ -4,7 +4,8 @@ class Lizard {
     static __initStatic() {this.properties = ['color', 'background', 'background--disabled', 'emphasis', 'emphasis--opacity', 'text', 'text--disabled', 'rgb']}
     static __initStatic2() {this.colors = ['red', 'green', 'blue', 'yellow', 'news', 'info', 'brand', 'contrast',
         'contrast--opacity', 'red--opacity', 'green--opacity', 'blue--opacity', 'yellow--opacity',
-        'news--opacity', 'info--opacity', 'brand--opacity', 'contrast--opacity']}
+        'news--opacity', 'info--opacity', 'brand--opacity', 'contrast--opacity',
+        'red-rgb', 'green-rgb', 'yellow-rgb', 'blue-rgb']}
     static __initStatic3() {this.images = ['empty']}
 
      __init() {this.v = [...Lizard.properties, ...Lizard.colors, Lizard.images]}

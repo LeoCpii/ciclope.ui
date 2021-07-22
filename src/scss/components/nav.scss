@@ -37,6 +37,18 @@
         &-right {
             @include end;
 
+            .lz-signal-notification {
+                width: 7px;
+                height: 7px;
+                border-radius: 100px;
+                padding: 1px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-color: var(--yellow);
+                animation: pulse-yellow 2s infinite;
+            }
+
             .lz-nav-buttons {
                 margin: 0px;
                 padding: 0px;
