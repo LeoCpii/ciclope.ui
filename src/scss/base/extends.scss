@@ -89,3 +89,17 @@
 .apexcharts-toolbar {
     z-index: 4 !important;
 }
+
+// TOOLTIP
+
+[aria-label][data-balloon-pos][data-balloon-pos="up"]:hover:before,
+[aria-label][data-balloon-pos][data-balloon-pos="up"][data-balloon-visible]:before,
+[aria-label][data-balloon-pos][data-balloon-pos="down"]:hover:before,
+[aria-label][data-balloon-pos][data-balloon-pos="down"][data-balloon-visible]:before {
+    display: none !important;
+}
+
+[aria-label][data-balloon-pos]:after {
+    background: var(--background--disabled-dark) !important;
+    text-transform: capitalize !important;
+}

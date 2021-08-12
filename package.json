@@ -7,7 +7,7 @@
     "build": "npm run sucrase && npm run assets && npm run scss & npm run clean",
     "sucrase": "npm run types && sucrase ./src -d ./dist --transforms typescript,imports",
     "start:dev": "nodemon src/index.ts",
-    "scss:dev": "node-sass src/scss --watch -o dist/css compressed",
+    "scss:watch": "node-sass src/scss --watch -o dist/css compressed",
     "scss": "node-sass src/scss -o dist/css --output-style compressed",
     "clean": "rimraf dist/scss && rimraf dist/css/base && rimraf dist/css/components && rimraf dist/css/layout && rimraf dist/css/themes && rimraf dist/css/utilities && rimraf dist/css/fonts.css",
     "types": "tsc --declaration",
@@ -16,7 +16,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^5.0.0",
+    "balloon-css": "^1.2.0",
+    "node-sass": "^6.0.1",
     "nodemon": "^2.0.7",
     "sucrase": "^3.17.1",
     "typescript": "^4.2.3"
