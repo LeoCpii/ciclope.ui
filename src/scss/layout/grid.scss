@@ -1,6 +1,6 @@
 @import "./../utilities/utilities";
 
-.lz-col {
+.lz-grid {
     @include grid(32);
 
     &--gap {

@@ -42,7 +42,7 @@ $dimenssion: 20px;
         }
 
         &--invalid {
-            border: 1px solid var(--red);
+            border: 1px solid var(--danger);
         }
 
         &--disabled,
@@ -59,6 +59,7 @@ $dimenssion: 20px;
             border: none;
             outline: none;
             padding: 10px 0px;
+            transition: all $animation;
 
             &:disabled,
             &:read-only {
@@ -174,11 +175,11 @@ $dimenssion: 20px;
                     border-radius: 50px;
 
                     &--success {
-                        color: var(--green);
+                        color: var(--success);
                     }
 
                     &--error {
-                        color: var(--red);
+                        color: var(--danger);
                     }
                 }
 
@@ -226,7 +227,7 @@ $dimenssion: 20px;
                 width: 30%;
                 top: 0;
                 left: 0;
-                background-color: var(--contrast);
+                background-color: var(--accent);
                 border-radius: $radius;
                 transition: all $animation;
             }
@@ -440,7 +441,7 @@ $dimenssion: 20px;
         }
 
         input:checked + label {
-            background: var(--green);
+            background: var(--success);
         }
 
         input:checked + label:after {
@@ -482,7 +483,7 @@ $dimenssion: 20px;
 
         &--required::after {
             content: "\0025CF";
-            color: var(--red);
+            color: var(--danger);
             position: absolute;
             bottom: 2px;
             font-size: 10px;
@@ -517,7 +518,7 @@ $dimenssion: 20px;
             }
 
             span {
-                color: var(--red) !important;
+                color: var(--danger) !important;
             }
         }
     }

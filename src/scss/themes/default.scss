@@ -1,0 +1,81 @@
+@import "./../main.scss";
+
+// ***************************************************** //
+// ************************LIGHT************************ //
+// ***************************************************** //
+
+:root {
+    // base
+    --brand: #23af93;
+    --accent: #294c60;
+
+    --color: #ffffff;
+    --background: #f4f7f9;
+    --background--disabled: #edf0f4;
+    --emphasis: #a7a9ab;
+    --emphasis--opacity: #a7a9ab4d;
+    --text: #303438;
+    --text--disabled: #c4c6c8;
+    --rgb: 241, 241, 241;
+
+    // State
+    --danger: #f44336;
+    --danger--opacity: #f4433657;
+    --danger-rgb: 244, 67, 54;
+
+    --success: #66bb6a;
+    --success--opacity: #66bb6a42;
+    --success-rgb: 102, 187, 106;
+
+    --warning: #f49f5c;
+    --warning--opacity: #f49e5c3d;
+    --warning-rgb: 244, 159, 92;
+
+    --info: #1ba8f1;
+    --info--opacity: #1baaf14b;
+    --info-rgb: 27, 168, 241;
+
+    // Images
+    --empty: url("./../assets/svg/empty/empty-light.svg");
+    --empty-chart: url("./../assets/svg/empty/empty-chart-light.svg");
+
+    // **************************************************** //
+    // ************************DARK************************ //
+    // **************************************************** //
+
+    & .dark {
+        // base
+        --brand: #23af93;
+        --accent: #3f7797;
+
+        --color: #272829;
+        --background: #1e1f20;
+        --background--disabled: #555657;
+        --emphasis: #717579;
+        --emphasis--opacity: #717579dd;
+        --text: #c4c6c8;
+        --text--disabled: #c4c6c8;
+        --rgb: 59, 59, 59;
+
+        // State
+        --danger: #f0776e;
+        --danger--opacity: #f4433657;
+        --danger-rgb: 244, 67, 54;
+
+        --success: #92d695;
+        --success--opacity: #66bb6a42;
+        --success-rgb: 240, 119, 110;
+
+        --warning: #f49f5c;
+        --warning--opacity: #f49e5c3d;
+        --warning-rgb: 244, 159, 92;
+
+        --info: #4dc2ff;
+        --info--opacity: #1baaf14b;
+        --info-rgb: 77, 194, 255;
+
+        // Images
+        --empty: url("./../assets/svg/empty/empty-dark.svg");
+        --empty-chart: url("./../assets/svg/empty/empty-chart-dark.svg");
+    }
+}

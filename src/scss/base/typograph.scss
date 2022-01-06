@@ -38,20 +38,20 @@
             color: var(--brand);
         }
 
-        &-contrast {
-            color: var(--contrast);
+        &-accent {
+            color: var(--accent);
         }
 
         &-red {
-            color: var(--red);
+            color: var(--danger);
         }
 
         &-green {
-            color: var(--green);
+            color: var(--success);
         }
 
         &-blue {
-            color: var(--blue);
+            color: var(--info);
         }
 
         &-link {

@@ -45,7 +45,7 @@
                 position: absolute;
                 top: 0;
                 right: 0;
-                background-color: var(--yellow);
+                background-color: var(--warning);
                 animation: pulse-yellow 2s infinite;
             }
 
@@ -64,7 +64,7 @@
                     }
 
                     &--siginout {
-                        color: var(--red);
+                        color: var(--danger);
                     }
                 }
             }
@@ -93,7 +93,7 @@
                 
                         &--unread {
                             animation: pulse-yellow 2s infinite;
-                            background-color: var(--yellow);
+                            background-color: var(--warning);
                         }
                 
                         i {

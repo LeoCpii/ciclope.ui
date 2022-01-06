@@ -13,40 +13,40 @@
         color: #f1f1f1;
     }
 
-    &--contrast {
-        background-color: var(--contrast);
+    &--accent {
+        background-color: var(--accent);
         color: #f1f1f1;
     }
 
-    &--red {
-        background-color: var(--red--opacity);
-        color: var(--red);
+    &--danger {
+        background-color: var(--danger--opacity);
+        color: var(--danger);
         .lz-btn--icon {
-            color: var(--red);
+            color: var(--danger);
         }
     }
 
-    &--green {
-        background-color: var(--green--opacity);
-        color: var(--green);
+    &--success {
+        background-color: var(--success--opacity);
+        color: var(--success);
         .lz-btn--icon {
-            color: var(--green);
+            color: var(--success);
         }
     }
 
-    &--yellow {
-        background-color: var(--yellow--opacity);
-        color: var(--yellow);
+    &--warning {
+        background-color: var(--warning--opacity);
+        color: var(--warning);
         .lz-btn--icon {
-            color: var(--yellow);
+            color: var(--warning);
         }
     }
 
-    &--blue {
-        background-color: var(--blue--opacity);
-        color: var(--blue);
+    &--info {
+        background-color: var(--info--opacity);
+        color: var(--info);
         .lz-btn--icon {
-            color: var(--blue);
+            color: var(--info);
         }
     }
 

@@ -1,0 +1,81 @@
+@import "./../main.scss";
+
+// ***************************************************** //
+// ************************LIGHT************************ //
+// ***************************************************** //
+
+:root .micrablepharus {
+    // base
+    --brand: #5384d0;
+    --accent: #8e898d;
+
+    --color: #ffffff;
+    --background: #f0f0f0;
+    --background--disabled: #edf0f4;
+    --emphasis: #999999;
+    --emphasis--opacity: #a7a9ab4d;
+    --text: #2a2b3c;
+    --text--disabled: #c4c6c8;
+    --rgb: 241, 241, 241;
+
+    // State
+    --danger: #f66e90;
+    --danger--opacity: #f4433657;
+    --danger-rgb: 244, 67, 54;
+
+    --success: #63c381;
+    --success--opacity: #66bb6a42;
+    --success-rgb: 102, 187, 106;
+
+    --warning: #efb700;
+    --warning--opacity: #f49e5c3d;
+    --warning-rgb: 244, 159, 92;
+
+    --info: #5b7dff;
+    --info--opacity: #1baaf14b;
+    --info-rgb: 27, 168, 241;
+
+    // Images
+    --empty: url("./../assets/svg/empty/empty-light.svg");
+    --empty-chart: url("./../assets/svg/empty/empty-chart-light.svg");
+
+    // **************************************************** //
+    // ************************DARK************************ //
+    // **************************************************** //
+
+    &.dark {
+        // base
+        --brand: #7aa1dd;
+        --accent: #b8b0b6;
+
+        --color: #293846;
+        --background: #2e3e4e;
+        --background--disabled: #555657;
+        --emphasis: #717579;
+        --emphasis--opacity: #717579dd;
+        --text: #d2d6da;
+        --text--disabled: #c4c6c8;
+        --rgb: 59, 59, 59;
+
+        // State
+        --danger: #f0776e;
+        --danger--opacity: #f4433657;
+        --danger-rgb: 244, 67, 54;
+
+        --success: #92d695;
+        --success--opacity: #66bb6a42;
+        --success-rgb: 240, 119, 110;
+
+        --warning: #f49f5c;
+        --warning--opacity: #f49e5c3d;
+        --warning-rgb: 244, 159, 92;
+
+        --info: #4dc2ff;
+        --info--opacity: #1baaf14b;
+        --info-rgb: 77, 194, 255;
+
+        // Images
+        --empty: url("./../assets/svg/empty/empty-dark.svg");
+        --empty-chart: url("./../assets/svg/empty/empty-chart-dark.svg");
+    }
+}

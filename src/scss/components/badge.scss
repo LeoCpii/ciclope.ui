@@ -21,39 +21,29 @@ button {
         color: #fff;
     }
 
-    &--contrast {
-        background-color: var(--contrast);
+    &--accent {
+        background-color: var(--accent);
         color: #fff;
     }
 
-    &--red {
-        background-color: var(--red--opacity);
-        color: var(--red);
+    &--danger {
+        background-color: var(--danger--opacity);
+        color: var(--danger);
     }
 
-    &--green {
-        background-color: var(--green--opacity);
-        color: var(--green);
+    &--success {
+        background-color: var(--success--opacity);
+        color: var(--success);
     }
     
-    &--yellow {
-        background-color: var(--yellow--opacity);
-        color: var(--yellow);
-    }
-
-    &--blue {
-        background-color: var(--blue--opacity);
-        color: var(--blue);
+    &--warning {
+        background-color: var(--warning--opacity);
+        color: var(--warning);
     }
 
     &--info {
-        background-color: var(--info);
-        color: #fff;
-    }
-
-    &--news {
-        background-color: var(--news);
-        color: #fff;
+        background-color: var(--info--opacity);
+        color: var(--info);
     }
 
     &--emphasis {

@@ -57,9 +57,16 @@
         font-size: 1.5rem;
         color: var(--text--disabled);
         transition: all $animation;
+        background-color: transparent;
 
         &--no-shadow {
             box-shadow: none;
+        }
+
+        &--hover {
+            &:hover {
+                background-color: var(--background--disabled);
+            }
         }
     }
 
@@ -90,98 +97,98 @@
         }
     }
 
-    &--contrast {
-        background-color: var(--contrast);
-        border: 1px solid var(--contrast);
+    &--accent {
+        background-color: var(--accent);
+        border: 1px solid var(--accent);
 
         &--no-stroke {
             background-color: transparent;
             border: 1px solid transparent;
             box-shadow: none;
-            color: var(--contrast);
+            color: var(--accent);
         }
 
         &--outline {
             background-color: transparent;
             box-shadow: none;
-            border: 1px solid var(--contrast);
-            color: var(--contrast);
+            border: 1px solid var(--accent);
+            color: var(--accent);
         }
     }
 
-    &--red {
-        background-color: var(--red);
-        border: 1px solid var(--red);
+    &--danger {
+        background-color: var(--danger);
+        border: 1px solid var(--danger);
 
         &--no-stroke {
             background-color: transparent;
             border: 1px solid transparent;
             box-shadow: none;
-            color: var(--red);
+            color: var(--danger);
         }
 
         &--outline {
             background-color: transparent;
             box-shadow: none;
-            border: 1px solid var(--red);
-            color: var(--red);
+            border: 1px solid var(--danger);
+            color: var(--danger);
         }
     }
 
-    &--green {
-        background-color: var(--green);
-        border: 1px solid var(--green);
+    &--success {
+        background-color: var(--success);
+        border: 1px solid var(--success);
 
         &--no-stroke {
             background-color: transparent;
             border: 1px solid transparent;
             box-shadow: none;
-            color: var(--green);
+            color: var(--success);
         }
 
         &--outline {
             background-color: transparent;
             box-shadow: none;
-            border: 1px solid var(--green);
-            color: var(--green);
+            border: 1px solid var(--success);
+            color: var(--success);
         }
     }
 
-    &--yellow {
-        background-color: var(--yellow);
-        border: 1px solid var(--yellow);
+    &--warning {
+        background-color: var(--warning);
+        border: 1px solid var(--warning);
 
         &--no-stroke {
             background-color: transparent;
             border: 1px solid transparent;
             box-shadow: none;
-            color: var(--yellow);
+            color: var(--warning);
         }
 
         &--outline {
             background-color: transparent;
             box-shadow: none;
-            border: 1px solid var(--yellow);
-            color: var(--yellow);
+            border: 1px solid var(--warning);
+            color: var(--warning);
         }
     }
 
-    &--blue {
-        background-color: var(--blue);
-        border: 1px solid var(--blue);
+    &--info {
+        background-color: var(--info);
+        border: 1px solid var(--info);
 
         &--no-stroke {
             background-color: transparent;
             border: 1px solid transparent;
             box-shadow: none;
-            color: var(--blue);
+            color: var(--info);
         }
 
         &--outline {
             background-color: transparent;
             box-shadow: none;
-            border: 1px solid var(--blue);
-            color: var(--blue);
+            border: 1px solid var(--info);
+            color: var(--info);
         }
     }
 
