@@ -6,17 +6,8 @@
     box-shadow: $box-shadow;
     border-radius: $radius;
     font-family: $font-regular;
+    transition: all $animation;
     color: #333;
-
-    &--brand {
-        background-color: var(--brand);
-        color: #f1f1f1;
-    }
-
-    &--accent {
-        background-color: var(--accent);
-        color: #f1f1f1;
-    }
 
     &--danger {
         background-color: var(--danger--opacity);

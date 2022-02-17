@@ -7,7 +7,7 @@
     "build": "rimraf dist && npm run sucrase && npm run assets && npm run scss && npm run clean",
     "sucrase": "npm run types && sucrase ./src -d ./dist --transforms typescript,imports",
     "start:dev": "nodemon src/index.ts",
-    "scss:watch": "node-sass src/scss --watch -o dist/theme compressed",
+    "scss:watch": "node-sass src/scss --watch -o dist compressed",
     "scss:default:watch": "node-sass src/scss/themes/default.scss --watch -o dist/theme compressed",
     "scss:micrablepharus:watch": "node-sass src/scss/themes/micrablepharus.scss --watch -o dist/theme compressed",
     "scss:vanzosaura:watch": "node-sass src/scss/themes/vanzosaura.scss --watch -o dist/theme compressed",
