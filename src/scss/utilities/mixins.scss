@@ -42,7 +42,7 @@
 }
 
 // GRID SYSTEM
-@mixin grid($columns-columns: $grid-columns, $GAP: 0) {
+@mixin grid($GAP: 0, $columns-columns: $grid-columns) {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: unquote(repeater("1fr ", $columns-columns));
@@ -113,8 +113,15 @@
 }
 
 // COLOR
-
 @mixin background-opacity($color, $opacity) {
-    background: var(#{$color});  /*Fallback */
+    background: var(#{$color}); /*Fallback */
     background: rgba(var(#{$color}), $opacity);
+}
+
+@function repeater($character, $n) {
+    $c: "";
+    @for $i from 1 through $n {
+        $c: $c + $character;
+    }
+    @return $c;
 }
