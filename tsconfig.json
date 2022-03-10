@@ -2,15 +2,18 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
-    "outDir": "./dist",
+    "rootDirs": [ "./dist/lib" ],
+    "outDir": "./dist/lib",
     "sourceMap": true,
     "declaration": true,
     "downlevelIteration": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2015",
-    "module": "es2020",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "target": "es6",
+    "module": "commonjs",
     "lib": [
       "es2018",
       "dom"
@@ -18,5 +21,20 @@
     "paths": {
       "@/*": ["src/*"]
     },
-  }
+    "plugins": [
+      {
+        "transform": "typescript-transform-paths",
+        "afterDeclarations": true
+      }
+    ]
+  },
+  "include": [
+    "src/**/*",
+    "lib/**/*",
+    "tests/**/*",
+    "src/**/*.json"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
