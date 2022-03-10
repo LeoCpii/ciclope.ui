@@ -5,13 +5,10 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "rimraf dist && npm run compile:all && npm run assets && npm run scss",
-
     "compile:all": "npm run compile:lib && npm run compile:api",
     "compile:lib": "tsc -p tsconfig.lib.json && tsc-alias -p tsconfig.aliases.json",
     "compile:api": "tsc -p tsconfig.api.json && tsc-alias -p tsconfig.aliases.json",
-
     "dev": "nodemon src/lib/index.ts",
-
     "scss": "npm run scss:default && npm run scss:micrablepharus && npm run scss:vanzosaura && npm run scss:custom",
     "scss:default": "node-sass src/ui/scss/themes/default.scss -o dist/themes --output-style compressed",
     "scss:micrablepharus": "node-sass src/ui/scss/themes/micrablepharus.scss -o dist/themes --output-style compressed",
@@ -19,22 +16,35 @@
     "scss:custom": "node-sass src/ui/scss/themes/custom.scss -o dist/themes --output-style compressed",
     "clean": "rimraf dist/scss",
     "assets": "mkdirp dist/assets && cp -r src/ui/assets/* dist/assets",
-
     "test": "rimraf dist && tsc -p tsconfig.api.json",
-    "test-clean": "rimraf dist"
+    "test-clean": "rimraf dist",
+    "analyze": "cem analyze --litelement",
+    "storybook": "npm run compile:api && npm run analyze -- --exclude dist && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds -c .storybook/server.mjs\""
   },
   "dependencies": {
-    "balloon-css": "^1.2.0"
+    "@storybook/preset-scss": "^1.0.3",
+    "balloon-css": "^1.2.0",
+    "lit": "^2.2.0"
   },
   "devDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.4.17",
     "@types/node": "15.0.3",
     "@types/node-sass": "^4.11.1",
+    "@open-wc/eslint-config": "^4.3.0",
+    "@open-wc/testing": "next",
+    "@web/dev-server": "^0.1.28",
+    "@web/dev-server-storybook": "next",
+    "@web/test-runner": "next",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "concurrently": "^5.3.0",
+    "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.3.2",
     "mkdirp": "^1.0.4",
     "node-sass": "^6.0.1",
     "nodemon": "^2.0.7",
+    "sass-loader": "^12.6.0",
     "storybook": "^6.4.19",
+    "style-loader": "^3.3.1",
     "ts-loader": "^9.2.7",
     "ts-node": "8.10.1",
     "tsc": "^2.0.3",
@@ -43,5 +53,6 @@
     "typings": "2.1.1"
   },
   "author": "Leonardo Gonçalves",
-  "license": "ISC"
+  "license": "ISC",
+  "customElements": "custom-elements.json"
 }

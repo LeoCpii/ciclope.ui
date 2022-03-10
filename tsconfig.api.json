@@ -2,9 +2,33 @@
     "extends": "./tsconfig.json",
     "compilerOptions": {
         "baseUrl": "./src/api",
-        "rootDirs": [ "./dist/api" ],
+        "rootDirs": [
+            "./dist/api"
+        ],
         "outDir": "./dist/api",
+        "target": "es2018",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "noEmitOnError": true,
+        "lib": [
+            "es2018",
+            "dom"
+        ],
+        "strict": true,
+        "esModuleInterop": false,
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true,
+        "importHelpers": true,
+        "sourceMap": true,
+        "inlineSources": true,
+        "declaration": true,
+        "incremental": true
     },
-    "include": ["src/api/**/*"],
-    "exclude": ["node_modules", "**/*.spec.ts"]
+    "include": [
+        "src/api/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
 }
