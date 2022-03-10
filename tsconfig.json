@@ -1,7 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "./src/lib",
     "rootDirs": [ "./dist/lib" ],
     "outDir": "./dist/lib",
     "sourceMap": true,

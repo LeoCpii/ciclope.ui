@@ -4,19 +4,24 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "rimraf dist && npm run webpack:all && npm run assets && npm run scss && npm run clean",
-    "build:aliases": "tsc-alias -p tsconfig.aliases.json",
-    "webpack:all": "npm run clean && npm run webpack:dev && npm run webpack:prod && npm run build:aliases",
-    "webpack:dev": "webpack --config \"./webpack/webpack.dev.js\" --progress ",
-    "webpack:prod": "webpack --config \"./webpack/webpack.prod.js\" --progress",
+    "build": "rimraf dist && npm run compile:all && npm run assets && npm run scss",
+
+    "compile:all": "npm run compile:lib && npm run compile:api",
+    "compile:lib": "tsc -p tsconfig.lib.json && tsc-alias -p tsconfig.aliases.json",
+    "compile:api": "tsc -p tsconfig.api.json && tsc-alias -p tsconfig.aliases.json",
+
     "dev": "nodemon src/lib/index.ts",
+
     "scss": "npm run scss:default && npm run scss:micrablepharus && npm run scss:vanzosaura && npm run scss:custom",
     "scss:default": "node-sass src/ui/scss/themes/default.scss -o dist/themes --output-style compressed",
     "scss:micrablepharus": "node-sass src/ui/scss/themes/micrablepharus.scss -o dist/themes --output-style compressed",
     "scss:vanzosaura": "node-sass src/ui/scss/themes/vanzosaura.scss -o dist/themes --output-style compressed",
     "scss:custom": "node-sass src/ui/scss/themes/custom.scss -o dist/themes --output-style compressed",
     "clean": "rimraf dist/scss",
-    "assets": "mkdirp dist/assets && cp -r src/ui/assets/* dist/assets"
+    "assets": "mkdirp dist/assets && cp -r src/ui/assets/* dist/assets",
+
+    "test": "rimraf dist && tsc -p tsconfig.api.json",
+    "test-clean": "rimraf dist"
   },
   "dependencies": {
     "balloon-css": "^1.2.0"
@@ -30,20 +35,12 @@
     "node-sass": "^6.0.1",
     "nodemon": "^2.0.7",
     "storybook": "^6.4.19",
-    "terser-webpack-plugin": "^5.1.4",
     "ts-loader": "^9.2.7",
     "ts-node": "8.10.1",
     "tsc": "^2.0.3",
     "tsc-alias": "^1.3.9",
-    "ttypescript": "^1.5.12",
     "typescript": "^4.6.2",
-    "typescript-transform-paths": "^3.3.1",
-    "typings": "2.1.1",
-    "webpack": "^5.41.1",
-    "webpack-bundle-analyzer": "^4.4.2",
-    "webpack-cli": "^4.7.2",
-    "webpack-merge": "^5.8.0",
-    "webpack-node-externals": "^3.0.0"
+    "typings": "2.1.1"
   },
   "author": "Leonardo Gonçalves",
   "license": "ISC"
