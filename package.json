@@ -14,12 +14,10 @@
     "scss:micrablepharus": "node-sass src/ui/scss/themes/micrablepharus.scss -o dist/themes --output-style compressed",
     "scss:vanzosaura": "node-sass src/ui/scss/themes/vanzosaura.scss -o dist/themes --output-style compressed",
     "scss:custom": "node-sass src/ui/scss/themes/custom.scss -o dist/themes --output-style compressed",
-    "clean": "rimraf dist/scss",
+    "scss:watch": "node-sass src/ui/scss/themes/default.scss --watch -o dist/themes compressed",
     "assets": "mkdirp dist/assets && cp -r src/ui/assets/* dist/assets",
-    "test": "rimraf dist && tsc -p tsconfig.api.json",
-    "test-clean": "rimraf dist",
     "analyze": "cem analyze --litelement",
-    "storybook": "npm run compile:api && npm run analyze -- --exclude dist && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds -c .storybook/server.mjs\""
+    "storybook": "npm run compile:api && npm run analyze -- --exclude dist && concurrently -k -r \"tsc -p tsconfig.api.json --watch --preserveWatchOutput\" \"wds -c .storybook/server.mjs\""
   },
   "dependencies": {
     "@storybook/preset-scss": "^1.0.3",
@@ -28,10 +26,12 @@
   },
   "devDependencies": {
     "@custom-elements-manifest/analyzer": "^0.4.17",
-    "@types/node": "15.0.3",
-    "@types/node-sass": "^4.11.1",
     "@open-wc/eslint-config": "^4.3.0",
     "@open-wc/testing": "next",
+    "@storybook/addons": "^6.4.19",
+    "@storybook/theming": "^6.4.19",
+    "@types/node": "15.0.3",
+    "@types/node-sass": "^4.11.1",
     "@web/dev-server": "^0.1.28",
     "@web/dev-server-storybook": "next",
     "@web/test-runner": "next",

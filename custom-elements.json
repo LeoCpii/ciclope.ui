@@ -22,6 +22,12 @@
     },
     {
       "kind": "javascript-module",
+      "path": "src/api/dto.d.ts",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/lib/index.ts",
       "declarations": [
         {
@@ -192,15 +198,284 @@
     },
     {
       "kind": "javascript-module",
+      "path": "src/api/components/button.component.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "ButtonComponent",
+          "members": [
+            {
+              "kind": "field",
+              "name": "label",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "label"
+            },
+            {
+              "kind": "field",
+              "name": "theme",
+              "type": {
+                "text": "ITheme"
+              },
+              "default": "'brand'",
+              "attribute": "theme"
+            },
+            {
+              "kind": "field",
+              "name": "type",
+              "type": {
+                "text": "'button' | 'submit'"
+              },
+              "default": "'button'",
+              "attribute": "type"
+            },
+            {
+              "kind": "field",
+              "name": "size",
+              "type": {
+                "text": "'small' | 'large' | 'default'"
+              },
+              "default": "'default'",
+              "attribute": "size"
+            },
+            {
+              "kind": "field",
+              "name": "icon",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "icon"
+            },
+            {
+              "kind": "field",
+              "name": "outline",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "outline"
+            },
+            {
+              "kind": "field",
+              "name": "block",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "block"
+            },
+            {
+              "kind": "field",
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "disabled"
+            },
+            {
+              "kind": "field",
+              "name": "responsive",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "responsive"
+            },
+            {
+              "kind": "field",
+              "name": "noStroke",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "no-stroke"
+            },
+            {
+              "kind": "field",
+              "name": "isLoading",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "is-loading"
+            },
+            {
+              "kind": "field",
+              "name": "textAlign",
+              "type": {
+                "text": "'left' | 'right' | 'default'"
+              },
+              "default": "'default'",
+              "attribute": "text-align"
+            },
+            {
+              "kind": "method",
+              "name": "createRenderRoot"
+            },
+            {
+              "kind": "field",
+              "name": "cls",
+              "type": {
+                "text": "string"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "clsIcon",
+              "type": {
+                "text": "string"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "text"
+            },
+            {
+              "kind": "field",
+              "name": "loading"
+            },
+            {
+              "kind": "method",
+              "name": "_click"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "label",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "label"
+            },
+            {
+              "name": "theme",
+              "type": {
+                "text": "ITheme"
+              },
+              "default": "'brand'",
+              "fieldName": "theme"
+            },
+            {
+              "name": "type",
+              "type": {
+                "text": "'button' | 'submit'"
+              },
+              "default": "'button'",
+              "fieldName": "type"
+            },
+            {
+              "name": "size",
+              "type": {
+                "text": "'small' | 'large' | 'default'"
+              },
+              "default": "'default'",
+              "fieldName": "size"
+            },
+            {
+              "name": "icon",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "icon"
+            },
+            {
+              "name": "outline",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "outline"
+            },
+            {
+              "name": "block",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "block"
+            },
+            {
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "disabled"
+            },
+            {
+              "name": "responsive",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "responsive"
+            },
+            {
+              "name": "no-stroke",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "noStroke"
+            },
+            {
+              "name": "is-loading",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "isLoading"
+            },
+            {
+              "name": "text-align",
+              "type": {
+                "text": "'left' | 'right' | 'default'"
+              },
+              "default": "'default'",
+              "fieldName": "textAlign"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "lz-button",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "ButtonComponent",
+          "declaration": {
+            "name": "ButtonComponent",
+            "module": "src/api/components/button.component.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "lz-button",
+          "declaration": {
+            "name": "ButtonComponent",
+            "module": "src/api/components/button.component.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/api/stories/button.stories.ts",
       "declarations": [
         {
           "kind": "variable",
           "name": "Regular"
-        },
-        {
-          "kind": "variable",
-          "name": "CustomLabel"
         }
       ],
       "exports": [
@@ -218,22 +493,8 @@
             "name": "Regular",
             "module": "src/api/stories/button.stories.ts"
           }
-        },
-        {
-          "kind": "js",
-          "name": "CustomLabel",
-          "declaration": {
-            "name": "CustomLabel",
-            "module": "src/api/stories/button.stories.ts"
-          }
         }
       ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/api/components/button.component.ts",
-      "declarations": [],
-      "exports": []
     }
   ]
 }
