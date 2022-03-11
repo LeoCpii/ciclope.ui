@@ -9,14 +9,14 @@ export class ButtonComponent extends LitElement {
     @property() theme: ITheme = 'brand';
     @property() type: 'button' | 'submit' = 'button';
     @property() size: 'small' | 'large' | 'default' = 'default';
-    @property() icon: string = '';
-    @property() outline: boolean = false;
-    @property() block: boolean = false;
-    @property() disabled: boolean = false;
-    @property() responsive: boolean = false;
-    @property({ attribute: 'icon-button' }) iconButton: boolean = false;
-    @property({ attribute: 'no-stroke' }) noStroke: boolean = false;
-    @property({ attribute: 'is-loading' }) isLoading: boolean = false;
+    @property() icon = '';
+    @property() outline = false;
+    @property() block = false;
+    @property() disabled = false;
+    @property() responsive = false;
+    @property({ attribute: 'icon-button' }) iconButton = false;
+    @property({ attribute: 'no-stroke' }) noStroke = false;
+    @property({ attribute: 'is-loading' }) isLoading = false;
     @property({ attribute: 'text-align' }) textAlign: 'left' | 'right' | 'default' = 'default';
 
     static styles = css``;

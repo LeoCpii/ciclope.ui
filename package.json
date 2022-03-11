@@ -17,7 +17,8 @@
     "scss:watch": "node-sass src/ui/scss/themes/default.scss --watch -o dist/themes compressed",
     "assets": "mkdirp dist/assets && cp -r src/ui/assets/* dist/assets",
     "analyze": "cem analyze --litelement",
-    "storybook": "npm run compile:api && npm run analyze -- --exclude dist && concurrently -k -r \"tsc -p tsconfig.api.json --watch --preserveWatchOutput\" \"wds -c .storybook/server.mjs\""
+    "storybook": "npm run compile:api && npm run analyze -- --exclude dist && concurrently -k -r \"tsc -p tsconfig.api.json --watch --preserveWatchOutput\" \"wds -c .storybook/server.mjs\"",
+    "lint": "eslint --ext .ts,.html . --ignore-path .gitignore --ignore-pattern dist/*"
   },
   "dependencies": {
     "@storybook/preset-scss": "^1.0.3",
@@ -32,12 +33,15 @@
     "@storybook/theming": "^6.4.19",
     "@types/node": "15.0.3",
     "@types/node-sass": "^4.11.1",
+    "@typescript-eslint/eslint-plugin": "^5.14.0",
+    "@typescript-eslint/parser": "^5.14.0",
     "@web/dev-server": "^0.1.28",
     "@web/dev-server-storybook": "next",
     "@web/test-runner": "next",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "concurrently": "^5.3.0",
     "css-loader": "^6.7.1",
+    "eslint": "^8.10.0",
     "html-webpack-plugin": "^5.3.2",
     "mkdirp": "^1.0.4",
     "node-sass": "^6.0.1",

@@ -92,7 +92,7 @@ const Template: Story<ArgTypes> = ({
     isLoading = false,
     iconButton = false,
     icon = ''
-}: ArgTypes, { globals }) => {
+}: ArgTypes) => {
     return html`
     <lz-button 
         .label=${label}

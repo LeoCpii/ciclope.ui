@@ -5,8 +5,6 @@ class Lizard {
     static themes: TTheme[] = ['default', 'micrablepharus', 'vanzosaura', 'custom'];
     static modes: TMode[] = ['dark', 'light'];
 
-    constructor() { };
-
     private _mode: TMode;
 
     public get mode(): TMode {
