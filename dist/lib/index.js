@@ -1,8 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 class Lizard {
-    constructor() { }
-    ;
     get mode() {
         return this._mode;
     }

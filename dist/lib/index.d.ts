@@ -3,7 +3,6 @@ export declare type TTheme = 'default' | 'micrablepharus' | 'vanzosaura' | 'cust
 declare class Lizard {
     static themes: TTheme[];
     static modes: TMode[];
-    constructor();
     private _mode;
     get mode(): TMode;
     get brand(): string;

@@ -10,25 +10,14 @@
         "module": "esnext",
         "moduleResolution": "node",
         "noEmitOnError": true,
-        "lib": [
-            "es2018",
-            "dom"
-        ],
-        "strict": true,
-        "esModuleInterop": false,
         "allowSyntheticDefaultImports": true,
-        "experimentalDecorators": true,
-        "importHelpers": true,
-        "sourceMap": true,
         "inlineSources": true,
-        "declaration": true,
-        "incremental": true
+        "strict": true,
     },
     "include": [
         "src/api/**/*"
     ],
     "exclude": [
-        "node_modules",
-        "**/*.spec.ts"
+        "node_modules"
     ]
 }

@@ -288,6 +288,15 @@
             },
             {
               "kind": "field",
+              "name": "iconButton",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "icon-button"
+            },
+            {
+              "kind": "field",
               "name": "noStroke",
               "type": {
                 "text": "boolean"
@@ -418,6 +427,14 @@
               "fieldName": "responsive"
             },
             {
+              "name": "icon-button",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "iconButton"
+            },
+            {
               "name": "no-stroke",
               "type": {
                 "text": "boolean"
@@ -465,6 +482,21 @@
           "declaration": {
             "name": "ButtonComponent",
             "module": "src/api/components/button.component.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/api/components/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "ButtonComponent",
+          "declaration": {
+            "name": "ButtonComponent",
+            "module": "./button.component"
           }
         }
       ]

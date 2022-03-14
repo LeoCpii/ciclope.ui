@@ -53,7 +53,7 @@ export default {
     }
 };
 // @property() icon: string = '';
-const Template = ({ label = 'Label', theme = 'brand', size = 'default', type = 'button', block = false, outline = false, disabled = false, responsive = false, noStroke = false, isLoading = false, iconButton = false, icon = '' }, { globals }) => {
+const Template = ({ label = 'Label', theme = 'brand', size = 'default', type = 'button', block = false, outline = false, disabled = false, responsive = false, noStroke = false, isLoading = false, iconButton = false, icon = '' }) => {
     return html `
     <lz-button 
         .label=${label}
