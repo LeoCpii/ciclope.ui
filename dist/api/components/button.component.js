@@ -7,7 +7,7 @@ let ButtonComponent = class ButtonComponent extends LitElement {
         this.label = '';
         this.theme = 'brand';
         this.type = 'button';
-        this.size = 'default';
+        this.size = '';
         this.icon = '';
         this.outline = false;
         this.block = false;
@@ -16,12 +16,12 @@ let ButtonComponent = class ButtonComponent extends LitElement {
         this.iconButton = false;
         this.noStroke = false;
         this.isLoading = false;
-        this.textAlign = 'default';
+        this.textAlign = '';
     }
     createRenderRoot() { return this; }
     get cls() {
         const ret = [];
-        if (this.theme !== 'default') {
+        if (this.theme) {
             ret.push(`lz-btn--${this.theme}`);
         }
         if (this.noStroke) {
@@ -33,13 +33,13 @@ let ButtonComponent = class ButtonComponent extends LitElement {
         if (this.block) {
             ret.push(`lz-btn--block`);
         }
-        if (this.size !== 'default') {
+        if (this.size) {
             ret.push(`lz-btn--${this.size}`);
         }
         if (this.icon) {
             ret.push(`lz-btn--icon`);
         }
-        if (this.textAlign !== 'default') {
+        if (this.textAlign) {
             ret.push(`lz-btn--align-${this.textAlign}`);
         }
         if (this.responsive) {
@@ -51,7 +51,7 @@ let ButtonComponent = class ButtonComponent extends LitElement {
         return `uil-${this.icon}`;
     }
     get text() {
-        return !this.iconButton && !this.isLoading ? this.label : '';
+        return this.iconButton && this.isLoading ? '' : this.label;
     }
     get loading() {
         return this.isLoading ? html `

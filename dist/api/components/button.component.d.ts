@@ -1,10 +1,10 @@
 import { LitElement } from 'lit';
-export declare type ITheme = 'brand' | 'contrast' | 'red' | 'green' | 'yellow' | 'blue' | 'default';
+export declare type ITheme = 'brand' | 'accent' | 'danger' | 'success' | 'warning' | 'info';
 export declare class ButtonComponent extends LitElement {
     label: string;
     theme: ITheme;
     type: 'button' | 'submit';
-    size: 'small' | 'large' | 'default';
+    size: 'small' | 'large' | '';
     icon: string;
     outline: boolean;
     block: boolean;
@@ -13,7 +13,7 @@ export declare class ButtonComponent extends LitElement {
     iconButton: boolean;
     noStroke: boolean;
     isLoading: boolean;
-    textAlign: 'left' | 'right' | 'default';
+    textAlign: 'left' | 'right' | '';
     static styles: import("lit").CSSResult;
     createRenderRoot(): this;
     get cls(): string;

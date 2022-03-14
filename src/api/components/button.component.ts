@@ -1,14 +1,14 @@
 import { html, css, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
-export type ITheme = 'brand' | 'contrast' | 'red' | 'green' | 'yellow' | 'blue' | 'default';
+export type ITheme = 'brand' | 'accent' | 'danger' | 'success' | 'warning' | 'info';
 
 @customElement('lz-button')
 export class ButtonComponent extends LitElement {
     @property() label = '';
     @property() theme: ITheme = 'brand';
     @property() type: 'button' | 'submit' = 'button';
-    @property() size: 'small' | 'large' | 'default' = 'default';
+    @property() size: 'small' | 'large' | '' = '';
     @property() icon = '';
     @property() outline = false;
     @property() block = false;
@@ -17,7 +17,7 @@ export class ButtonComponent extends LitElement {
     @property({ attribute: 'icon-button' }) iconButton = false;
     @property({ attribute: 'no-stroke' }) noStroke = false;
     @property({ attribute: 'is-loading' }) isLoading = false;
-    @property({ attribute: 'text-align' }) textAlign: 'left' | 'right' | 'default' = 'default';
+    @property({ attribute: 'text-align' }) textAlign: 'left' | 'right' | '' = '';
 
     static styles = css``;
 
@@ -26,13 +26,13 @@ export class ButtonComponent extends LitElement {
     get cls(): string {
         const ret = [];
 
-        if (this.theme !== 'default') { ret.push(`lz-btn--${this.theme}`); }
+        if (this.theme) { ret.push(`lz-btn--${this.theme}`); }
         if (this.noStroke) { ret.push(`lz-btn--${this.theme}--no-stroke`); }
         if (this.outline) { ret.push(`lz-btn--${this.theme}--outline`); }
         if (this.block) { ret.push(`lz-btn--block`); }
-        if (this.size !== 'default') { ret.push(`lz-btn--${this.size}`); }
+        if (this.size) { ret.push(`lz-btn--${this.size}`); }
         if (this.icon) { ret.push(`lz-btn--icon`); }
-        if (this.textAlign !== 'default') { ret.push(`lz-btn--align-${this.textAlign}`); }
+        if (this.textAlign) { ret.push(`lz-btn--align-${this.textAlign}`); }
         if (this.responsive) { ret.push(`lz-btn--responsive`); }
 
         return ret.join(' ');
@@ -43,7 +43,7 @@ export class ButtonComponent extends LitElement {
     }
 
     get text() {
-        return !this.iconButton && !this.isLoading ? this.label : ''
+        return this.iconButton && this.isLoading ? '' : this.label
     }
 
     get loading() {
