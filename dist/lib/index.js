@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-class Lizard {
+class Ciclope {
     get mode() {
         return this._mode;
     }
@@ -34,7 +34,7 @@ class Lizard {
         const arr = document.getElementsByTagName('BODY')[0].classList;
         const length = arr.length;
         for (let index = 0; index < length; index++) {
-            const isNotMode = !Lizard.modes.includes(arr[index]);
+            const isNotMode = !Ciclope.modes.includes(arr[index]);
             if (isNotMode) {
                 arr.remove(arr[index]);
             }
@@ -44,7 +44,7 @@ class Lizard {
         const arr = document.getElementsByTagName('BODY')[0].classList;
         const length = arr.length;
         for (let index = 0; index < length; index++) {
-            const isNotMode = Lizard.modes.includes(arr[index]);
+            const isNotMode = Ciclope.modes.includes(arr[index]);
             if (isNotMode) {
                 arr.remove(arr[index]);
             }
@@ -69,7 +69,7 @@ class Lizard {
         }
     }
 }
-Lizard.themes = ['default', 'micrablepharus', 'vanzosaura', 'custom'];
-Lizard.modes = ['dark', 'light'];
-exports.default = Lizard;
+Ciclope.themes = ['default', 'micrablepharus', 'vanzosaura', 'custom'];
+Ciclope.modes = ['dark', 'light'];
+exports.default = Ciclope;
 //# sourceMappingURL=index.js.map

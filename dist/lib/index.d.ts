@@ -1,6 +1,6 @@
 export declare type TMode = 'light' | 'dark';
 export declare type TTheme = 'default' | 'micrablepharus' | 'vanzosaura' | 'custom';
-declare class Lizard {
+declare class Ciclope {
     static themes: TTheme[];
     static modes: TMode[];
     private _mode;
@@ -32,4 +32,4 @@ declare class Lizard {
     setaccent(color: string): void;
     setTheme(theme: TTheme): void;
 }
-export default Lizard;
+export default Ciclope;

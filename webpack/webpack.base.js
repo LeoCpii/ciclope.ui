@@ -25,7 +25,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, '../dist/lib'),
-        library: 'lizard',
+        library: 'ciclope',
         libraryTarget: 'umd',
         umdNamedDefine: true,
         globalObject: 'this'

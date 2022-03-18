@@ -1,7 +1,7 @@
 export type TMode = 'light' | 'dark';
 export type TTheme = 'default' | 'micrablepharus' | 'vanzosaura' | 'custom';
 
-class Lizard {
+class Ciclope {
     static themes: TTheme[] = ['default', 'micrablepharus', 'vanzosaura', 'custom'];
     static modes: TMode[] = ['dark', 'light'];
 
@@ -45,7 +45,7 @@ class Lizard {
         const length = arr.length;
 
         for (let index = 0; index < length; index++) {
-            const isNotMode = !Lizard.modes.includes(arr[index] as TMode);
+            const isNotMode = !Ciclope.modes.includes(arr[index] as TMode);
             if (isNotMode) {
                 arr.remove(arr[index]);
             }
@@ -57,7 +57,7 @@ class Lizard {
         const length = arr.length;
 
         for (let index = 0; index < length; index++) {
-            const isNotMode = Lizard.modes.includes(arr[index] as TMode);
+            const isNotMode = Ciclope.modes.includes(arr[index] as TMode);
             if (isNotMode) {
                 arr.remove(arr[index]);
             }
@@ -85,4 +85,4 @@ class Lizard {
     }
 }
 
-export default Lizard;
+export default Ciclope;
