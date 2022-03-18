@@ -1,7 +1,6 @@
 import { html, css, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-
-export type ITheme = 'brand' | 'accent' | 'danger' | 'success' | 'warning' | 'info';
+import { ITheme } from '../shared/dto';
 
 @customElement('lz-button')
 export class ButtonComponent extends LitElement {
@@ -43,7 +42,7 @@ export class ButtonComponent extends LitElement {
     }
 
     get text() {
-        return this.iconButton && this.isLoading ? '' : this.label
+        return this.iconButton || this.isLoading ? '' : this.label
     }
 
     get loading() {

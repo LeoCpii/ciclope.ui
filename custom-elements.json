@@ -22,6 +22,24 @@
     },
     {
       "kind": "javascript-module",
+      "path": "coverage/Chrome Headless 99.0.4844.51 (Windows 10)/block-navigation.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "coverage/Chrome Headless 99.0.4844.51 (Windows 10)/prettify.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "coverage/Chrome Headless 99.0.4844.51 (Windows 10)/sorter.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/api/dto.d.ts",
       "declarations": [],
       "exports": []
@@ -198,6 +216,140 @@
     },
     {
       "kind": "javascript-module",
+      "path": "src/api/components/alert.component.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "AlertComponent",
+          "members": [
+            {
+              "kind": "field",
+              "name": "message",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "message"
+            },
+            {
+              "kind": "field",
+              "name": "theme",
+              "type": {
+                "text": "TState"
+              },
+              "default": "'success'",
+              "attribute": "theme"
+            },
+            {
+              "kind": "field",
+              "name": "action",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "action"
+            },
+            {
+              "kind": "field",
+              "name": "show",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "show"
+            },
+            {
+              "kind": "field",
+              "name": "icons",
+              "type": {
+                "text": "object"
+              },
+              "static": true,
+              "default": "{\r\n        danger: 'times-square',\r\n        success: 'thumbs-up',\r\n        warning: 'exclamation-triangle',\r\n        info: 'info-circle'\r\n    }"
+            },
+            {
+              "kind": "method",
+              "name": "createRenderRoot"
+            },
+            {
+              "kind": "field",
+              "name": "icon",
+              "type": {
+                "text": "string"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "cls",
+              "type": {
+                "text": "string"
+              }
+            }
+          ],
+          "attributes": [
+            {
+              "name": "message",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "message"
+            },
+            {
+              "name": "theme",
+              "type": {
+                "text": "TState"
+              },
+              "default": "'success'",
+              "fieldName": "theme"
+            },
+            {
+              "name": "action",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "action"
+            },
+            {
+              "name": "show",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "show"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "lz-alert",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "AlertComponent",
+          "declaration": {
+            "name": "AlertComponent",
+            "module": "src/api/components/alert.component.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "lz-alert",
+          "declaration": {
+            "name": "AlertComponent",
+            "module": "src/api/components/alert.component.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/api/components/button.component.ts",
       "declarations": [
         {
@@ -236,9 +388,9 @@
               "kind": "field",
               "name": "size",
               "type": {
-                "text": "'small' | 'large' | 'default'"
+                "text": "'small' | 'large' | ''"
               },
-              "default": "'default'",
+              "default": "''",
               "attribute": "size"
             },
             {
@@ -317,9 +469,9 @@
               "kind": "field",
               "name": "textAlign",
               "type": {
-                "text": "'left' | 'right' | 'default'"
+                "text": "'left' | 'right' | ''"
               },
-              "default": "'default'",
+              "default": "''",
               "attribute": "text-align"
             },
             {
@@ -381,9 +533,9 @@
             {
               "name": "size",
               "type": {
-                "text": "'small' | 'large' | 'default'"
+                "text": "'small' | 'large' | ''"
               },
-              "default": "'default'",
+              "default": "''",
               "fieldName": "size"
             },
             {
@@ -453,9 +605,9 @@
             {
               "name": "text-align",
               "type": {
-                "text": "'left' | 'right' | 'default'"
+                "text": "'left' | 'right' | ''"
               },
-              "default": "'default'",
+              "default": "''",
               "fieldName": "textAlign"
             }
           ],
@@ -493,10 +645,51 @@
       "exports": [
         {
           "kind": "js",
+          "name": "AlertComponent",
+          "declaration": {
+            "name": "AlertComponent",
+            "module": "./alert.component"
+          }
+        },
+        {
+          "kind": "js",
           "name": "ButtonComponent",
           "declaration": {
             "name": "ButtonComponent",
             "module": "./button.component"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/api/shared/dto.d.ts",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/api/stories/alert.stories.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "Regular"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/api/stories/alert.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Regular",
+          "declaration": {
+            "name": "Regular",
+            "module": "src/api/stories/alert.stories.ts"
           }
         }
       ]
@@ -527,6 +720,12 @@
           }
         }
       ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/api/test/button.spec.ts",
+      "declarations": [],
+      "exports": []
     }
   ]
 }

@@ -1,13 +1,17 @@
 @import "./../utilities/utilities";
 
 .lz-alert {
+    @include between;
     padding: 15px;
+    max-height: 46px;
+    width: 100%;
     text-align: left;
     box-shadow: $box-shadow;
     border-radius: $radius;
     font-family: $font-regular;
     transition: all $animation;
     color: #333;
+    user-select: none;
 
     &--danger {
         background-color: var(--danger--opacity);
@@ -39,11 +43,6 @@
         .lz-btn--icon {
             color: var(--info);
         }
-    }
-
-    &--action {
-        @include between;
-        padding: 10px 15px;
     }
 
     .lz-alert-icon {

@@ -51,7 +51,7 @@ let ButtonComponent = class ButtonComponent extends LitElement {
         return `uil-${this.icon}`;
     }
     get text() {
-        return this.iconButton && this.isLoading ? '' : this.label;
+        return this.iconButton || this.isLoading ? '' : this.label;
     }
     get loading() {
         return this.isLoading ? html `

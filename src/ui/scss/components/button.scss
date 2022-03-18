@@ -48,7 +48,8 @@
     }
 
     &--icon {
-        min-width: 0px;
+        min-width: 0px !important;
+        padding: 0.25rem 0.5rem !important;
         transition: all $animation;
         background-color: transparent;
 

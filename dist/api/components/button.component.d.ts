@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-export declare type ITheme = 'brand' | 'accent' | 'danger' | 'success' | 'warning' | 'info';
+import { ITheme } from '../shared/dto';
 export declare class ButtonComponent extends LitElement {
     label: string;
     theme: ITheme;

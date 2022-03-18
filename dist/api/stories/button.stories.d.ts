@@ -1,6 +1,6 @@
 import { TemplateResult } from 'lit';
 import '../components/button.component.js';
-import { ITheme } from '../components/button.component.js';
+import { ITheme } from '../shared/dto.js';
 interface Story<T> {
     (args: T, data: {
         globals: IGlobals;
