@@ -1,7 +1,7 @@
 export type TMode = 'light' | 'dark';
 export type TTheme = 'default' | 'micrablepharus' | 'vanzosaura' | 'custom';
 
-class Ciclope {
+export class Ciclope {
     static themes: TTheme[] = ['default', 'micrablepharus', 'vanzosaura', 'custom'];
     static modes: TMode[] = ['dark', 'light'];
 
@@ -84,5 +84,3 @@ class Ciclope {
         if (theme !== 'default') { document.getElementsByTagName('BODY')[0].classList.add(theme); }
     }
 }
-
-module.exports = new Ciclope();

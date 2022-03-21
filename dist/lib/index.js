@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Ciclope = void 0;
 class Ciclope {
     get mode() {
         return this._mode;
@@ -69,7 +70,7 @@ class Ciclope {
         }
     }
 }
+exports.Ciclope = Ciclope;
 Ciclope.themes = ['default', 'micrablepharus', 'vanzosaura', 'custom'];
 Ciclope.modes = ['dark', 'light'];
-module.exports = new Ciclope();
 //# sourceMappingURL=index.js.map
