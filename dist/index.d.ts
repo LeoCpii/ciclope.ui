@@ -1,2 +1,2 @@
 export * as api from './api/components';
-export * as lib from './lib';
+export { Ciclope as lib } from './lib';
