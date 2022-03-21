@@ -1,6 +1,6 @@
 import { html, css, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import { TState } from '../shared/dto';
+import { TState } from './shared/dto';
 import { animate } from '@lit-labs/motion';
 
 @customElement('lz-alert')
