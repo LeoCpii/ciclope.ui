@@ -16,7 +16,7 @@ interface ArgTypes {
 }
 
 export default {
-    title: 'lz-alert',
+    title: 'ci-alert',
     component: 'AlertComponent',
     argTypes: {
         theme: { 
@@ -37,12 +37,12 @@ const Template: Story<ArgTypes> = ({
     show = false
 }: ArgTypes) => {
     return html`
-    <lz-alert
+    <ci-alert
         .theme=${theme}
         .message=${message}
         .action=${action}
         .show=${show}
-    ></lz-alert>
+    ></ci-alert>
   `;
 }
 

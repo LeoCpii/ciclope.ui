@@ -1,6 +1,6 @@
 @import "./../utilities/utilities";
 
-.lz-padding {
+.ci-padding {
     padding: $distance;
 
     &--2x {
@@ -8,15 +8,15 @@
     }
 }
 
-.lz-padding-right {
+.ci-padding-right {
     padding-right: $distance;
 }
 
-.lz-padding-left {
+.ci-padding-left {
     padding-left: $distance;
 }
 
-.lz-padding-top {
+.ci-padding-top {
     padding-top: $distance;
 
     &--2x {
@@ -24,6 +24,6 @@
     }
 }
 
-.lz-padding-bottom {
+.ci-padding-bottom {
     padding-bottom: $distance;
 }

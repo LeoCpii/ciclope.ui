@@ -1,15 +1,15 @@
 @import "./../utilities/utilities";
 
-.lz-anchor-to-top {
+.ci-anchor-to-top {
     position: absolute;
     top: -100vh;
 }
 
-.lz-anchor-to-position {
+.ci-anchor-to-position {
     position: absolute;
     top: -10px;
 }
 
-.lz-shadow {
+.ci-shadow {
     box-shadow: $box-shadow;
 }

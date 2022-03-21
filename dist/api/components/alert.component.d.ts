@@ -19,6 +19,6 @@ export declare class AlertComponent extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'lz-alert': AlertComponent;
+        'ci-alert': AlertComponent;
     }
 }

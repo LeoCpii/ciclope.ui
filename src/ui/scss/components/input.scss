@@ -2,12 +2,12 @@
 
 $dimenssion: 20px;
 
-.lz-container-field {
+.ci-container-field {
     &--inline {
         margin-right: 10px;
     }
 
-    .lz-field {
+    .ci-field {
         @include start();
         border: 1px solid var(--background--disabled);
         height: 37px;
@@ -100,7 +100,7 @@ $dimenssion: 20px;
             }
         }
 
-        .lz-icon {
+        .ci-icon {
             margin-left: 10px;
             padding: 10px;
             padding-right: 0px;
@@ -111,14 +111,14 @@ $dimenssion: 20px;
             }
         }
 
-        .lz-limit {
+        .ci-limit {
             font-family: $font-regular;
             color: var(--emphasis--opacity);
             padding-left: $distance;
         }
     }
 
-    .lz-field-file {
+    .ci-field-file {
         position: relative;
 
         &-container {
@@ -145,7 +145,7 @@ $dimenssion: 20px;
                 cursor: pointer;
             }
 
-            .lz-field-file-text {
+            .ci-field-file-text {
                 font-family: $font-regular;
                 text-align: center;
                 color: var(--emphasis--opacity);
@@ -165,7 +165,7 @@ $dimenssion: 20px;
                 @include center;
                 margin-bottom: 15px;
 
-                .lz-field-file-icon {
+                .ci-field-file-icon {
                     @include center;
                     font-family: $font-regular;
                     width: $dimenssion;
@@ -183,7 +183,7 @@ $dimenssion: 20px;
                     }
                 }
 
-                .lz-field-file-info {
+                .ci-field-file-info {
                     margin-left: 10px;
 
                     &-name {
@@ -213,7 +213,7 @@ $dimenssion: 20px;
             }
         }
 
-        .lz-progress {
+        .ci-progress {
             position: relative;
             padding: 5px;
             height: 5px;
@@ -221,7 +221,7 @@ $dimenssion: 20px;
             background-color: var(--emphasis);
             overflow: hidden;
 
-            .lz-content {
+            .ci-content {
                 position: absolute;
                 height: 100%;
                 width: 30%;
@@ -234,7 +234,7 @@ $dimenssion: 20px;
         }
     }
 
-    .lz-radio {
+    .ci-radio {
         @include between;
         width: 100%;
 
@@ -323,7 +323,7 @@ $dimenssion: 20px;
         }
     }
 
-    .lz-checkbox {
+    .ci-checkbox {
         input[type="checkbox"] {
             &:not(:checked),
             &:checked {
@@ -400,7 +400,7 @@ $dimenssion: 20px;
         }
     }
 
-    .lz-switch {
+    .ci-switch {
         &--disabled {
             label {
                 cursor: no-drop !important;
@@ -455,8 +455,8 @@ $dimenssion: 20px;
     }
 }
 
-.lz-container-field-group,
-.lz-container-field {
+.ci-container-field-group,
+.ci-container-field {
     position: relative;
     margin-bottom: calc(#{$distance} * 2);
 
@@ -472,7 +472,7 @@ $dimenssion: 20px;
         }
     }
 
-    .lz-label {
+    .ci-label {
         font-size: 0.75rem;
         margin-top: 10px;
         margin-bottom: 10px;
@@ -491,7 +491,7 @@ $dimenssion: 20px;
         }
     }
 
-    .lz-feedback {
+    .ci-feedback {
         font-size: 12px;
         transition: all $animation;
         @include z-index("floor");

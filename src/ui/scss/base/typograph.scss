@@ -1,12 +1,12 @@
 @import "./../utilities/utilities";
 
-.lz-title-page {
+.ci-title-page {
     font-family: $font-semi-bold;
     color: var(--text);
     font-size: $font-x-large;
 }
 
-.lz-text {
+.ci-text {
     &--type {
         font-family: $font-regular;
         color: var(--text);
@@ -99,14 +99,14 @@
     }
 }
 
-.lz-text-truncate {
+.ci-text-truncate {
     display: block;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 
-.lz-link {
+.ci-link {
     color: var(--link);
     text-decoration: none;
 }

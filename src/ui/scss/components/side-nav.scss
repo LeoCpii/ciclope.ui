@@ -1,6 +1,6 @@
 @import "./../utilities/utilities";
 
-.lz-side-nav {
+.ci-side-nav {
     width: 250px;
     min-height: calc(100vh - #{$header-height});
     height: 100%;
@@ -10,13 +10,13 @@
     transition: all $animation;
     padding-top: $distance;
 
-    .lz-side-nav-content {
+    .ci-side-nav-content {
         position: sticky;
         top: 15px;
         display: block;
 
         button {
-            &.lz-btn-side-nav {
+            &.ci-btn-side-nav {
                 @include between;
                 width: 100%;
                 height: 40px;
@@ -42,13 +42,13 @@
             }
         }
 
-        .lz-side-nav-container {
-            ul.lz-btn-side-nav-list {
+        .ci-side-nav-container {
+            ul.ci-btn-side-nav-list {
                 padding-inline-start: 17px;
                 margin: 0px;
                 overflow: hidden;
 
-                li.lz-btn-side-nav-list-item {
+                li.ci-btn-side-nav-list-item {
                     @include between;
                     font-family: $font-regular;
                     padding: 10px;

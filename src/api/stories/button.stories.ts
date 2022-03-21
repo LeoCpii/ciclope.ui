@@ -25,7 +25,7 @@ interface ArgTypes {
 }
 
 export default {
-    title: 'lz-button',
+    title: 'ci-button',
     component: 'ButtonComponent',
     argTypes: {
         label: { control: 'text' },
@@ -94,7 +94,7 @@ const Template: Story<ArgTypes> = ({
     icon = ''
 }: ArgTypes) => {
     return html`
-    <lz-button 
+    <ci-button 
         .label=${label}
         .theme=${theme}
         .type=${type}
@@ -107,7 +107,7 @@ const Template: Story<ArgTypes> = ({
         .responsive=${responsive}
         .noStroke=${noStroke}
         .isLoading=${isLoading}
-    ></lz-button>
+    ></ci-button>
   `;
 }
 

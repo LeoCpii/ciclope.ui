@@ -1,12 +1,12 @@
 @import "./../utilities/utilities";
 
-.lz-loader-container {
+.ci-loader-container {
     @include center;
     position: relative;
     width: 100%;
     height: 100%;
 
-    .lz-loader {
+    .ci-loader {
         border: 2px solid white;
         border-radius: 50%;
         border-top: .5px solid transparent;

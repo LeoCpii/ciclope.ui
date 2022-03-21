@@ -1,6 +1,6 @@
 @import "./../utilities/utilities";
 
-.lz-nav {
+.ci-nav {
     position: relative;
     background-color: var(--color);
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -37,7 +37,7 @@
         &-right {
             @include end;
 
-            .lz-signal-notification {
+            .ci-signal-notification {
                 width: 7px;
                 height: 7px;
                 border-radius: 100px;
@@ -49,12 +49,12 @@
                 animation: pulse-yellow 2s infinite;
             }
 
-            .lz-nav-buttons {
+            .ci-nav-buttons {
                 margin: 0px;
                 padding: 0px;
                 list-style: none;
 
-                .lz-nav-button {
+                .ci-nav-button {
                     @include between;
                     cursor: pointer;
                     padding-bottom: 15px;
@@ -69,7 +69,7 @@
                 }
             }
 
-            .lz-nav-notification {
+            .ci-nav-notification {
                 list-style-type: none;
                 padding-inline-start: 0px;
                 margin-block-end: 0px;
@@ -114,7 +114,7 @@
     }
 }
 
-.lz-menu-mobile-overlay {
+.ci-menu-mobile-overlay {
     font-family: $font-regular;
     color: var(--text);
     width: 100%;
@@ -126,18 +126,18 @@
     z-index: 100;
     overflow: hidden;
 
-    .lz-menu-mobile-close {
+    .ci-menu-mobile-close {
         display: flex;
         justify-content: flex-end;
         align-items: center;
         padding: 15px 0px;
     }
 
-    .lz-menu-mobile-card-overlay {
+    .ci-menu-mobile-card-overlay {
         width: 100%;
         border-radius: 4px;
 
-        .lz-menu-mobile-card-overlay-item {
+        .ci-menu-mobile-card-overlay-item {
             padding: 15px;
             cursor: pointer;
             background-color: var(--color);

@@ -1,10 +1,10 @@
 @import "./../utilities/utilities";
 
-.lz-svg {
+.ci-svg {
     margin: auto;
     transition: all $animation;
 
-    .lz-svg-error-500 {
+    .ci-svg-error-500 {
         position: relative;
         background-image: url("./../assets/svg/error/500.svg");
         background-repeat: no-repeat;
@@ -15,7 +15,7 @@
         transition: all $animation;
     }
 
-    .lz-svg-check {
+    .ci-svg-check {
         position: relative;
         background-image: url("./../assets/svg/success/check.svg");
         background-repeat: no-repeat;
@@ -25,7 +25,7 @@
         transition: all $animation;
     }
 
-    .lz-svg-empty {
+    .ci-svg-empty {
         position: relative;
         background-image: var(--empty);
         background-repeat: no-repeat;
@@ -35,7 +35,7 @@
         transition: all $animation;
     }
 
-    .lz-svg-empty-chart {
+    .ci-svg-empty-chart {
         position: relative;
         background-image: var(--empty-chart);
         background-repeat: no-repeat;

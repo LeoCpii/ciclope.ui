@@ -1,6 +1,6 @@
 @import "./../utilities/utilities";
 
-.lz-table {
+.ci-table {
     table {
         width: 100%;
         border-collapse: collapse;
@@ -18,7 +18,7 @@
             text-align: left;
             transition: all $animation !important;
 
-            &.lz-table-align {
+            &.ci-table-align {
                 &-left {
                     text-align: left;
                 }
@@ -27,7 +27,7 @@
                 }
             }
 
-            &.lz-table-empty {
+            &.ci-table-empty {
                 text-align: center;
                 font-style: italic;
                 opacity: 0.4;
@@ -93,7 +93,7 @@
                 color: var(--emphasis);
             }
 
-            &.lz-table-empty {
+            &.ci-table-empty {
                 padding-left: 0px !important;
             }
         }

@@ -1,6 +1,6 @@
 @import "./../utilities/utilities";
 
-.lz-display-small-mobile {
+.ci-display-small-mobile {
     &-show {
         @include for-small-mobile {
             display: initial !important;
@@ -14,7 +14,7 @@
     }
 }
 
-.lz-display-mobile {
+.ci-display-mobile {
     &-show {
         @include for-mobile {
             display: initial !important;
@@ -28,7 +28,7 @@
     }
 }
 
-.lz-display-small-tablet {
+.ci-display-small-tablet {
     &-show {
         @include for-small-tablet {
             display: initial !important;
@@ -42,7 +42,7 @@
     }
 }
 
-.lz-display-tablet {
+.ci-display-tablet {
     &-show {
         @include for-tablet {
             display: initial !important;
@@ -56,7 +56,7 @@
     }
 }
 
-.lz-display-small-desktop {
+.ci-display-small-desktop {
     &-show {
         @include for-small-desktop {
             display: initial !important;
@@ -70,7 +70,7 @@
     }
 }
 
-.lz-display-desktop {
+.ci-display-desktop {
     &-show {
         @include for-desktop {
             display: initial !important;
@@ -84,7 +84,7 @@
     }
 }
 
-.lz-display-big-desktop {
+.ci-display-big-desktop {
     &-show {
         @include for-big-desktop {
             display: initial !important;
@@ -99,48 +99,48 @@
 }
 
 // FLEX
-.lz-display-flex-center {
+.ci-display-flex-center {
     @include center;
 }
 
-.lz-display-flex-end {
+.ci-display-flex-end {
     @include end;
 }
 
-.lz-display-flex-start {
+.ci-display-flex-start {
     @include start;
 }
 
-.lz-display-flex-between {
+.ci-display-flex-between {
     @include between;
 }
 
 // JUSTIFY-CONTENT
-.lz-justify-baseline {
+.ci-justify-baseline {
     justify-content: baseline;
 }
 
-.lz-justify-flex-end {
+.ci-justify-flex-end {
     justify-content: flex-end;
 }
 
-.lz-justify-flex-start {
+.ci-justify-flex-start {
     justify-content: flex-start;
 }
 
-.lz-justify-center {
+.ci-justify-center {
     justify-content: center;
 }
 
 // ALIGN-ITEMS
-.lz-align-items-baseline {
+.ci-align-items-baseline {
     align-items: baseline;
 }
 
-.lz-align-items-flex-end {
+.ci-align-items-flex-end {
     align-items: flex-end;
 }
 
-.lz-align-items-flex-start {
+.ci-align-items-flex-start {
     align-items: flex-start;
 }

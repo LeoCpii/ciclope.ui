@@ -325,7 +325,7 @@
             "name": "LitElement",
             "package": "lit"
           },
-          "tagName": "lz-alert",
+          "tagName": "ci-alert",
           "customElement": true
         }
       ],
@@ -340,7 +340,7 @@
         },
         {
           "kind": "custom-element-definition",
-          "name": "lz-alert",
+          "name": "ci-alert",
           "declaration": {
             "name": "AlertComponent",
             "module": "src/api/components/alert.component.ts"
@@ -615,7 +615,7 @@
             "name": "LitElement",
             "package": "lit"
           },
-          "tagName": "lz-button",
+          "tagName": "ci-button",
           "customElement": true
         }
       ],
@@ -630,7 +630,7 @@
         },
         {
           "kind": "custom-element-definition",
-          "name": "lz-button",
+          "name": "ci-button",
           "declaration": {
             "name": "ButtonComponent",
             "module": "src/api/components/button.component.ts"

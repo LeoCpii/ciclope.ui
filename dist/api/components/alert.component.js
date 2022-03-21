@@ -18,21 +18,21 @@ let AlertComponent = AlertComponent_1 = class AlertComponent extends LitElement 
     get cls() {
         const ret = [];
         if (this.theme) {
-            ret.push(`lz-alert--${this.theme}`);
+            ret.push(`ci-alert--${this.theme}`);
         }
         if (this.show) {
-            ret.push(`lz-slide`);
+            ret.push(`ci-slide`);
         }
         return ret.join(' ');
     }
     render() {
         return html `
-        <div class="lz-alert ${this.cls}" ${animate()}>
+        <div class="ci-alert ${this.cls}" ${animate()}>
             <div>
-                <i class="uil lz-alert-icon ${this.icon}"></i>
+                <i class="uil ci-alert-icon ${this.icon}"></i>
                 ${this.message}
             </div>
-            <button ?hidden=${!this.action} type="button" class="lz-btn lz-btn--icon lz-btn--icon--no-shadow">
+            <button ?hidden=${!this.action} type="button" class="ci-btn ci-btn--icon ci-btn--icon--no-shadow">
                 <i class="uil uil-times"></i>
             </button>
         </div>
@@ -59,7 +59,7 @@ __decorate([
     property()
 ], AlertComponent.prototype, "show", void 0);
 AlertComponent = AlertComponent_1 = __decorate([
-    customElement('lz-alert')
+    customElement('ci-alert')
 ], AlertComponent);
 export { AlertComponent };
 //# sourceMappingURL=alert.component.js.map

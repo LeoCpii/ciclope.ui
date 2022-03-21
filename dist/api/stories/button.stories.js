@@ -1,7 +1,7 @@
 import { html } from 'lit';
 import '../components/button.component.js';
 export default {
-    title: 'lz-button',
+    title: 'ci-button',
     component: 'ButtonComponent',
     argTypes: {
         label: { control: 'text' },
@@ -55,7 +55,7 @@ export default {
 // @property() icon: string = '';
 const Template = ({ label = 'Label', theme = 'brand', size = 'default', type = 'button', block = false, outline = false, disabled = false, responsive = false, noStroke = false, isLoading = false, iconButton = false, icon = '' }) => {
     return html `
-    <lz-button 
+    <ci-button 
         .label=${label}
         .theme=${theme}
         .type=${type}
@@ -68,7 +68,7 @@ const Template = ({ label = 'Label', theme = 'brand', size = 'default', type = '
         .responsive=${responsive}
         .noStroke=${noStroke}
         .isLoading=${isLoading}
-    ></lz-button>
+    ></ci-button>
   `;
 };
 export const Regular = Template.bind({});

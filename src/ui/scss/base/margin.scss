@@ -1,6 +1,6 @@
 @import './../utilities/utilities';
 
-.lz-margin {
+.ci-margin {
     margin: $distance;
 
     &--2x {
@@ -8,7 +8,7 @@
     }
 }
 
-.lz-margin-right {
+.ci-margin-right {
     margin-right: $distance;
 
     &--2x {
@@ -16,7 +16,7 @@
     }
 }
 
-.lz-margin-left {
+.ci-margin-left {
     margin-left: $distance;
 
     &--2x {
@@ -24,7 +24,7 @@
     }
 }
 
-.lz-margin-top {
+.ci-margin-top {
     margin-top: $distance;
 
     &--2x {
@@ -32,7 +32,7 @@
     }
 }
 
-.lz-margin-bottom {
+.ci-margin-bottom {
     margin-bottom: $distance;
 
     &--2x {

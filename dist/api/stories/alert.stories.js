@@ -1,7 +1,7 @@
 import { html } from 'lit';
 import '../components/alert.component.js';
 export default {
-    title: 'lz-alert',
+    title: 'ci-alert',
     component: 'AlertComponent',
     argTypes: {
         theme: {
@@ -16,12 +16,12 @@ export default {
 };
 const Template = ({ theme = 'success', message = 'Um texto bem maneiro aqui pra apresentar um componente maneiro', action = false, show = false }) => {
     return html `
-    <lz-alert
+    <ci-alert
         .theme=${theme}
         .message=${message}
         .action=${action}
         .show=${show}
-    ></lz-alert>
+    ></ci-alert>
   `;
 };
 export const Regular = Template.bind({});

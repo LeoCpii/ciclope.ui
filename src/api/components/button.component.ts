@@ -2,7 +2,7 @@ import { html, css, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { ITheme } from '../dto';
 
-@customElement('lz-button')
+@customElement('ci-button')
 export class ButtonComponent extends LitElement {
     @property() label = '';
     @property() theme: ITheme = 'brand';
@@ -25,14 +25,14 @@ export class ButtonComponent extends LitElement {
     get cls(): string {
         const ret = [];
 
-        if (this.theme) { ret.push(`lz-btn--${this.theme}`); }
-        if (this.noStroke) { ret.push(`lz-btn--${this.theme}--no-stroke`); }
-        if (this.outline) { ret.push(`lz-btn--${this.theme}--outline`); }
-        if (this.block) { ret.push(`lz-btn--block`); }
-        if (this.size) { ret.push(`lz-btn--${this.size}`); }
-        if (this.icon) { ret.push(`lz-btn--icon`); }
-        if (this.textAlign) { ret.push(`lz-btn--align-${this.textAlign}`); }
-        if (this.responsive) { ret.push(`lz-btn--responsive`); }
+        if (this.theme) { ret.push(`ci-btn--${this.theme}`); }
+        if (this.noStroke) { ret.push(`ci-btn--${this.theme}--no-stroke`); }
+        if (this.outline) { ret.push(`ci-btn--${this.theme}--outline`); }
+        if (this.block) { ret.push(`ci-btn--block`); }
+        if (this.size) { ret.push(`ci-btn--${this.size}`); }
+        if (this.icon) { ret.push(`ci-btn--icon`); }
+        if (this.textAlign) { ret.push(`ci-btn--align-${this.textAlign}`); }
+        if (this.responsive) { ret.push(`ci-btn--responsive`); }
 
         return ret.join(' ');
     }
@@ -47,8 +47,8 @@ export class ButtonComponent extends LitElement {
 
     get loading() {
         return this.isLoading ? html`
-            <div class="lz-loader-container">
-                <div class="lz-loader"></div>
+            <div class="ci-loader-container">
+                <div class="ci-loader"></div>
             </div>
         ` : ''
     }
@@ -63,7 +63,7 @@ export class ButtonComponent extends LitElement {
             <button
                 @click=${this._click}
                 .type="${this.type}"
-                class="lz-btn ${this.cls}"
+                class="ci-btn ${this.cls}"
                 .disabled=${this.disabled}
             >
                 <i ?hidden=${this.isLoading} class="uil ${this.clsIcon}"></i>
@@ -77,6 +77,6 @@ export class ButtonComponent extends LitElement {
 
 declare global {
     interface HTMLElementTagNameMap {
-        'lz-button': ButtonComponent;
+        'ci-button': ButtonComponent;
     }
 }

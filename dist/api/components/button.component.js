@@ -22,28 +22,28 @@ let ButtonComponent = class ButtonComponent extends LitElement {
     get cls() {
         const ret = [];
         if (this.theme) {
-            ret.push(`lz-btn--${this.theme}`);
+            ret.push(`ci-btn--${this.theme}`);
         }
         if (this.noStroke) {
-            ret.push(`lz-btn--${this.theme}--no-stroke`);
+            ret.push(`ci-btn--${this.theme}--no-stroke`);
         }
         if (this.outline) {
-            ret.push(`lz-btn--${this.theme}--outline`);
+            ret.push(`ci-btn--${this.theme}--outline`);
         }
         if (this.block) {
-            ret.push(`lz-btn--block`);
+            ret.push(`ci-btn--block`);
         }
         if (this.size) {
-            ret.push(`lz-btn--${this.size}`);
+            ret.push(`ci-btn--${this.size}`);
         }
         if (this.icon) {
-            ret.push(`lz-btn--icon`);
+            ret.push(`ci-btn--icon`);
         }
         if (this.textAlign) {
-            ret.push(`lz-btn--align-${this.textAlign}`);
+            ret.push(`ci-btn--align-${this.textAlign}`);
         }
         if (this.responsive) {
-            ret.push(`lz-btn--responsive`);
+            ret.push(`ci-btn--responsive`);
         }
         return ret.join(' ');
     }
@@ -55,8 +55,8 @@ let ButtonComponent = class ButtonComponent extends LitElement {
     }
     get loading() {
         return this.isLoading ? html `
-            <div class="lz-loader-container">
-                <div class="lz-loader"></div>
+            <div class="ci-loader-container">
+                <div class="ci-loader"></div>
             </div>
         ` : '';
     }
@@ -71,7 +71,7 @@ let ButtonComponent = class ButtonComponent extends LitElement {
             <button
                 @click=${this._click}
                 .type="${this.type}"
-                class="lz-btn ${this.cls}"
+                class="ci-btn ${this.cls}"
                 .disabled=${this.disabled}
             >
                 <i ?hidden=${this.isLoading} class="uil ${this.clsIcon}"></i>
@@ -123,7 +123,7 @@ __decorate([
     property({ attribute: 'text-align' })
 ], ButtonComponent.prototype, "textAlign", void 0);
 ButtonComponent = __decorate([
-    customElement('lz-button')
+    customElement('ci-button')
 ], ButtonComponent);
 export { ButtonComponent };
 //# sourceMappingURL=button.component.js.map

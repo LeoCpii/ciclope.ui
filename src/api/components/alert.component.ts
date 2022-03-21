@@ -3,7 +3,7 @@ import { customElement, property } from 'lit/decorators.js';
 import { TState } from '../dto';
 import { animate } from '@lit-labs/motion';
 
-@customElement('lz-alert')
+@customElement('ci-alert')
 export class AlertComponent extends LitElement {
     @property() message = '';
     @property() theme: TState = 'success';
@@ -28,20 +28,20 @@ export class AlertComponent extends LitElement {
     get cls(): string {
         const ret = [];
 
-        if (this.theme) { ret.push(`lz-alert--${this.theme}`); }
-        if (this.show) { ret.push(`lz-slide`); }
+        if (this.theme) { ret.push(`ci-alert--${this.theme}`); }
+        if (this.show) { ret.push(`ci-slide`); }
 
         return ret.join(' ');
     }
 
     render() {
         return html`
-        <div class="lz-alert ${this.cls}" ${animate()}>
+        <div class="ci-alert ${this.cls}" ${animate()}>
             <div>
-                <i class="uil lz-alert-icon ${this.icon}"></i>
+                <i class="uil ci-alert-icon ${this.icon}"></i>
                 ${this.message}
             </div>
-            <button ?hidden=${!this.action} type="button" class="lz-btn lz-btn--icon lz-btn--icon--no-shadow">
+            <button ?hidden=${!this.action} type="button" class="ci-btn ci-btn--icon ci-btn--icon--no-shadow">
                 <i class="uil uil-times"></i>
             </button>
         </div>
@@ -51,6 +51,6 @@ export class AlertComponent extends LitElement {
 
 declare global {
     interface HTMLElementTagNameMap {
-        'lz-alert': AlertComponent;
+        'ci-alert': AlertComponent;
     }
 }

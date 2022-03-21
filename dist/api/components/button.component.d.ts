@@ -25,6 +25,6 @@ export declare class ButtonComponent extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'lz-button': ButtonComponent;
+        'ci-button': ButtonComponent;
     }
 }
