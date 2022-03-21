@@ -85,4 +85,4 @@ class Ciclope {
     }
 }
 
-export default Ciclope;
+module.exports = new Ciclope();

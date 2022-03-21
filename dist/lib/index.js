@@ -71,5 +71,5 @@ class Ciclope {
 }
 Ciclope.themes = ['default', 'micrablepharus', 'vanzosaura', 'custom'];
 Ciclope.modes = ['dark', 'light'];
-exports.default = Ciclope;
+module.exports = new Ciclope();
 //# sourceMappingURL=index.js.map
