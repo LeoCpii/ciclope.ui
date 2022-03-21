@@ -7,9 +7,10 @@
   "scripts": {
     "prebuild": "npm run lint && npm run test",
     "build": "rimraf dist && npm run compile:all && npm run assets && npm run scss",
-    "compile:all": "npm run compile:lib && npm run compile:api",
+    "compile:all": "npm run compile:index && npm run compile:lib && npm run compile:api",
     "compile:lib": "tsc -p tsconfig.lib.json && tsc-alias -p tsconfig.aliases.json",
     "compile:api": "tsc -p tsconfig.api.json && tsc-alias -p tsconfig.aliases.json",
+    "compile:index": "tsc && tsc-alias -p tsconfig.aliases.json",
     "dev:lib": "nodemon src/lib/index.ts",
     "dev:api": "nodemon src/api/components/index.ts",
     "scss": "npm run scss:default && npm run scss:micrablepharus && npm run scss:vanzosaura && npm run scss:custom",

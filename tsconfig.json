@@ -1,9 +1,9 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./src/lib",
-    "rootDirs": [ "./dist/lib" ],
-    "outDir": "./dist/lib",
+    "baseUrl": "./src/index.ts",
+    "rootDirs": [ "./dist" ],
+    "outDir": "./dist",
     "sourceMap": true,
     "declaration": true,
     "downlevelIteration": true,
@@ -29,10 +29,7 @@
     ]
   },
   "include": [
-    "src/**/*",
-    "lib/**/*",
-    "tests/**/*",
-    "src/**/*.json"
+    "src/index.ts"
   ],
   "exclude": [
     "node_modules",
