@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-import { TState } from './shared/dto';
+import { TState } from '../dto';
 export declare class AlertComponent extends LitElement {
     message: string;
     theme: TState;

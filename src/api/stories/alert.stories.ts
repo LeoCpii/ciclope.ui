@@ -1,6 +1,6 @@
 import { html, TemplateResult } from 'lit';
 import '../components/alert.component.js';
-import { TState } from '../components/shared/dto.js';
+import { TState, IGlobals } from '../dto';
 
 interface Story<T> {
     (args: T, data: { globals: IGlobals }): TemplateResult;

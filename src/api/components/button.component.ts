@@ -1,6 +1,6 @@
 import { html, css, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import { ITheme } from './shared/dto';
+import { ITheme } from '../dto';
 
 @customElement('lz-button')
 export class ButtonComponent extends LitElement {
