@@ -8,7 +8,7 @@
     text-align: left;
     box-shadow: $box-shadow;
     border-radius: $radius;
-    font-family: $font-regular;
+    font-family: var(--font-family);
     transition: all $animation;
     color: #333;
     user-select: none;

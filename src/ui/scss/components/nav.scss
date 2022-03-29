@@ -2,7 +2,7 @@
 
 .ci-nav {
     position: relative;
-    background-color: var(--color);
+    background-color: var(--mode);
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     @include start;
     padding: $distance;
@@ -115,7 +115,7 @@
 }
 
 .ci-menu-mobile-overlay {
-    font-family: $font-regular;
+    font-family: var(--font-family);
     color: var(--text);
     width: 100%;
     height: 100vh;
@@ -140,7 +140,7 @@
         .ci-menu-mobile-card-overlay-item {
             padding: 15px;
             cursor: pointer;
-            background-color: var(--color);
+            background-color: var(--mode);
 
             &--active {
                 color: var(--brand);

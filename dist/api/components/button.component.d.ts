@@ -1,6 +1,6 @@
 import { LitElement } from 'lit';
 import { ITheme } from '../dto';
-export declare class ButtonComponent extends LitElement {
+export declare class ButtonCi extends LitElement {
     label: string;
     theme: ITheme;
     type: 'button' | 'submit';
@@ -25,6 +25,6 @@ export declare class ButtonComponent extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'ci-button': ButtonComponent;
+        'ci-button': ButtonCi;
     }
 }

@@ -4,7 +4,7 @@ import { TState } from '../dto';
 import { animate } from '@lit-labs/motion';
 
 @customElement('ci-alert')
-export class AlertComponent extends LitElement {
+export class AlertCi extends LitElement {
     @property() message = '';
     @property() theme: TState = 'success';
     @property() action = false;
@@ -22,7 +22,7 @@ export class AlertComponent extends LitElement {
     createRenderRoot() { return this; }
 
     get icon(): string {
-        return `uil-${AlertComponent.icons[this.theme]}`;
+        return `uil-${AlertCi.icons[this.theme]}`;
     }
 
     get cls(): string {
@@ -51,6 +51,6 @@ export class AlertComponent extends LitElement {
 
 declare global {
     interface HTMLElementTagNameMap {
-        'ci-alert': AlertComponent;
+        'ci-alert': AlertCi;
     }
 }

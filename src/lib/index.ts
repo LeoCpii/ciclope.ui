@@ -1,5 +1,5 @@
 export type TMode = 'light' | 'dark';
-export type TTheme = 'default' | 'micrablepharus' | 'vanzosaura' | 'custom';
+export type TTheme = 'default' | 'micrablepharus' | 'vanzosaura' | 'custom' | 'viva-real' | 'zap-imoveis';
 
 export class Ciclope {
     static themes: TTheme[] = ['default', 'micrablepharus', 'vanzosaura', 'custom'];
@@ -23,7 +23,7 @@ export class Ciclope {
         return {
             brand: getComputedStyle(document.documentElement).getPropertyValue('--brand').trim(),
             accent: getComputedStyle(document.documentElement).getPropertyValue('--accent').trim(),
-            color: getComputedStyle(document.documentElement).getPropertyValue('--color').trim(),
+            color: getComputedStyle(document.documentElement).getPropertyValue('--mode').trim(),
             text: getComputedStyle(document.documentElement).getPropertyValue('--text').trim(),
             emphasis: getComputedStyle(document.documentElement).getPropertyValue('--emphasis').trim(),
             red: getComputedStyle(document.documentElement).getPropertyValue('--danger').trim(),

@@ -1,6 +1,6 @@
 import { LitElement } from 'lit';
 import { TState } from '../dto';
-export declare class AlertComponent extends LitElement {
+export declare class AlertCi extends LitElement {
     message: string;
     theme: TState;
     action: boolean;
@@ -19,6 +19,6 @@ export declare class AlertComponent extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'ci-alert': AlertComponent;
+        'ci-alert': AlertCi;
     }
 }

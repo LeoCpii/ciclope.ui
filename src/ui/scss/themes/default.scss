@@ -9,7 +9,7 @@
     --brand: #23af93;
     --accent: #294c60;
 
-    --color: #ffffff;
+    --mode: #ffffff;
     --background: #f4f7f9;
     --background--disabled: #edf0f4;
     --emphasis: #a7a9ab;
@@ -35,6 +35,11 @@
     --info--opacity: #1baaf14b;
     --info-rgb: 27, 168, 241;
 
+    // Fonts
+    --font-family: "gibson" !important;
+    --font-family--lignt: "gibson-light" !important;
+    --font-family--bold: "gibson-semi-bold" !important;
+
     // Images
     --empty: url("./../assets/svg/empty/empty-light.svg");
     --empty-chart: url("./../assets/svg/empty/empty-chart-light.svg");
@@ -48,7 +53,7 @@
         --brand: #23af93;
         --accent: #3f7797;
 
-        --color: #272829;
+        --mode: #272829;
         --background: #1e1f20;
         --background--disabled: #555657;
         --emphasis: #717579;
@@ -73,6 +78,11 @@
         --info: #4dc2ff;
         --info--opacity: #1baaf14b;
         --info-rgb: 77, 194, 255;
+
+        // Fonts
+        --font-family: "gibson" !important;
+        --font-family--lignt: "gibson-light" !important;
+        --font-family--bold: "gibson-semi-bold" !important;
 
         // Images
         --empty: url("./../assets/svg/empty/empty-dark.svg");

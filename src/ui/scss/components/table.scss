@@ -6,7 +6,7 @@
         border-collapse: collapse;
 
         th {
-            font-family: $font-light;
+            font-family: var(--font-family--light);
             text-transform: uppercase;
             color: var(--emphasis);
         }
@@ -89,7 +89,7 @@
                 padding-right: 10px;
                 content: attr(data-header);
                 text-transform: uppercase;
-                font-family: $font-light;
+                font-family: var(--font-family--light);
                 color: var(--emphasis);
             }
 

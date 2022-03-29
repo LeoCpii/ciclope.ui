@@ -1,8 +1,8 @@
 @import "./../utilities/utilities";
 
 .ci-card {
-    font-family: $font-regular;
-    background-color: var(--color);
+    font-family: var(--font-family);
+    background-color: var(--mode);
     transition: all $animation;
     box-shadow: $box-shadow;
     border-radius: $radius;
@@ -19,7 +19,7 @@
     }
 
     &-body {
-        background-color: var(--color);
+        background-color: var(--mode);
         color: var(--text);
         padding: $distance;
         border-radius: $radius;

@@ -3,7 +3,7 @@ import { customElement, property } from 'lit/decorators.js';
 import { ITheme } from '../dto';
 
 @customElement('ci-button')
-export class ButtonComponent extends LitElement {
+export class ButtonCi extends LitElement {
     @property() label = '';
     @property() theme: ITheme = 'brand';
     @property() type: 'button' | 'submit' = 'button';
@@ -77,6 +77,6 @@ export class ButtonComponent extends LitElement {
 
 declare global {
     interface HTMLElementTagNameMap {
-        'ci-button': ButtonComponent;
+        'ci-button': ButtonCi;
     }
 }

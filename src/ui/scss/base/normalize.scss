@@ -60,7 +60,7 @@ ul,
 li,
 ol,
 .ci-text {
-    font-family: $font-regular;
+    font-family: var(--font-family);
     color: var(--text);
 }
 

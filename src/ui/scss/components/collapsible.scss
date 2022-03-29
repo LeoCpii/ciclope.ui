@@ -3,7 +3,7 @@
 .ci-collapsible {
     position: relative;
     border-radius: 4px;
-    font-family: $font-regular;
+    font-family: var(--font-family);
 
     &-header {
         display: flex;

@@ -1,9 +1,9 @@
-var AlertComponent_1;
+var AlertCi_1;
 import { __decorate } from "tslib";
 import { html, css, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { animate } from '@lit-labs/motion';
-let AlertComponent = AlertComponent_1 = class AlertComponent extends LitElement {
+let AlertCi = AlertCi_1 = class AlertCi extends LitElement {
     constructor() {
         super(...arguments);
         this.message = '';
@@ -13,7 +13,7 @@ let AlertComponent = AlertComponent_1 = class AlertComponent extends LitElement 
     }
     createRenderRoot() { return this; }
     get icon() {
-        return `uil-${AlertComponent_1.icons[this.theme]}`;
+        return `uil-${AlertCi_1.icons[this.theme]}`;
     }
     get cls() {
         const ret = [];
@@ -39,8 +39,8 @@ let AlertComponent = AlertComponent_1 = class AlertComponent extends LitElement 
         `;
     }
 };
-AlertComponent.styles = css ``;
-AlertComponent.icons = {
+AlertCi.styles = css ``;
+AlertCi.icons = {
     danger: 'times-square',
     success: 'thumbs-up',
     warning: 'exclamation-triangle',
@@ -48,18 +48,18 @@ AlertComponent.icons = {
 };
 __decorate([
     property()
-], AlertComponent.prototype, "message", void 0);
+], AlertCi.prototype, "message", void 0);
 __decorate([
     property()
-], AlertComponent.prototype, "theme", void 0);
+], AlertCi.prototype, "theme", void 0);
 __decorate([
     property()
-], AlertComponent.prototype, "action", void 0);
+], AlertCi.prototype, "action", void 0);
 __decorate([
     property()
-], AlertComponent.prototype, "show", void 0);
-AlertComponent = AlertComponent_1 = __decorate([
+], AlertCi.prototype, "show", void 0);
+AlertCi = AlertCi_1 = __decorate([
     customElement('ci-alert')
-], AlertComponent);
-export { AlertComponent };
+], AlertCi);
+export { AlertCi };
 //# sourceMappingURL=alert.component.js.map

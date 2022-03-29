@@ -13,10 +13,12 @@
     "compile:index": "tsc && tsc-alias -p tsconfig.aliases.json",
     "dev:lib": "nodemon src/lib/index.ts",
     "dev:api": "nodemon src/api/components/index.ts",
-    "scss": "npm run scss:default && npm run scss:micrablepharus && npm run scss:vanzosaura && npm run scss:custom",
+    "scss": "npm run scss:default && npm run scss:micrablepharus && npm run scss:vanzosaura && npm run scss:zap && npm run scss:viva && npm run scss:custom",
     "scss:default": "node-sass src/ui/scss/themes/default.scss -o dist/themes --output-style compressed",
     "scss:micrablepharus": "node-sass src/ui/scss/themes/micrablepharus.scss -o dist/themes --output-style compressed",
     "scss:vanzosaura": "node-sass src/ui/scss/themes/vanzosaura.scss -o dist/themes --output-style compressed",
+    "scss:zap": "node-sass src/ui/scss/themes/zap-imoveis.scss -o dist/themes --output-style compressed",
+    "scss:viva": "node-sass src/ui/scss/themes/viva-real.scss -o dist/themes --output-style compressed",
     "scss:custom": "node-sass src/ui/scss/themes/custom.scss -o dist/themes --output-style compressed",
     "scss:watch": "node-sass src/ui/scss/themes/default.scss --watch -o dist/themes compressed",
     "assets": "mkdirp dist/assets && cp -r src/ui/assets/* dist/assets",
@@ -28,7 +30,9 @@
   },
   "dependencies": {
     "@lit-labs/motion": "^1.0.2",
+    "axios": "^0.26.1",
     "balloon-css": "^1.2.0",
+    "imask": "^6.4.2",
     "lit": "^2.2.0"
   },
   "devDependencies": {

@@ -7,7 +7,7 @@
     &-header {
         @include start;
         width: 100%;
-        background-color: var(--color);
+        background-color: var(--mode);
         padding: $distance;
         border-radius: $radius;
         box-shadow: $box-shadow;
@@ -32,10 +32,10 @@
 
     &-body {
         margin-top: 15px;
-        background-color: var(--color);
+        background-color: var(--mode);
         color: var(--text);
         padding: $distance;
-        font-family: $font-regular;
+        font-family: var(--font-family);
         transition: all $animation;
         box-shadow: $box-shadow;
         border-radius: $radius;

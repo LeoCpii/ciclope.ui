@@ -13,7 +13,7 @@ button {
     border-radius: $radius;
     border: none;
     padding: 2px 4px;
-    color: var(--color);
+    color: var(--mode);
     transition: all $animation;
 
     &--brand {

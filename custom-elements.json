@@ -4,6 +4,29 @@
   "modules": [
     {
       "kind": "javascript-module",
+      "path": "src/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./api/components"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "lib",
+          "declaration": {
+            "name": "Ciclope",
+            "module": "./lib"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "webpack/webpack.base.js",
       "declarations": [],
       "exports": []
@@ -40,7 +63,7 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/api/dto.d.ts",
+      "path": "src/api/dto.ts",
       "declarations": [],
       "exports": []
     },
@@ -51,7 +74,7 @@
         {
           "kind": "class",
           "description": "",
-          "name": "Lizard",
+          "name": "Ciclope",
           "members": [
             {
               "kind": "field",
@@ -206,9 +229,9 @@
       "exports": [
         {
           "kind": "js",
-          "name": "default",
+          "name": "Ciclope",
           "declaration": {
-            "name": "Lizard",
+            "name": "Ciclope",
             "module": "src/lib/index.ts"
           }
         }
@@ -640,6 +663,435 @@
     },
     {
       "kind": "javascript-module",
+      "path": "src/api/components/card.component.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "CardComponent",
+          "members": [
+            {
+              "kind": "field",
+              "name": "label",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "label"
+            },
+            {
+              "kind": "method",
+              "name": "createRenderRoot"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "label",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "label"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "ci-card",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "CardComponent",
+          "declaration": {
+            "name": "CardComponent",
+            "module": "src/api/components/card.component.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "ci-card",
+          "declaration": {
+            "name": "CardComponent",
+            "module": "src/api/components/card.component.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/api/components/field.component.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "FieldComponent",
+          "members": [
+            {
+              "kind": "field",
+              "name": "nextId",
+              "type": {
+                "text": "number"
+              },
+              "privacy": "private",
+              "static": true,
+              "default": "0"
+            },
+            {
+              "kind": "field",
+              "name": "label",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "label"
+            },
+            {
+              "kind": "field",
+              "name": "placeholder",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "placeholder"
+            },
+            {
+              "kind": "field",
+              "name": "value",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "value"
+            },
+            {
+              "kind": "field",
+              "name": "type",
+              "type": {
+                "text": "IValidTypes"
+              },
+              "attribute": "type"
+            },
+            {
+              "kind": "field",
+              "name": "size",
+              "type": {
+                "text": "IValidSize"
+              },
+              "attribute": "size"
+            },
+            {
+              "kind": "field",
+              "name": "required",
+              "type": {
+                "text": "boolean"
+              },
+              "attribute": "required"
+            },
+            {
+              "kind": "field",
+              "name": "loading",
+              "type": {
+                "text": "boolean"
+              },
+              "attribute": "loading"
+            },
+            {
+              "kind": "field",
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "attribute": "disabled"
+            },
+            {
+              "kind": "field",
+              "name": "icon",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "icon"
+            },
+            {
+              "kind": "field",
+              "name": "errors",
+              "type": {
+                "text": "Array<string>"
+              },
+              "default": "[]"
+            },
+            {
+              "kind": "field",
+              "name": "id",
+              "default": "`field_${++FieldComponent.nextId}`"
+            },
+            {
+              "kind": "field",
+              "name": "typeState",
+              "type": {
+                "text": "IValidTypes"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "validator",
+              "privacy": "private",
+              "default": "new Validator()"
+            },
+            {
+              "kind": "field",
+              "name": "eyeIcon",
+              "type": {
+                "text": "'eye' | 'eye-slash'"
+              },
+              "privacy": "private",
+              "default": "'eye'"
+            },
+            {
+              "kind": "method",
+              "name": "createRenderRoot"
+            },
+            {
+              "kind": "field",
+              "name": "getType",
+              "type": {
+                "text": "string"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "labelCls",
+              "type": {
+                "text": "string"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "iconCls",
+              "type": {
+                "text": "string"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "fieldCls",
+              "type": {
+                "text": "string"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "showFeedbackError",
+              "type": {
+                "text": "string"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "loadingHTML"
+            },
+            {
+              "kind": "field",
+              "name": "iconHTML"
+            },
+            {
+              "kind": "field",
+              "name": "input",
+              "type": {
+                "text": "HTMLElement"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "toggle",
+              "privacy": "private"
+            },
+            {
+              "kind": "method",
+              "name": "sanitize",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "value",
+                  "type": {
+                    "text": "string"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "sanitizeNumber",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "value",
+                  "type": {
+                    "text": "string"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "clean",
+              "privacy": "private",
+              "return": {
+                "type": {
+                  "text": "string"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "value",
+                  "type": {
+                    "text": "string"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "validate",
+              "privacy": "private",
+              "return": {
+                "type": {
+                  "text": "boolean"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "value",
+                  "type": {
+                    "text": "string"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "inputHandler",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "e",
+                  "type": {
+                    "text": "{ target: { value: string } }"
+                  }
+                }
+              ]
+            }
+          ],
+          "events": [
+            {
+              "name": "ci-change",
+              "type": {
+                "text": "CustomEvent"
+              }
+            }
+          ],
+          "attributes": [
+            {
+              "name": "label",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "label"
+            },
+            {
+              "name": "placeholder",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "placeholder"
+            },
+            {
+              "name": "value",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "value"
+            },
+            {
+              "name": "type",
+              "type": {
+                "text": "IValidTypes"
+              },
+              "fieldName": "type"
+            },
+            {
+              "name": "size",
+              "type": {
+                "text": "IValidSize"
+              },
+              "fieldName": "size"
+            },
+            {
+              "name": "required",
+              "type": {
+                "text": "boolean"
+              },
+              "fieldName": "required"
+            },
+            {
+              "name": "loading",
+              "type": {
+                "text": "boolean"
+              },
+              "fieldName": "loading"
+            },
+            {
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "fieldName": "disabled"
+            },
+            {
+              "name": "icon",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "icon"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "ci-field",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "FieldComponent",
+          "declaration": {
+            "name": "FieldComponent",
+            "module": "src/api/components/field.component.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "ci-field",
+          "declaration": {
+            "name": "FieldComponent",
+            "module": "src/api/components/field.component.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/api/components/index.ts",
       "declarations": [],
       "exports": [
@@ -658,14 +1110,24 @@
             "name": "ButtonComponent",
             "module": "./button.component"
           }
+        },
+        {
+          "kind": "js",
+          "name": "CardComponent",
+          "declaration": {
+            "name": "CardComponent",
+            "module": "./card.component"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "FieldComponent",
+          "declaration": {
+            "name": "FieldComponent",
+            "module": "./field.component"
+          }
         }
       ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/api/shared/dto.d.ts",
-      "declarations": [],
-      "exports": []
     },
     {
       "kind": "javascript-module",
@@ -723,9 +1185,533 @@
     },
     {
       "kind": "javascript-module",
+      "path": "src/api/stories/card.stories.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "Regular"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/api/stories/card.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Regular",
+          "declaration": {
+            "name": "Regular",
+            "module": "src/api/stories/card.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/api/stories/field.stories.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "Regular"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/api/stories/field.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Regular",
+          "declaration": {
+            "name": "Regular",
+            "module": "src/api/stories/field.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/api/test/button.spec.ts",
       "declarations": [],
       "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/api/components/shared/services/formatter.service.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "Formatter",
+          "members": [
+            {
+              "kind": "field",
+              "name": "config",
+              "type": {
+                "text": "object"
+              },
+              "static": true,
+              "default": "{\r\n        cep: {\r\n            length: 8,\r\n            regex: /^(\\d{5})(\\d{3})$/,\r\n            mask: '$1-$2',\r\n            example: '00000-000'\r\n        },\r\n        cpf: {\r\n            length: 11,\r\n            regex: /^(\\d{3})(\\d{3})(\\d{3})(\\d{2})$/,\r\n            mask: '$1.$2.$3-$4',\r\n            example: '000.000.000-00'\r\n        },\r\n        cnpj: {\r\n            length: 14,\r\n            regex: /^(\\d{2})(\\d{3})(\\d{3})(\\d{4})(\\d{2})$/,\r\n            mask: '$1.$2.$3/$4-$5',\r\n            example: '00.000.000/0000-00'\r\n        },\r\n        cel: {\r\n            length: 9,\r\n            regex: /^(\\d{5})(\\d{4})$/,\r\n            mask: '$1-$2',\r\n            example: '00000-0000'\r\n        },\r\n        celWithDDD: {\r\n            length: 11,\r\n            regex: /^(\\d{2})(\\d{5})(\\d{4})$/,\r\n            mask: '($1) $2-$3',\r\n            example: '(00) 00000-0000'\r\n        }\r\n    }"
+            },
+            {
+              "kind": "method",
+              "name": "leadingZerosValue",
+              "privacy": "private",
+              "return": {
+                "type": {
+                  "text": "string"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "value",
+                  "type": {
+                    "text": "number | string"
+                  }
+                },
+                {
+                  "name": "length",
+                  "type": {
+                    "text": "number"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "fn",
+              "privacy": "private",
+              "return": {
+                "type": {
+                  "text": "IReturn"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "config",
+                  "type": {
+                    "text": "IConfig"
+                  }
+                },
+                {
+                  "name": "value",
+                  "type": {
+                    "text": "string | number"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "cep",
+              "privacy": "public",
+              "return": {
+                "type": {
+                  "text": "string"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "value",
+                  "type": {
+                    "text": "string | number"
+                  },
+                  "description": "cep Ex: 00000000"
+                }
+              ],
+              "description": "Fomatter CEP."
+            },
+            {
+              "kind": "method",
+              "name": "cpf",
+              "privacy": "public",
+              "return": {
+                "type": {
+                  "text": "string"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "value",
+                  "type": {
+                    "text": "string | number"
+                  },
+                  "description": "cep Ex: 000000000000"
+                }
+              ],
+              "description": "Fomatter CPF."
+            },
+            {
+              "kind": "method",
+              "name": "cnpj",
+              "privacy": "public",
+              "return": {
+                "type": {
+                  "text": "string"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "value",
+                  "type": {
+                    "text": "string | number"
+                  },
+                  "description": "cep Ex: 00000000000000"
+                }
+              ],
+              "description": "Fomatter CNPJ."
+            },
+            {
+              "kind": "method",
+              "name": "cellWithDDD",
+              "privacy": "public",
+              "return": {
+                "type": {
+                  "text": "string"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "value",
+                  "type": {
+                    "text": "string | number"
+                  },
+                  "description": "cep Ex: 00000000000"
+                }
+              ],
+              "description": "Fomatter Cel with DDD."
+            },
+            {
+              "kind": "method",
+              "name": "cell",
+              "privacy": "public",
+              "return": {
+                "type": {
+                  "text": "string"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "value",
+                  "type": {
+                    "text": "string | number"
+                  },
+                  "description": "cep Ex: 000000000"
+                }
+              ],
+              "description": "cell."
+            },
+            {
+              "kind": "method",
+              "name": "generic",
+              "privacy": "public",
+              "return": {
+                "type": {
+                  "text": "String"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "value",
+                  "type": {
+                    "text": "string | number"
+                  }
+                },
+                {
+                  "name": "config",
+                  "type": {
+                    "text": "IConfig"
+                  }
+                }
+              ],
+              "description": "Dynamically format the value."
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Formatter",
+          "declaration": {
+            "name": "Formatter",
+            "module": "src/api/components/shared/services/formatter.service.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/api/components/shared/services/validator.service.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "Validator",
+          "members": [
+            {
+              "kind": "field",
+              "name": "emailRegex",
+              "privacy": "private",
+              "default": "/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$/"
+            },
+            {
+              "kind": "field",
+              "name": "numberRegex",
+              "privacy": "private",
+              "default": "/^[0-9]+$/"
+            },
+            {
+              "kind": "field",
+              "name": "cepRegex",
+              "privacy": "private",
+              "default": "/^\\d{5}\\d{3}$/"
+            },
+            {
+              "kind": "field",
+              "name": "telRegex",
+              "privacy": "private",
+              "default": "/(^\\d{10}$)|(^$)/"
+            },
+            {
+              "kind": "field",
+              "name": "celRegex",
+              "privacy": "private",
+              "default": "/(^\\d{11}$)|(^$)/"
+            },
+            {
+              "kind": "field",
+              "name": "cpfRegex",
+              "privacy": "private",
+              "default": "/^\\d{3}\\d{3}\\d{3}\\d{2}$/"
+            },
+            {
+              "kind": "field",
+              "name": "cnpjRegex",
+              "privacy": "private",
+              "default": "/^\\d{2}\\d{3}\\d{3}\\d{4}\\d{2}$/"
+            },
+            {
+              "kind": "method",
+              "name": "isValidEmail",
+              "privacy": "public",
+              "return": {
+                "type": {
+                  "text": "boolean"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "email",
+                  "type": {
+                    "text": "string"
+                  },
+                  "description": "Email"
+                }
+              ],
+              "description": "Verifica a validade do email segundo o regex emailRegex"
+            },
+            {
+              "kind": "method",
+              "name": "isValidNumber",
+              "privacy": "public",
+              "return": {
+                "type": {
+                  "text": "boolean"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "value",
+                  "type": {
+                    "text": "string"
+                  },
+                  "description": "Número"
+                }
+              ],
+              "description": "Verifica a validade do número segundo o regex numberRegex"
+            },
+            {
+              "kind": "method",
+              "name": "isValidTel",
+              "privacy": "public",
+              "return": {
+                "type": {
+                  "text": "boolean"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "value",
+                  "type": {
+                    "text": "string"
+                  },
+                  "description": "Número de telefone"
+                }
+              ],
+              "description": "Verifica a validade do número de telefone segundo o regex telRegex"
+            },
+            {
+              "kind": "method",
+              "name": "isValidCel",
+              "privacy": "public",
+              "return": {
+                "type": {
+                  "text": "boolean"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "value",
+                  "type": {
+                    "text": "string"
+                  },
+                  "description": "Número de celular"
+                }
+              ],
+              "description": "Verifica a validade do número de celular segundo o regex celRegex"
+            },
+            {
+              "kind": "method",
+              "name": "isValidCpf",
+              "privacy": "public",
+              "return": {
+                "type": {
+                  "text": "boolean"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "value",
+                  "type": {
+                    "text": "string"
+                  },
+                  "description": "Número de cpf"
+                }
+              ],
+              "description": "Verifica a validade do número de cpf segundo o regex cpfRegex"
+            },
+            {
+              "kind": "method",
+              "name": "isValidCnpj",
+              "privacy": "public",
+              "return": {
+                "type": {
+                  "text": "boolean"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "value",
+                  "type": {
+                    "text": "string"
+                  },
+                  "description": "Número de CNPJ"
+                }
+              ],
+              "description": "Verifica a validade do número de cnpj segundo o regex cnpjRegex"
+            },
+            {
+              "kind": "method",
+              "name": "isValidPassword",
+              "privacy": "public",
+              "return": {
+                "type": {
+                  "text": "boolean"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "value",
+                  "type": {
+                    "text": "string"
+                  },
+                  "description": "Senha"
+                }
+              ],
+              "description": "Verifica a validade da senha segundo as regras de tamanho (length > = 6)"
+            },
+            {
+              "kind": "method",
+              "name": "isValidCep",
+              "privacy": "public",
+              "return": {
+                "type": {
+                  "text": "boolean"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "value",
+                  "type": {
+                    "text": "string"
+                  },
+                  "description": "CEP"
+                }
+              ],
+              "description": "Verifica a validade do cep"
+            },
+            {
+              "kind": "method",
+              "name": "isValidTelCel",
+              "privacy": "public",
+              "return": {
+                "type": {
+                  "text": "boolean"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "value",
+                  "type": {
+                    "text": "string"
+                  },
+                  "description": "CEL ou TEL"
+                }
+              ],
+              "description": "Verifica a validade do cel ou tel"
+            },
+            {
+              "kind": "method",
+              "name": "isValidPercent",
+              "privacy": "public",
+              "return": {
+                "type": {
+                  "text": "boolean"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "value",
+                  "type": {
+                    "text": "string"
+                  },
+                  "description": "Percent"
+                }
+              ],
+              "description": "Verifica a validade do percentual"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "Validator",
+          "declaration": {
+            "name": "Validator",
+            "module": "src/api/components/shared/services/validator.service.ts"
+          }
+        }
+      ]
     }
   ]
 }

@@ -4,7 +4,7 @@
     &-title {
         h1 {
             font-size: 20px;
-            font-family: $font-regular;
+            font-family: var(--font-family);
             font-weight: 100;
             padding: 10px;
             border-bottom: 1px solid rgba(var(--rgb), 0.7);

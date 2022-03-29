@@ -5,7 +5,7 @@
     min-height: calc(100vh - #{$header-height});
     height: 100%;
     position: relative;
-    background-color: var(--color);
+    background-color: var(--mode);
     box-shadow: $box-shadow;
     transition: all $animation;
     padding-top: $distance;
@@ -50,7 +50,7 @@
 
                 li.ci-btn-side-nav-list-item {
                     @include between;
-                    font-family: $font-regular;
+                    font-family: var(--font-family);
                     padding: 10px;
                     list-style: inside;
                     list-style-type: none;

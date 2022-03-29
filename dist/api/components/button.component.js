@@ -1,7 +1,7 @@
 import { __decorate } from "tslib";
 import { html, css, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-let ButtonComponent = class ButtonComponent extends LitElement {
+let ButtonCi = class ButtonCi extends LitElement {
     constructor() {
         super(...arguments);
         this.label = '';
@@ -82,48 +82,48 @@ let ButtonComponent = class ButtonComponent extends LitElement {
         `;
     }
 };
-ButtonComponent.styles = css ``;
+ButtonCi.styles = css ``;
 __decorate([
     property()
-], ButtonComponent.prototype, "label", void 0);
+], ButtonCi.prototype, "label", void 0);
 __decorate([
     property()
-], ButtonComponent.prototype, "theme", void 0);
+], ButtonCi.prototype, "theme", void 0);
 __decorate([
     property()
-], ButtonComponent.prototype, "type", void 0);
+], ButtonCi.prototype, "type", void 0);
 __decorate([
     property()
-], ButtonComponent.prototype, "size", void 0);
+], ButtonCi.prototype, "size", void 0);
 __decorate([
     property()
-], ButtonComponent.prototype, "icon", void 0);
+], ButtonCi.prototype, "icon", void 0);
 __decorate([
     property()
-], ButtonComponent.prototype, "outline", void 0);
+], ButtonCi.prototype, "outline", void 0);
 __decorate([
     property()
-], ButtonComponent.prototype, "block", void 0);
+], ButtonCi.prototype, "block", void 0);
 __decorate([
     property()
-], ButtonComponent.prototype, "disabled", void 0);
+], ButtonCi.prototype, "disabled", void 0);
 __decorate([
     property()
-], ButtonComponent.prototype, "responsive", void 0);
+], ButtonCi.prototype, "responsive", void 0);
 __decorate([
     property({ attribute: 'icon-button' })
-], ButtonComponent.prototype, "iconButton", void 0);
+], ButtonCi.prototype, "iconButton", void 0);
 __decorate([
     property({ attribute: 'no-stroke' })
-], ButtonComponent.prototype, "noStroke", void 0);
+], ButtonCi.prototype, "noStroke", void 0);
 __decorate([
     property({ attribute: 'is-loading' })
-], ButtonComponent.prototype, "isLoading", void 0);
+], ButtonCi.prototype, "isLoading", void 0);
 __decorate([
     property({ attribute: 'text-align' })
-], ButtonComponent.prototype, "textAlign", void 0);
-ButtonComponent = __decorate([
+], ButtonCi.prototype, "textAlign", void 0);
+ButtonCi = __decorate([
     customElement('ci-button')
-], ButtonComponent);
-export { ButtonComponent };
+], ButtonCi);
+export { ButtonCi };
 //# sourceMappingURL=button.component.js.map

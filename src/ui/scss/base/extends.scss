@@ -18,27 +18,27 @@
 
 .angular-editor-button {
     border-radius: 4px !important;
-    background-color: var(--color) !important;
+    background-color: var(--mode) !important;
     border: none !important;
 
     &.active {
         background-color: var(--brand) !important;
-        color: var(--color) !important;
+        color: var(--mode) !important;
     }
 }
 
 .ae-picker-label {
     border-radius: 4px !important;
-    background-color: var(--color) !important;
+    background-color: var(--mode) !important;
     border: none !important;
 
     &::before {
-        background: var(--color) !important;
+        background: var(--mode) !important;
     }
 }
 
 .angular-editor-textarea {
-    background: var(--color) !important;
+    background: var(--mode) !important;
     border-radius: 4px !important;
     border: 1px solid var(--background--disabled) !important;
     outline: none;
@@ -75,7 +75,7 @@
 // MODAL
 
 .nsm-content {
-    background-color: var(--color) !important;
+    background-color: var(--mode) !important;
 }
 
 // CHART
