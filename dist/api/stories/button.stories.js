@@ -2,11 +2,11 @@ import { html } from 'lit';
 import '../components/button.component.js';
 export default {
     title: 'ci-button',
-    component: 'ButtonComponent',
+    component: 'ButtonCi',
     argTypes: {
         label: { control: 'text' },
         theme: {
-            options: ['brand', 'accent', 'success', 'danger', 'warning', 'info'],
+            options: ['brand', 'accent', 'base', 'success', 'danger', 'warning', 'info'],
             type: { name: 'string', required: false },
             control: { type: 'select' }
         },

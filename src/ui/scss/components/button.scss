@@ -35,7 +35,7 @@
     }
 
     &--small {
-        font-size: .875rem !important;
+        font-size: 0.875rem !important;
         padding: 0.25rem 0.5rem;
         min-width: 50px;
     }
@@ -64,12 +64,11 @@
         }
     }
 
-    &--default {
-        &--no-stroke {
-            background-color: transparent;
-            border: 1px solid transparent;
-            box-shadow: none;
-        }
+    &--base {
+        background-color: transparent;
+        border: 1px solid transparent;
+        box-shadow: none;
+        color: var(--text);
     }
 
     &--brand {
@@ -146,7 +145,6 @@
             box-shadow: none;
             color: var(--success);
         }
-
     }
 
     &--warning {
@@ -185,6 +183,10 @@
             box-shadow: none;
             color: var(--info);
         }
+    }
+
+    &--link {
+        color: var(--link);
     }
 }
 

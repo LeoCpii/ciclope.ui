@@ -8,19 +8,28 @@ export class ButtonCi extends LitElement {
     @property() theme: ITheme = 'brand';
     @property() type: 'button' | 'submit' = 'button';
     @property() size: 'small' | 'large' | '' = '';
-    @property() icon = '';
+    @property() icon!: string;
+    @property() link!: string;
     @property() outline = false;
     @property() block = false;
     @property() disabled = false;
     @property() responsive = false;
-    @property({ attribute: 'icon-button' }) iconButton = false;
-    @property({ attribute: 'no-stroke' }) noStroke = false;
-    @property({ attribute: 'is-loading' }) isLoading = false;
-    @property({ attribute: 'text-align' }) textAlign: 'left' | 'right' | '' = '';
+    @property({ attribute: '_blank' }) blank!: boolean;
+    @property({ attribute: 'icon-button' }) iconButton!: boolean;
+    @property({ attribute: 'no-stroke' }) noStroke!: boolean;
+    @property({ attribute: 'is-loading' }) isLoading!: boolean;
+    @property({ attribute: 'text-align' }) textAlign!: 'left' | 'right';
 
     static styles = css``;
 
     createRenderRoot() { return this; }
+
+    connectedCallback() {
+        super.connectedCallback();
+        if (!this.icon && this.blank) {
+            this.icon = 'external-link-alt';
+        }
+    }
 
     get cls(): string {
         const ret = [];
@@ -31,6 +40,7 @@ export class ButtonCi extends LitElement {
         if (this.block) { ret.push(`ci-btn--block`); }
         if (this.size) { ret.push(`ci-btn--${this.size}`); }
         if (this.icon) { ret.push(`ci-btn--icon`); }
+        if (this.link) { ret.push(`ci-btn--link`); }
         if (this.textAlign) { ret.push(`ci-btn--align-${this.textAlign}`); }
         if (this.responsive) { ret.push(`ci-btn--responsive`); }
 

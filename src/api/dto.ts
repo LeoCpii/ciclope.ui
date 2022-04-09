@@ -1,5 +1,5 @@
 export type TState = 'success' | 'danger' | 'warning' | 'info';
-export type ITheme = 'brand' | 'accent' | TState;
+export type ITheme = 'brand' | 'accent' | 'base' | TState;
 
 export interface IGlobals {
     locale: 'en' | 'br';

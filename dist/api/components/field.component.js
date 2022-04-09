@@ -5,25 +5,8 @@ import { customElement, property, state } from 'lit/decorators.js';
 import { animate } from '@lit-labs/motion';
 import { Validator } from './shared/services/validator.service';
 import { Formatter } from './shared/services/formatter.service';
+import { MASKS, NUMBER, NUMBER_MASK, FIELD_MESSAGES } from './shared/const/field.const';
 import IMask from 'imask';
-const NUMBER = ['cpf', 'cel', 'tel', 'cnpj', 'cep'];
-const MASKS = ['cpf', 'celWithDDD', 'cel', 'tel', 'cnpj', 'cep', 'currency'];
-const NUMBER_MASK = ['number', 'decimal', 'percent'];
-const FIELD_MESSAGES = {
-    required: 'FORM.ERROR.REQUIRED',
-    cpf: 'FORM.ERROR.CPF',
-    cnpj: 'FORM.ERROR.CNPJ',
-    tel: 'FORM.ERROR.TEL',
-    cel: 'FORM.ERROR.CEL',
-    cep: 'FORM.ERROR.CEP',
-    number: 'FORM.ERROR.NUMBER',
-    email: 'FORM.ERROR.EMAIL',
-    password: 'FORM.ERROR.PASSWORD',
-    cnpjcpf: 'FORM.ERROR.DOCUMENT',
-    telcel: 'FORM.ERROR.CONTACT',
-    date: 'FORM.ERROR.DATE',
-    percent: 'FORM.ERROR.PERCENT'
-};
 let FieldCi = FieldCi_1 = class FieldCi extends LitElement {
     constructor() {
         super(...arguments);

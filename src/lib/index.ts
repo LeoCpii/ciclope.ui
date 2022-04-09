@@ -1,8 +1,8 @@
 export type TMode = 'light' | 'dark';
-export type TTheme = 'default' | 'micrablepharus' | 'vanzosaura' | 'custom' | 'viva-real' | 'zap-imoveis';
+export type TTheme = 'default' | 'micrablepharus' | 'vanzosaura' | 'custom' | 'viva-real' | 'zap-imoveis' | 'aulera';
 
 export class Ciclope {
-    static themes: TTheme[] = ['default', 'micrablepharus', 'vanzosaura', 'custom'];
+    static themes: TTheme[] = ['default', 'micrablepharus', 'vanzosaura', 'custom', 'aulera', 'viva-real', 'zap-imoveis'];
     static modes: TMode[] = ['dark', 'light'];
 
     private _mode: TMode;

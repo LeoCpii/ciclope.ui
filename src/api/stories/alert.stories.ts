@@ -17,7 +17,7 @@ interface ArgTypes {
 
 export default {
     title: 'ci-alert',
-    component: 'AlertComponent',
+    component: 'AlertCi',
     argTypes: {
         theme: { 
             options: ['success', 'danger', 'warning', 'info'],

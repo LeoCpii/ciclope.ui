@@ -17,4 +17,4 @@ function setTheme(theme, mode) {
     head.appendChild(root);
 }
 
-setTheme('default', 'dark');
+setTheme('default', 'light');

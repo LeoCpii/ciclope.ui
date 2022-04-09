@@ -23,7 +23,8 @@ let CardCi = class CardCi extends LitElement {
         `;
     }
 };
-CardCi.styles = css ``;
+CardCi.styles = css `
+    `;
 __decorate([
     property()
 ], CardCi.prototype, "label", void 0);

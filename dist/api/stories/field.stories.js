@@ -3,7 +3,7 @@ import '../components/field.component.js';
 const types = ['standard', 'password', 'text', 'email', 'cep', 'cpf', 'cnpj', 'number', 'cel', 'tel', 'date', 'celWithDDD'];
 export default {
     title: 'ci-field',
-    component: 'FieldComponent',
+    component: 'FieldCi',
     argTypes: {
         label: { control: 'text' },
         placeholder: { control: 'text' },

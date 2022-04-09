@@ -23,7 +23,7 @@ const types = ['standard', 'password', 'text', 'email', 'cep', 'cpf', 'cnpj', 'n
 
 export default {
     title: 'ci-field',
-    component: 'FieldComponent',
+    component: 'FieldCi',
     argTypes: {
         label: { control: 'text' },
         placeholder: { control: 'text' },

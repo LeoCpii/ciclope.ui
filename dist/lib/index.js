@@ -71,6 +71,6 @@ class Ciclope {
     }
 }
 exports.Ciclope = Ciclope;
-Ciclope.themes = ['default', 'micrablepharus', 'vanzosaura', 'custom'];
+Ciclope.themes = ['default', 'micrablepharus', 'vanzosaura', 'custom', 'aulera', 'viva-real', 'zap-imoveis'];
 Ciclope.modes = ['dark', 'light'];
 //# sourceMappingURL=index.js.map

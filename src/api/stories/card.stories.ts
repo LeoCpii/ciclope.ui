@@ -13,7 +13,7 @@ interface ArgTypes { }
 
 export default {
     title: 'ci-card',
-    component: 'CardComponent',
+    component: 'CardCi',
     argTypes: {}
 };
 

@@ -2,7 +2,7 @@ import { html } from 'lit';
 import '../components/card.component.js';
 export default {
     title: 'ci-card',
-    component: 'CardComponent',
+    component: 'CardCi',
     argTypes: {}
 };
 const Template = ({}) => {

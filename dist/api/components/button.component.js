@@ -8,17 +8,18 @@ let ButtonCi = class ButtonCi extends LitElement {
         this.theme = 'brand';
         this.type = 'button';
         this.size = '';
-        this.icon = '';
         this.outline = false;
         this.block = false;
         this.disabled = false;
         this.responsive = false;
-        this.iconButton = false;
-        this.noStroke = false;
-        this.isLoading = false;
-        this.textAlign = '';
     }
     createRenderRoot() { return this; }
+    connectedCallback() {
+        super.connectedCallback();
+        if (!this.icon && this.blank) {
+            this.icon = 'external-link-alt';
+        }
+    }
     get cls() {
         const ret = [];
         if (this.theme) {
@@ -38,6 +39,9 @@ let ButtonCi = class ButtonCi extends LitElement {
         }
         if (this.icon) {
             ret.push(`ci-btn--icon`);
+        }
+        if (this.link) {
+            ret.push(`ci-btn--link`);
         }
         if (this.textAlign) {
             ret.push(`ci-btn--align-${this.textAlign}`);
@@ -100,6 +104,9 @@ __decorate([
 ], ButtonCi.prototype, "icon", void 0);
 __decorate([
     property()
+], ButtonCi.prototype, "link", void 0);
+__decorate([
+    property()
 ], ButtonCi.prototype, "outline", void 0);
 __decorate([
     property()
@@ -110,6 +117,9 @@ __decorate([
 __decorate([
     property()
 ], ButtonCi.prototype, "responsive", void 0);
+__decorate([
+    property({ attribute: '_blank' })
+], ButtonCi.prototype, "blank", void 0);
 __decorate([
     property({ attribute: 'icon-button' })
 ], ButtonCi.prototype, "iconButton", void 0);

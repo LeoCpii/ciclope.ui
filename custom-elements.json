@@ -63,6 +63,24 @@
     },
     {
       "kind": "javascript-module",
+      "path": "coverage/Chrome Headless 99.0.4844.82 (Windows 10)/block-navigation.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "coverage/Chrome Headless 99.0.4844.82 (Windows 10)/prettify.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "coverage/Chrome Headless 99.0.4844.82 (Windows 10)/sorter.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/api/dto.ts",
       "declarations": [],
       "exports": []
@@ -239,12 +257,147 @@
     },
     {
       "kind": "javascript-module",
+      "path": "src/api/stories/alert.stories.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "Regular"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/api/stories/alert.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Regular",
+          "declaration": {
+            "name": "Regular",
+            "module": "src/api/stories/alert.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/api/stories/button.stories.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "Regular"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/api/stories/button.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Regular",
+          "declaration": {
+            "name": "Regular",
+            "module": "src/api/stories/button.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/api/stories/card.stories.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "Regular"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/api/stories/card.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Regular",
+          "declaration": {
+            "name": "Regular",
+            "module": "src/api/stories/card.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/api/stories/checkbox.stories.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "Regular"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/api/stories/checkbox.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Regular",
+          "declaration": {
+            "name": "Regular",
+            "module": "src/api/stories/checkbox.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/api/stories/field.stories.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "Regular"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "src/api/stories/field.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Regular",
+          "declaration": {
+            "name": "Regular",
+            "module": "src/api/stories/field.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/api/components/alert.component.ts",
       "declarations": [
         {
           "kind": "class",
           "description": "",
-          "name": "AlertComponent",
+          "name": "AlertCi",
           "members": [
             {
               "kind": "field",
@@ -355,9 +508,9 @@
       "exports": [
         {
           "kind": "js",
-          "name": "AlertComponent",
+          "name": "AlertCi",
           "declaration": {
-            "name": "AlertComponent",
+            "name": "AlertCi",
             "module": "src/api/components/alert.component.ts"
           }
         },
@@ -365,7 +518,7 @@
           "kind": "custom-element-definition",
           "name": "ci-alert",
           "declaration": {
-            "name": "AlertComponent",
+            "name": "AlertCi",
             "module": "src/api/components/alert.component.ts"
           }
         }
@@ -378,7 +531,7 @@
         {
           "kind": "class",
           "description": "",
-          "name": "ButtonComponent",
+          "name": "ButtonCi",
           "members": [
             {
               "kind": "field",
@@ -422,8 +575,15 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
               "attribute": "icon"
+            },
+            {
+              "kind": "field",
+              "name": "link",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "link"
             },
             {
               "kind": "field",
@@ -463,11 +623,18 @@
             },
             {
               "kind": "field",
+              "name": "blank",
+              "type": {
+                "text": "boolean"
+              },
+              "attribute": "_blank"
+            },
+            {
+              "kind": "field",
               "name": "iconButton",
               "type": {
                 "text": "boolean"
               },
-              "default": "false",
               "attribute": "icon-button"
             },
             {
@@ -476,7 +643,6 @@
               "type": {
                 "text": "boolean"
               },
-              "default": "false",
               "attribute": "no-stroke"
             },
             {
@@ -485,16 +651,14 @@
               "type": {
                 "text": "boolean"
               },
-              "default": "false",
               "attribute": "is-loading"
             },
             {
               "kind": "field",
               "name": "textAlign",
               "type": {
-                "text": "'left' | 'right' | ''"
+                "text": "'left' | 'right'"
               },
-              "default": "''",
               "attribute": "text-align"
             },
             {
@@ -566,8 +730,14 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
               "fieldName": "icon"
+            },
+            {
+              "name": "link",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "link"
             },
             {
               "name": "outline",
@@ -602,11 +772,17 @@
               "fieldName": "responsive"
             },
             {
+              "name": "_blank",
+              "type": {
+                "text": "boolean"
+              },
+              "fieldName": "blank"
+            },
+            {
               "name": "icon-button",
               "type": {
                 "text": "boolean"
               },
-              "default": "false",
               "fieldName": "iconButton"
             },
             {
@@ -614,7 +790,6 @@
               "type": {
                 "text": "boolean"
               },
-              "default": "false",
               "fieldName": "noStroke"
             },
             {
@@ -622,15 +797,13 @@
               "type": {
                 "text": "boolean"
               },
-              "default": "false",
               "fieldName": "isLoading"
             },
             {
               "name": "text-align",
               "type": {
-                "text": "'left' | 'right' | ''"
+                "text": "'left' | 'right'"
               },
-              "default": "''",
               "fieldName": "textAlign"
             }
           ],
@@ -645,9 +818,9 @@
       "exports": [
         {
           "kind": "js",
-          "name": "ButtonComponent",
+          "name": "ButtonCi",
           "declaration": {
-            "name": "ButtonComponent",
+            "name": "ButtonCi",
             "module": "src/api/components/button.component.ts"
           }
         },
@@ -655,7 +828,7 @@
           "kind": "custom-element-definition",
           "name": "ci-button",
           "declaration": {
-            "name": "ButtonComponent",
+            "name": "ButtonCi",
             "module": "src/api/components/button.component.ts"
           }
         }
@@ -668,7 +841,7 @@
         {
           "kind": "class",
           "description": "",
-          "name": "CardComponent",
+          "name": "CardCi",
           "members": [
             {
               "kind": "field",
@@ -705,9 +878,9 @@
       "exports": [
         {
           "kind": "js",
-          "name": "CardComponent",
+          "name": "CardCi",
           "declaration": {
-            "name": "CardComponent",
+            "name": "CardCi",
             "module": "src/api/components/card.component.ts"
           }
         },
@@ -715,7 +888,7 @@
           "kind": "custom-element-definition",
           "name": "ci-card",
           "declaration": {
-            "name": "CardComponent",
+            "name": "CardCi",
             "module": "src/api/components/card.component.ts"
           }
         }
@@ -723,12 +896,12 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/api/components/field.component.ts",
+      "path": "src/api/components/checkbox.component.ts",
       "declarations": [
         {
           "kind": "class",
           "description": "",
-          "name": "FieldComponent",
+          "name": "CheckboxCi",
           "members": [
             {
               "kind": "field",
@@ -751,6 +924,166 @@
             },
             {
               "kind": "field",
+              "name": "value",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "value"
+            },
+            {
+              "kind": "field",
+              "name": "required",
+              "type": {
+                "text": "boolean"
+              },
+              "attribute": "required"
+            },
+            {
+              "kind": "field",
+              "name": "id",
+              "default": "`checkbox_${++CheckboxCi.nextId}`"
+            },
+            {
+              "kind": "field",
+              "name": "errors",
+              "type": {
+                "text": "Array<string>"
+              },
+              "default": "[]"
+            },
+            {
+              "kind": "method",
+              "name": "createRenderRoot"
+            },
+            {
+              "kind": "field",
+              "name": "showFeedbackError",
+              "type": {
+                "text": "string"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "validate",
+              "privacy": "private",
+              "return": {
+                "type": {
+                  "text": "boolean"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "value",
+                  "type": {
+                    "text": "boolean"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "inputHandler",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "e",
+                  "type": {
+                    "text": "{ target: { value: string; checked: boolean; } }"
+                  }
+                }
+              ]
+            }
+          ],
+          "events": [
+            {
+              "name": "ci-change",
+              "type": {
+                "text": "CustomEvent"
+              }
+            }
+          ],
+          "attributes": [
+            {
+              "name": "label",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "label"
+            },
+            {
+              "name": "value",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "value"
+            },
+            {
+              "name": "required",
+              "type": {
+                "text": "boolean"
+              },
+              "fieldName": "required"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "ci-checkbox",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "CheckboxCi",
+          "declaration": {
+            "name": "CheckboxCi",
+            "module": "src/api/components/checkbox.component.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "ci-checkbox",
+          "declaration": {
+            "name": "CheckboxCi",
+            "module": "src/api/components/checkbox.component.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/api/components/field.component.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "FieldCi",
+          "members": [
+            {
+              "kind": "field",
+              "name": "nextId",
+              "type": {
+                "text": "number"
+              },
+              "privacy": "private",
+              "static": true,
+              "default": "0"
+            },
+            {
+              "kind": "field",
+              "name": "label",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "label"
+            },
+            {
+              "kind": "field",
               "name": "placeholder",
               "type": {
                 "text": "string"
@@ -766,6 +1099,22 @@
               },
               "default": "''",
               "attribute": "value"
+            },
+            {
+              "kind": "field",
+              "name": "icon",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "icon"
+            },
+            {
+              "kind": "field",
+              "name": "name",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "name"
             },
             {
               "kind": "field",
@@ -809,15 +1158,6 @@
             },
             {
               "kind": "field",
-              "name": "icon",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "attribute": "icon"
-            },
-            {
-              "kind": "field",
               "name": "errors",
               "type": {
                 "text": "Array<string>"
@@ -827,7 +1167,7 @@
             {
               "kind": "field",
               "name": "id",
-              "default": "`field_${++FieldComponent.nextId}`"
+              "default": "`field_${++FieldCi.nextId}`"
             },
             {
               "kind": "field",
@@ -1000,7 +1340,6 @@
               "type": {
                 "text": "string"
               },
-              "default": "''",
               "fieldName": "label"
             },
             {
@@ -1018,6 +1357,20 @@
               },
               "default": "''",
               "fieldName": "value"
+            },
+            {
+              "name": "icon",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "icon"
+            },
+            {
+              "name": "name",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "name"
             },
             {
               "name": "type",
@@ -1053,14 +1406,6 @@
                 "text": "boolean"
               },
               "fieldName": "disabled"
-            },
-            {
-              "name": "icon",
-              "type": {
-                "text": "string"
-              },
-              "default": "''",
-              "fieldName": "icon"
             }
           ],
           "superclass": {
@@ -1074,9 +1419,9 @@
       "exports": [
         {
           "kind": "js",
-          "name": "FieldComponent",
+          "name": "FieldCi",
           "declaration": {
-            "name": "FieldComponent",
+            "name": "FieldCi",
             "module": "src/api/components/field.component.ts"
           }
         },
@@ -1084,7 +1429,7 @@
           "kind": "custom-element-definition",
           "name": "ci-field",
           "declaration": {
-            "name": "FieldComponent",
+            "name": "FieldCi",
             "module": "src/api/components/field.component.ts"
           }
         }
@@ -1097,142 +1442,42 @@
       "exports": [
         {
           "kind": "js",
-          "name": "AlertComponent",
+          "name": "AlertCi",
           "declaration": {
-            "name": "AlertComponent",
+            "name": "AlertCi",
             "module": "./alert.component"
           }
         },
         {
           "kind": "js",
-          "name": "ButtonComponent",
+          "name": "ButtonCi",
           "declaration": {
-            "name": "ButtonComponent",
+            "name": "ButtonCi",
             "module": "./button.component"
           }
         },
         {
           "kind": "js",
-          "name": "CardComponent",
+          "name": "CardCi",
           "declaration": {
-            "name": "CardComponent",
+            "name": "CardCi",
             "module": "./card.component"
           }
         },
         {
           "kind": "js",
-          "name": "FieldComponent",
+          "name": "FieldCi",
           "declaration": {
-            "name": "FieldComponent",
+            "name": "FieldCi",
             "module": "./field.component"
           }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/api/stories/alert.stories.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "Regular"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/api/stories/alert.stories.ts"
-          }
         },
         {
           "kind": "js",
-          "name": "Regular",
+          "name": "CheckboxCi",
           "declaration": {
-            "name": "Regular",
-            "module": "src/api/stories/alert.stories.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/api/stories/button.stories.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "Regular"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/api/stories/button.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Regular",
-          "declaration": {
-            "name": "Regular",
-            "module": "src/api/stories/button.stories.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/api/stories/card.stories.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "Regular"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/api/stories/card.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Regular",
-          "declaration": {
-            "name": "Regular",
-            "module": "src/api/stories/card.stories.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/api/stories/field.stories.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "Regular"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/api/stories/field.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Regular",
-          "declaration": {
-            "name": "Regular",
-            "module": "src/api/stories/field.stories.ts"
+            "name": "CheckboxCi",
+            "module": "./checkbox.component"
           }
         }
       ]
@@ -1242,6 +1487,78 @@
       "path": "src/api/test/button.spec.ts",
       "declarations": [],
       "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/api/components/shared/const/field.const.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "NUMBER",
+          "type": {
+            "text": "array"
+          },
+          "default": "['cpf', 'cel', 'tel', 'cnpj', 'cep']"
+        },
+        {
+          "kind": "variable",
+          "name": "MASKS",
+          "type": {
+            "text": "array"
+          },
+          "default": "['cpf', 'celWithDDD', 'cel', 'tel', 'cnpj', 'cep', 'currency']"
+        },
+        {
+          "kind": "variable",
+          "name": "NUMBER_MASK",
+          "type": {
+            "text": "array"
+          },
+          "default": "['number', 'decimal', 'percent']"
+        },
+        {
+          "kind": "variable",
+          "name": "FIELD_MESSAGES",
+          "type": {
+            "text": "ITypes"
+          },
+          "default": "{\r\n    required: 'FORM.ERROR.REQUIRED',\r\n    cpf: 'FORM.ERROR.CPF',\r\n    cnpj: 'FORM.ERROR.CNPJ',\r\n    tel: 'FORM.ERROR.TEL',\r\n    cel: 'FORM.ERROR.CEL',\r\n    cep: 'FORM.ERROR.CEP',\r\n    number: 'FORM.ERROR.NUMBER',\r\n    email: 'FORM.ERROR.EMAIL',\r\n    password: 'FORM.ERROR.PASSWORD',\r\n    cnpjcpf: 'FORM.ERROR.DOCUMENT',\r\n    telcel: 'FORM.ERROR.CONTACT',\r\n    date: 'FORM.ERROR.DATE',\r\n    percent: 'FORM.ERROR.PERCENT'\r\n}"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "NUMBER",
+          "declaration": {
+            "name": "NUMBER",
+            "module": "src/api/components/shared/const/field.const.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "MASKS",
+          "declaration": {
+            "name": "MASKS",
+            "module": "src/api/components/shared/const/field.const.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "NUMBER_MASK",
+          "declaration": {
+            "name": "NUMBER_MASK",
+            "module": "src/api/components/shared/const/field.const.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "FIELD_MESSAGES",
+          "declaration": {
+            "name": "FIELD_MESSAGES",
+            "module": "src/api/components/shared/const/field.const.ts"
+          }
+        }
+      ]
     },
     {
       "kind": "javascript-module",

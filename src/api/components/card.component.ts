@@ -5,7 +5,8 @@ import { customElement, property } from 'lit/decorators.js';
 export class CardCi extends LitElement {
     @property() label = '';
 
-    static styles = css``;
+    static styles = css`
+    `;
 
     createRenderRoot() { return this; }
 
