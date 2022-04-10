@@ -12,7 +12,7 @@
           "name": "*",
           "declaration": {
             "name": "*",
-            "package": "./api/components"
+            "package": "./api"
           }
         },
         {
@@ -84,6 +84,61 @@
       "path": "src/api/dto.ts",
       "declarations": [],
       "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/api/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "AlertCi",
+          "declaration": {
+            "name": "AlertCi",
+            "module": "./components/alert.component"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "ButtonCi",
+          "declaration": {
+            "name": "ButtonCi",
+            "module": "./components/button.component"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "CardCi",
+          "declaration": {
+            "name": "CardCi",
+            "module": "./components/card.component"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "FieldCi",
+          "declaration": {
+            "name": "FieldCi",
+            "module": "./components/field.component"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "CheckboxCi",
+          "declaration": {
+            "name": "CheckboxCi",
+            "module": "./components/checkbox.component"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./dto"
+          }
+        }
+      ]
     },
     {
       "kind": "javascript-module",
@@ -1296,53 +1351,6 @@
           "declaration": {
             "name": "FieldCi",
             "module": "src/api/components/field.component.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/api/components/index.ts",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "AlertCi",
-          "declaration": {
-            "name": "AlertCi",
-            "module": "./alert.component"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "ButtonCi",
-          "declaration": {
-            "name": "ButtonCi",
-            "module": "./button.component"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "CardCi",
-          "declaration": {
-            "name": "CardCi",
-            "module": "./card.component"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "FieldCi",
-          "declaration": {
-            "name": "FieldCi",
-            "module": "./field.component"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "CheckboxCi",
-          "declaration": {
-            "name": "CheckboxCi",
-            "module": "./checkbox.component"
           }
         }
       ]

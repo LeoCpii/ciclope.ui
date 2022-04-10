@@ -7,7 +7,7 @@
   "scripts": {
     "prebuild": "npm run lint && npm run test",
     "build": "rimraf dist && npm run compile:all && npm run assets && npm run scss",
-    "compile:all": "npm run compile:index && npm run compile:lib && npm run compile:api",
+    "compile:all": "npm run compile:index && npm run compile:lib && npm run compile:api && rollup -c",
     "compile:lib": "tsc -p tsconfig.lib.json && tsc-alias -p tsconfig.aliases.json",
     "compile:api": "tsc -p tsconfig.api.json && tsc-alias -p tsconfig.aliases.json && npm run analyze -- --exclude dist",
     "compile:index": "tsc && tsc-alias -p tsconfig.aliases.json",
@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "@custom-elements-manifest/analyzer": "^0.4.17",
+    "@open-wc/building-rollup": "^2.0.1",
     "@open-wc/eslint-config": "^4.3.0",
     "@open-wc/testing": "^3.1.2",
     "@open-wc/testing-karma": "^4.0.9",
@@ -64,6 +65,8 @@
     "mocha": "^9.2.2",
     "node-sass": "^6.0.1",
     "nodemon": "^2.0.7",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.70.1",
     "sass-loader": "^12.6.0",
     "storybook": "^6.4.19",
     "style-loader": "^3.3.1",
