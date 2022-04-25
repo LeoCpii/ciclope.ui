@@ -187,7 +187,7 @@ export class FieldCi extends LitElement {
                         .placeholder=${this.placeholder}
                         .value=${this.value}
                         .disabled=${this.disabled || this.loading}
-                        @input=${this.inputHandler}>
+                        @focus=${this.inputHandler}>
 
                     ${this.loadingHTML}
                     ${this.iconHTML}

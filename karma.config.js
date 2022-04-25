@@ -10,7 +10,7 @@ module.exports = config => {
             },
             files: [
                 {
-                    pattern: config.grep ? config.grep : 'dist/api/**/*.spec.js',
+                    pattern: config.grep ? config.grep : 'dist/out-tsc/**/*.spec.js',
                     type: 'module'
                 },
             ],

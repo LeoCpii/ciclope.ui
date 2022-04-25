@@ -8,15 +8,15 @@ function t(t,e,i,n){var s,r=arguments.length,o=r<3?e:null===n?n=Object.getOwnPro
                 <i class="uil uil-times"></i>
             </button>
         </div>
-        `}};Et.styles=r``,Et.icons={danger:"times-square",success:"thumbs-up",warning:"exclamation-triangle",info:"info-circle"},t([et()],Et.prototype,"message",void 0),t([et()],Et.prototype,"theme",void 0),t([et()],Et.prototype,"action",void 0),t([et()],Et.prototype,"show",void 0),Et=Ct=t([X("ci-alert")],Et);let $t=class extends J{constructor(){super(...arguments),this.label="",this.theme="brand",this.type="button",this.size="",this.outline=!1,this.block=!1,this.disabled=!1,this.responsive=!1}createRenderRoot(){return this}connectedCallback(){super.connectedCallback(),!this.icon&&this.blank&&(this.icon="external-link-alt")}get cls(){const t=[];return this.theme&&t.push(`ci-btn--${this.theme}`),this.noStroke&&t.push(`ci-btn--${this.theme}--no-stroke`),this.outline&&t.push(`ci-btn--${this.theme}--outline`),this.block&&t.push("ci-btn--block"),this.size&&t.push(`ci-btn--${this.size}`),this.icon&&t.push("ci-btn--icon"),this.link&&t.push("ci-btn--link"),this.textAlign&&t.push(`ci-btn--align-${this.textAlign}`),this.responsive&&t.push("ci-btn--responsive"),t.join(" ")}get clsIcon(){return`uil-${this.icon}`}get text(){return this.iconButton||this.isLoading?"":this.label}get loading(){return this.isLoading?R`
+        `}};Et.styles=r``,Et.icons={danger:"times-square",success:"thumbs-up",warning:"exclamation-triangle",info:"info-circle"},t([et()],Et.prototype,"message",void 0),t([et()],Et.prototype,"theme",void 0),t([et()],Et.prototype,"action",void 0),t([et()],Et.prototype,"show",void 0),Et=Ct=t([X("ci-alert")],Et);let $t=class extends J{constructor(){super(...arguments),this.label="",this.theme="brand",this.type="button",this.size="",this.outline=!1,this.block=!1,this.disabled=!1,this.responsive=!1}createRenderRoot(){return this}connectedCallback(){super.connectedCallback(),!this.icon&&this.blank&&(this.icon="external-link-alt")}get cls(){const t=[];return this.theme&&!this.link&&t.push(`ci-btn--${this.theme}`),this.noStroke&&t.push(`ci-btn--${this.theme}--no-stroke`),this.outline&&t.push(`ci-btn--${this.theme}--outline`),this.block&&t.push("ci-btn--block"),this.size&&t.push(`ci-btn--${this.size}`),this.icon&&t.push("ci-btn--icon"),this.link&&t.push("ci-btn--link"),this.textAlign&&t.push(`ci-btn--align-${this.textAlign}`),this.responsive&&t.push("ci-btn--responsive"),t.join(" ")}get clsIcon(){return`uil-${this.icon}`}get text(){return this.iconButton||this.isLoading?"":this.label}get loading(){return this.isLoading?R`
             <div class="ci-loader-container">
                 <div class="ci-loader"></div>
             </div>
-        `:""}_click(){this.disabled||this.isLoading||console.log("clicando")}render(){return R`
+        `:""}_click(){!this.disabled&&this.isLoading}render(){return R`
             <button
                 @click=${this._click}
-                .type="${this.type}"
                 class="ci-btn ${this.cls}"
+                .type="${this.type}"
                 .disabled=${this.disabled}
             >
                 <i ?hidden=${this.isLoading} class="uil ${this.clsIcon}"></i>
@@ -55,7 +55,7 @@ function t(t,e,i,n){var s,r=arguments.length,o=r<3?e:null===n?n=Object.getOwnPro
                         .placeholder=${this.placeholder}
                         .value=${this.value}
                         .disabled=${this.disabled||this.loading}
-                        @input=${this.inputHandler}>
+                        @focus=${this.inputHandler}>
 
                     ${this.loadingHTML}
                     ${this.iconHTML}
@@ -64,7 +64,7 @@ function t(t,e,i,n){var s,r=arguments.length,o=r<3?e:null===n?n=Object.getOwnPro
                     ${this.errors.map((t=>R`<span>${t}</span>`))}
                 </div>
             </div>
-        `}};var Ie;Te.nextId=0,Te.styles=r``,t([et()],Te.prototype,"label",void 0),t([et()],Te.prototype,"placeholder",void 0),t([et()],Te.prototype,"value",void 0),t([et()],Te.prototype,"icon",void 0),t([et()],Te.prototype,"name",void 0),t([et()],Te.prototype,"type",void 0),t([et()],Te.prototype,"size",void 0),t([et()],Te.prototype,"required",void 0),t([et()],Te.prototype,"loading",void 0),t([et()],Te.prototype,"disabled",void 0),t([it()],Te.prototype,"errors",void 0),t([it()],Te.prototype,"id",void 0),t([it()],Te.prototype,"typeState",void 0),Te=Oe=t([X("ci-field")],Te);let Ve=Ie=class extends J{constructor(){super(...arguments),this.label="",this.value="",this.id="checkbox_"+ ++Ie.nextId,this.errors=[]}createRenderRoot(){return this}get showFeedbackError(){const t=[];return this.errors.length&&t.push("ci-feedback--error--active"),t.join(" ")}validate(t){this.errors=[];const e={};e.required=!!this.required&&!t;const i=Object.keys(e).some((t=>e[t]));if(console.log("hasError",i),i){const t=Object.keys(e).find((t=>e[t]));this.errors.push(Rt[t])}return!Boolean(this.errors.length)}inputHandler(t){const e=t.target,i=e.value||"",n=e.checked;this.validate(n)&&this.dispatchEvent(new CustomEvent("ci-change",{detail:{value:i}}))}render(){return R`
+        `}};var Ie;Te.nextId=0,Te.styles=r``,t([et()],Te.prototype,"label",void 0),t([et()],Te.prototype,"placeholder",void 0),t([et()],Te.prototype,"value",void 0),t([et()],Te.prototype,"icon",void 0),t([et()],Te.prototype,"name",void 0),t([et()],Te.prototype,"type",void 0),t([et()],Te.prototype,"size",void 0),t([et()],Te.prototype,"required",void 0),t([et()],Te.prototype,"loading",void 0),t([et()],Te.prototype,"disabled",void 0),t([it()],Te.prototype,"errors",void 0),t([it()],Te.prototype,"id",void 0),t([it()],Te.prototype,"typeState",void 0),Te=Oe=t([X("ci-field")],Te);let Ve=Ie=class extends J{constructor(){super(...arguments),this.label="",this.value="",this.id="checkbox_"+ ++Ie.nextId,this.errors=[]}createRenderRoot(){return this}get showFeedbackError(){const t=[];return this.errors.length&&t.push("ci-feedback--error--active"),t.join(" ")}validate(t){this.errors=[];const e={};e.required=!!this.required&&!t;if(Object.keys(e).some((t=>e[t]))){const t=Object.keys(e).find((t=>e[t]));this.errors.push(Rt[t])}return!Boolean(this.errors.length)}inputHandler(t){const e=t.target,i=e.value||"",n=e.checked;this.validate(n)&&this.dispatchEvent(new CustomEvent("ci-change",{detail:{value:i}}))}render(){return R`
             <div class="ci-container-field">
                 <div class="ci-checkbox">
                     <input

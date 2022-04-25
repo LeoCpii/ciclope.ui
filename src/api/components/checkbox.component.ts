@@ -32,8 +32,6 @@ export class CheckboxCi extends LitElement {
 
         const hasError = Object.keys(data).some(key => data[key]);
 
-        console.log('hasError', hasError)
-
         if (hasError) {
             const att = Object.keys(data).find(key => data[key]) as keyof ITypes;
             this.errors.push(FIELD_MESSAGES[att]);

@@ -1,29 +1,29 @@
 @import "./../utilities/utilities";
 
 .ci-padding {
-    padding: $distance;
+    padding: $distance !important;
 
     &--2x {
-        padding: calc(2 * #{$distance});
+        padding: calc(2 * #{$distance}) !important;
     }
 }
 
 .ci-padding-right {
-    padding-right: $distance;
+    padding-right: $distance !important;
 }
 
 .ci-padding-left {
-    padding-left: $distance;
+    padding-left: $distance !important;
 }
 
 .ci-padding-top {
-    padding-top: $distance;
+    padding-top: $distance !important;
 
     &--2x {
-        padding-top: calc(2 * #{$distance});
+        padding-top: calc(2 * #{$distance}) !important;
     }
 }
 
 .ci-padding-bottom {
-    padding-bottom: $distance;
+    padding-bottom: $distance !important;
 }

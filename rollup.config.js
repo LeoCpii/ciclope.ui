@@ -4,16 +4,16 @@ import { createBasicConfig } from '@open-wc/building-rollup';
 const baseConfig = createBasicConfig();
 
 export default merge(baseConfig, {
-    input: './dist/api/index.js',
+    input: './dist/out-tsc/index.js',
     output: [
         {
             format: "cjs",
-            file: 'bolin/index.js',
+            file: 'dist/api/index.js',
             sourcemap: true
         },
         {
             format: "esm",
-            file: 'bolin/index.esm.js',
+            file: 'dist/api/index.esm.js',
             sourcemap: true
         }
     ]

@@ -144,3 +144,17 @@
 .ci-align-items-flex-start {
     align-items: flex-start;
 }
+
+// BLOCK
+
+@include for-tablet {
+    .ci-display-block-md {
+        display: block;
+    }
+}
+
+@include for-mobile {
+    .ci-display-block-sm {
+        display: block;
+    }
+}

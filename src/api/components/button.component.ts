@@ -9,7 +9,7 @@ export class ButtonCi extends LitElement {
     @property() type: 'button' | 'submit' = 'button';
     @property() size: 'small' | 'large' | '' = '';
     @property() icon!: string;
-    @property() link!: string;
+    @property() link!: boolean;
     @property() outline = false;
     @property() block = false;
     @property() disabled = false;
@@ -34,7 +34,7 @@ export class ButtonCi extends LitElement {
     get cls(): string {
         const ret = [];
 
-        if (this.theme) { ret.push(`ci-btn--${this.theme}`); }
+        if (this.theme && !this.link) { ret.push(`ci-btn--${this.theme}`); }
         if (this.noStroke) { ret.push(`ci-btn--${this.theme}--no-stroke`); }
         if (this.outline) { ret.push(`ci-btn--${this.theme}--outline`); }
         if (this.block) { ret.push(`ci-btn--block`); }
@@ -65,15 +65,14 @@ export class ButtonCi extends LitElement {
 
     _click() {
         if (this.disabled || this.isLoading) { return; }
-        console.log('clicando');
     }
 
     render() {
         return html`
             <button
                 @click=${this._click}
-                .type="${this.type}"
                 class="ci-btn ${this.cls}"
+                .type="${this.type}"
                 .disabled=${this.disabled}
             >
                 <i ?hidden=${this.isLoading} class="uil ${this.clsIcon}"></i>

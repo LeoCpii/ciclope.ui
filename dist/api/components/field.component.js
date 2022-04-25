@@ -1,20 +1,23 @@
+"use strict";
 var FieldCi_1;
-import { __decorate } from "tslib";
-import { html, css, LitElement } from 'lit';
-import { customElement, property, state } from 'lit/decorators.js';
-import { animate } from '@lit-labs/motion';
-import { Validator } from './shared/services/validator.service';
-import { Formatter } from './shared/services/formatter.service';
-import { MASKS, NUMBER, NUMBER_MASK, FIELD_MESSAGES } from './shared/const/field.const';
-import IMask from 'imask';
-let FieldCi = FieldCi_1 = class FieldCi extends LitElement {
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.FieldCi = void 0;
+const tslib_1 = require("tslib");
+const lit_1 = require("lit");
+const decorators_js_1 = require("lit/decorators.js");
+const motion_1 = require("@lit-labs/motion");
+const validator_service_1 = require("./shared/services/validator.service");
+const formatter_service_1 = require("./shared/services/formatter.service");
+const field_const_1 = require("./shared/const/field.const");
+const imask_1 = tslib_1.__importDefault(require("imask"));
+let FieldCi = FieldCi_1 = class FieldCi extends lit_1.LitElement {
     constructor() {
         super(...arguments);
         this.placeholder = '';
         this.value = '';
         this.errors = [];
         this.id = `field_${++FieldCi_1.nextId}`;
-        this.validator = new Validator();
+        this.validator = new validator_service_1.Validator();
         this.eyeIcon = 'eye';
     }
     createRenderRoot() { return this; }
@@ -26,7 +29,7 @@ let FieldCi = FieldCi_1 = class FieldCi extends LitElement {
         if (['password'].includes(this.type)) {
             return this.type;
         }
-        if (NUMBER.includes(this.type)) {
+        if (field_const_1.NUMBER.includes(this.type)) {
             return 'tel';
         }
         return 'text';
@@ -65,14 +68,14 @@ let FieldCi = FieldCi_1 = class FieldCi extends LitElement {
         return ret.join(' ');
     }
     get loadingHTML() {
-        return this.loading ? html `
+        return this.loading ? (0, lit_1.html) `
             <div class="ci-loader-container">
                 <div class="ci-loader"></div>
             </div>
         ` : '';
     }
     get iconHTML() {
-        return ['password'].includes(this.typeState) ? html `
+        return ['password'].includes(this.typeState) ? (0, lit_1.html) `
             <div @click=${this.toggle} class="ci-icon ci-icon--pointer">
                 <i class="uil ${this.iconCls}"></i>
             </div>` : '';
@@ -98,10 +101,10 @@ let FieldCi = FieldCi_1 = class FieldCi extends LitElement {
             if (this.type === 'email') {
                 clean = value;
             }
-            if (NUMBER_MASK.includes(this.type)) {
+            if (field_const_1.NUMBER_MASK.includes(this.type)) {
                 clean = this.sanitizeNumber(value);
             }
-            if (MASKS.includes(this.type)) {
+            if (field_const_1.MASKS.includes(this.type)) {
                 clean = this.sanitize(value);
             }
         }
@@ -124,16 +127,16 @@ let FieldCi = FieldCi_1 = class FieldCi extends LitElement {
         const hasError = Object.keys(data).some(key => data[key]);
         if (hasError) {
             const att = Object.keys(data).find(key => data[key]);
-            this.errors.push(FIELD_MESSAGES[att]);
+            this.errors.push(field_const_1.FIELD_MESSAGES[att]);
         }
         return !Boolean(this.errors.length);
     }
     inputHandler(e) {
         const value = e.target['value'] || '';
-        if (MASKS.includes(this.type)) {
-            const format = Formatter.config[this.type].example;
+        if (field_const_1.MASKS.includes(this.type)) {
+            const format = formatter_service_1.Formatter.config[this.type].example;
             const options = { mask: format };
-            IMask(this.input, options);
+            (0, imask_1.default)(this.input, options);
         }
         const sanitize = this.clean(value);
         const isValid = this.validate(sanitize);
@@ -144,7 +147,7 @@ let FieldCi = FieldCi_1 = class FieldCi extends LitElement {
         }
     }
     render() {
-        return html `
+        return (0, lit_1.html) `
             <div class="ci-container-field">
                 <div class="ci-label ${this.labelCls}">${this.label}</div>
                 <div class="ci-field ${this.fieldCls}">
@@ -155,61 +158,61 @@ let FieldCi = FieldCi_1 = class FieldCi extends LitElement {
                         .placeholder=${this.placeholder}
                         .value=${this.value}
                         .disabled=${this.disabled || this.loading}
-                        @input=${this.inputHandler}>
+                        @focus=${this.inputHandler}>
 
                     ${this.loadingHTML}
                     ${this.iconHTML}
                 </div>
-                <div class="ci-feedback ci-feedback--error ${this.showFeedbackError}" ${animate()}>
-                    ${this.errors.map(e => html `<span>${e}</span>`)}
+                <div class="ci-feedback ci-feedback--error ${this.showFeedbackError}" ${(0, motion_1.animate)()}>
+                    ${this.errors.map(e => (0, lit_1.html) `<span>${e}</span>`)}
                 </div>
             </div>
         `;
     }
 };
 FieldCi.nextId = 0;
-FieldCi.styles = css ``;
-__decorate([
-    property()
+FieldCi.styles = (0, lit_1.css) ``;
+tslib_1.__decorate([
+    (0, decorators_js_1.property)()
 ], FieldCi.prototype, "label", void 0);
-__decorate([
-    property()
+tslib_1.__decorate([
+    (0, decorators_js_1.property)()
 ], FieldCi.prototype, "placeholder", void 0);
-__decorate([
-    property()
+tslib_1.__decorate([
+    (0, decorators_js_1.property)()
 ], FieldCi.prototype, "value", void 0);
-__decorate([
-    property()
+tslib_1.__decorate([
+    (0, decorators_js_1.property)()
 ], FieldCi.prototype, "icon", void 0);
-__decorate([
-    property()
+tslib_1.__decorate([
+    (0, decorators_js_1.property)()
 ], FieldCi.prototype, "name", void 0);
-__decorate([
-    property()
+tslib_1.__decorate([
+    (0, decorators_js_1.property)()
 ], FieldCi.prototype, "type", void 0);
-__decorate([
-    property()
+tslib_1.__decorate([
+    (0, decorators_js_1.property)()
 ], FieldCi.prototype, "size", void 0);
-__decorate([
-    property()
+tslib_1.__decorate([
+    (0, decorators_js_1.property)()
 ], FieldCi.prototype, "required", void 0);
-__decorate([
-    property()
+tslib_1.__decorate([
+    (0, decorators_js_1.property)()
 ], FieldCi.prototype, "loading", void 0);
-__decorate([
-    property()
+tslib_1.__decorate([
+    (0, decorators_js_1.property)()
 ], FieldCi.prototype, "disabled", void 0);
-__decorate([
-    state()
+tslib_1.__decorate([
+    (0, decorators_js_1.state)()
 ], FieldCi.prototype, "errors", void 0);
-__decorate([
-    state()
+tslib_1.__decorate([
+    (0, decorators_js_1.state)()
 ], FieldCi.prototype, "id", void 0);
-__decorate([
-    state()
+tslib_1.__decorate([
+    (0, decorators_js_1.state)()
 ], FieldCi.prototype, "typeState", void 0);
-FieldCi = FieldCi_1 = __decorate([
-    customElement('ci-field')
+FieldCi = FieldCi_1 = tslib_1.__decorate([
+    (0, decorators_js_1.customElement)('ci-field')
 ], FieldCi);
-export { FieldCi };
+exports.FieldCi = FieldCi;
 //# sourceMappingURL=field.component.js.map

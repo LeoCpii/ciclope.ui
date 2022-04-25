@@ -1,9 +1,12 @@
+"use strict";
 var AlertCi_1;
-import { __decorate } from "tslib";
-import { html, css, LitElement } from 'lit';
-import { customElement, property } from 'lit/decorators.js';
-import { animate } from '@lit-labs/motion';
-let AlertCi = AlertCi_1 = class AlertCi extends LitElement {
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.AlertCi = void 0;
+const tslib_1 = require("tslib");
+const lit_1 = require("lit");
+const decorators_js_1 = require("lit/decorators.js");
+const motion_1 = require("@lit-labs/motion");
+let AlertCi = AlertCi_1 = class AlertCi extends lit_1.LitElement {
     constructor() {
         super(...arguments);
         this.message = '';
@@ -26,8 +29,8 @@ let AlertCi = AlertCi_1 = class AlertCi extends LitElement {
         return ret.join(' ');
     }
     render() {
-        return html `
-        <div class="ci-alert ${this.cls}" ${animate()}>
+        return (0, lit_1.html) `
+        <div class="ci-alert ${this.cls}" ${(0, motion_1.animate)()}>
             <div>
                 <i class="uil ci-alert-icon ${this.icon}"></i>
                 ${this.message}
@@ -39,27 +42,27 @@ let AlertCi = AlertCi_1 = class AlertCi extends LitElement {
         `;
     }
 };
-AlertCi.styles = css ``;
+AlertCi.styles = (0, lit_1.css) ``;
 AlertCi.icons = {
     danger: 'times-square',
     success: 'thumbs-up',
     warning: 'exclamation-triangle',
     info: 'info-circle'
 };
-__decorate([
-    property()
+tslib_1.__decorate([
+    (0, decorators_js_1.property)()
 ], AlertCi.prototype, "message", void 0);
-__decorate([
-    property()
+tslib_1.__decorate([
+    (0, decorators_js_1.property)()
 ], AlertCi.prototype, "theme", void 0);
-__decorate([
-    property()
+tslib_1.__decorate([
+    (0, decorators_js_1.property)()
 ], AlertCi.prototype, "action", void 0);
-__decorate([
-    property()
+tslib_1.__decorate([
+    (0, decorators_js_1.property)()
 ], AlertCi.prototype, "show", void 0);
-AlertCi = AlertCi_1 = __decorate([
-    customElement('ci-alert')
+AlertCi = AlertCi_1 = tslib_1.__decorate([
+    (0, decorators_js_1.customElement)('ci-alert')
 ], AlertCi);
-export { AlertCi };
+exports.AlertCi = AlertCi;
 //# sourceMappingURL=alert.component.js.map

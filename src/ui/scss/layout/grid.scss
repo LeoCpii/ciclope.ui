@@ -7,7 +7,7 @@
         @include grid(15px);
 
         @include for-mobile {
-            @include grid(12);
+            @include grid();
         }
 
         &--margin {

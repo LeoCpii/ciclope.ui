@@ -1,4 +1,7 @@
-export class Validator {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Validator = void 0;
+class Validator {
     constructor() {
         this.emailRegex = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
         this.numberRegex = /^[0-9]+$/;
@@ -79,4 +82,5 @@ export class Validator {
         return Number(value) >= 0 && Number(value) <= 100;
     }
 }
+exports.Validator = Validator;
 //# sourceMappingURL=validator.service.js.map

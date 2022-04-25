@@ -1,4 +1,7 @@
-export class Formatter {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Formatter = void 0;
+class Formatter {
     leadingZerosValue(value, length) {
         const unformattedValue = value.toString().replace(/\D/g, '');
         return `${'0'.repeat(length)}${unformattedValue}`.slice(-length);
@@ -73,6 +76,7 @@ export class Formatter {
         return this.fn(config, value);
     }
 }
+exports.Formatter = Formatter;
 Formatter.config = {
     cep: {
         length: 8,

@@ -187,6 +187,10 @@
 
     &--link {
         color: var(--link);
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+        box-shadow: none;
     }
 }
 

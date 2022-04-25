@@ -2,8 +2,8 @@
     "extends": "./tsconfig.json",
     "compilerOptions": {
         "baseUrl": "./src/api",
-        "rootDirs": [ "./dist/api" ],
-        "outDir": "./dist/api",
+        "rootDirs": [ "./dist/out-tsc" ],
+        "outDir": "./dist/out-tsc",
         "target": "es2018",
         "module": "esnext",
         "moduleResolution": "node",
