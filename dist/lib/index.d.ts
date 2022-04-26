@@ -1,5 +1,8 @@
 export declare type TMode = 'light' | 'dark';
 export declare type TTheme = 'default' | 'micrablepharus' | 'vanzosaura' | 'custom' | 'viva-real' | 'zap-imoveis' | 'aulera';
+export declare type TColors = 'brand' | 'accent' | 'spotlight';
+export declare type TState = 'success' | 'danger' | 'warning' | 'info' | 'link';
+export declare type TStateColor = TColors | TState;
 export declare class Ciclope {
     static themes: TTheme[];
     static modes: TMode[];
