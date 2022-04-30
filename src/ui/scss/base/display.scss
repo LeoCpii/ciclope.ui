@@ -1,19 +1,5 @@
 @import "./../utilities/utilities";
 
-.ci-display-small-mobile {
-    &-show {
-        @include for-small-mobile {
-            display: initial !important;
-        }
-    }
-
-    &-hide {
-        @include for-small-mobile {
-            display: none !important;
-        }
-    }
-}
-
 .ci-display-mobile {
     &-show {
         @include for-mobile {
@@ -23,20 +9,6 @@
 
     &-hide {
         @include for-mobile {
-            display: none !important;
-        }
-    }
-}
-
-.ci-display-small-tablet {
-    &-show {
-        @include for-small-tablet {
-            display: initial !important;
-        }
-    }
-
-    &-hide {
-        @include for-small-tablet {
             display: none !important;
         }
     }
@@ -56,20 +28,6 @@
     }
 }
 
-.ci-display-small-desktop {
-    &-show {
-        @include for-small-desktop {
-            display: initial !important;
-        }
-    }
-
-    &-hide {
-        @include for-small-desktop {
-            display: none !important;
-        }
-    }
-}
-
 .ci-display-desktop {
     &-show {
         @include for-desktop {
@@ -79,20 +37,6 @@
 
     &-hide {
         @include for-desktop {
-            display: none !important;
-        }
-    }
-}
-
-.ci-display-big-desktop {
-    &-show {
-        @include for-big-desktop {
-            display: initial !important;
-        }
-    }
-
-    &-hide {
-        @include for-big-desktop {
             display: none !important;
         }
     }

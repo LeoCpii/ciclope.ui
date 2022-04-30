@@ -3,7 +3,6 @@
 .ci-alert {
     @include between;
     padding: 15px;
-    max-height: 46px;
     width: 100%;
     text-align: left;
     box-shadow: $box-shadow;
@@ -47,5 +46,10 @@
 
     .ci-alert-icon {
         margin-right: 15px;
+    }
+
+    #button {
+        position: absolute;
+        right: 20px;
     }
 }
